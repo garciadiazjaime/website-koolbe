@@ -3,6 +3,6 @@ import { Link } from 'react-router';
 
 export default class HomeSection extends React.Component {
   render() {
-    return (<h3>Home</h3>);
+    return (<h3>Homefdsafda</h3>);
   }
 }

@@ -19,9 +19,9 @@ app.get('/*', function (req, res) {
     } else if (redirectLocation) {
       res.redirect(302, redirectLocation.pathname + redirectLocation.search);
     } else if (renderProps) {
-      // let content = renderToString(<RoutingContext {...renderProps} />);
-      // res.render('index', { content: content });
-      res.status(200).send(renderToString(<RoutingContext {...renderProps} />))
+      let content = renderToString(<RoutingContext {...renderProps} />);
+      res.render('index', { content: content });
+      // res.status(200).send(renderToString(<RoutingContext {...renderProps} />))
     } else {
       res.status(404).send('Not found');
     }
