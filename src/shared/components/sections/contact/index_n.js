@@ -10,7 +10,7 @@ var style = {
    fintSize: "16px"
  }
  var grisb = {
-   colr: "#4D4D4D",
+   color: "#4D4D4D",
    fontSize: "14px"
  }
  var AzulM = {

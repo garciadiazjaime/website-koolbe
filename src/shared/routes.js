@@ -6,14 +6,21 @@ import AppHandler from "./components/AppHandler";
 import HomeSection from "./components/sections/home";
 import AboutUsSection from "./components/sections/aboutus";
 import ContactSection from "./components/sections/contact/index_a";
+import ProyectokSection from "./components/sections/proyectok";
+import Extraescolares from "./components/sections/extraescolares";
+
 
 
 export default(
   <Router>
     <Route path="/" component={AppHandler}>
       <IndexRoute component={HomeSection} />
-      <Route path="about" component={AboutUsSection} />
-      <Route path="contact" component={ContactSection} />
+      <Route path="inscripciones" component={AboutUsSection} />
+      <Route path="contacto" component={ContactSection} />
+      <Route path="proyecto-k" component={ProyectokSection} />
+      <Route path="Extraescolares" component={Extraescolares} />
+
+
     </Route>
   </Router>
 );
