@@ -7,9 +7,9 @@ export default class AppHandler extends React.Component {
       <div>
         <h1>App</h1>
         <ul>
-          <li><Link to="/">Home</Link></li>
+          <li><Link to="/">inicio</Link></li>
           <li><Link to="/inscripciones">About</Link></li>
-          <li><Link to="/contacto">Contact</Link></li>
+          <li><Link to="/contactanos">Contactanos</Link></li>
           <li><Link to="/proyecto-k">Proyecto K</Link></li>
           <li><Link to="/extraescolares">Extraescolares</Link></li>
 
