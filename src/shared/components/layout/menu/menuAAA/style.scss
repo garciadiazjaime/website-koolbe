@@ -1,0 +1,26 @@
+@import '../../../../constants';
+
+.wrapper {
+  height: 128px;
+}
+
+.navbarDefault {
+
+}
+
+.navbarBrand {
+  color: $grayDark;
+  font-size: 16px;
+  font-family: $fontABold;
+}
+
+.navbarNavAnchor {
+  font-family: $fontABold;
+  font-size: 12px;
+  color: $grayDark;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $red;
+  }
+}
