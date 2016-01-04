@@ -1,6 +1,5 @@
 import express from "express";
 import React from "react";
-// import Router from "react-router";
 
 import { renderToString } from 'react-dom/server';
 import { match, RoutingContext } from 'react-router';
@@ -10,7 +9,8 @@ const app = express();
 
 app.set('views', './views');
 app.set('view engine', 'jade');
-
+app.use(express.static('bower_components'));
+app.use(express.static('public'));
 
 app.get('/*', function (req, res) {
   match({ routes, location: req.url }, (error, redirectLocation, renderProps) => {
