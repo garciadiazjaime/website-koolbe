@@ -7,4 +7,4 @@ a) let's install all packages:
 b) let's run the server
 `npm start`
 
-By default server will run on http://127.0.0.1:3000/
+By default server will run on http://127.0.0.1:3030/

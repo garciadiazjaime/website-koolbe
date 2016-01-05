@@ -6,9 +6,7 @@ import _ from 'lodash';
 var style = process.env.NODE_ENV === 'DEV' ? require("./style.scss") : {};
 import Constants from '../../../constants';
 import SimpleCard from '../../widgets/card/simpleCard';
-
 import Sprites from '../../../sprite';
-
 
 
 export default class Extras extends Component {
