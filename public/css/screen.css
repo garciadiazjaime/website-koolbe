@@ -19,3 +19,13 @@
   font-family: nunito-light;
   src: url(/fonts/nunito/nunito-light.ttf);
 }
+
+@media screen and (min-width: 1200px) {
+  .container {
+      width: 1024px;
+  }
+}
+
+div{
+  border: 1px solid black;
+}
