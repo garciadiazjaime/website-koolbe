@@ -21,6 +21,7 @@
   text-transform: uppercase;
 
   &:hover {
-    color: $red;
+    color: $blueMedium;
+    background-color: initial;
   }
 }
