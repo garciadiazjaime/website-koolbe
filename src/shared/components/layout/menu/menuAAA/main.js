@@ -6,6 +6,7 @@ import _ from 'lodash';
 
 
 var style = process.env.NODE_ENV === 'DEV' ? require("./style.scss") : {};
+import Sprites from '../../../../sprite';
 
 
 export default class Main extends Component {
@@ -18,19 +19,14 @@ export default class Main extends Component {
           <nav className="navbar navbar-default" className={style.navbarDefault}>
             <div className="navbar-header">
 
+              <a title="Koolbe | Volver a inicio" className="navbar-brand" href="/" style={Sprites.General.Logo}></a>
+
               <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-main-menu" aria-expanded="false">
                 <span className="sr-only">Toggle navigation</span>
                 <span className="icon-bar"></span>
                 <span className="icon-bar"></span>
                 <span className="icon-bar"></span>
               </button>
-
-              <div>
-                <div>
-                  <i></i>
-                </div>
-                <a className={"navbar-brand " + style.navbarBrand} href={"tel:" + this.props.tel}>{this.props.tel}</a>
-              </div>
 
             </div>
 

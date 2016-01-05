@@ -28,21 +28,15 @@ gulp.task('clean:sprites', () => {
 });
 
 gulp.task('replace:sprite_url', () =>{
-  // gulp.src(['./src/sprites/sprite.js'])
-  //   .pipe(replace(/\.\.\/images/g, 'http://127.0.0.1:3000/images'))
-  //   .pipe(gulp.dest('./src/constants'));
+  gulp.src(['./public/images/sprites/sprite.js'])
+    .pipe(replace(/\.\.\/images/g, 'http://127.0.0.1:3000/images/sprites'))
+    .pipe(gulp.dest('./src/shared'));
 });
 
-gulp.task('move:spritejs', () => {
-  gulp.src(['public/images/sprites/sprite.js'])
-    .pipe(gulp.dest('src/shared/'));
-  del([
-      './public/images/sprites/sprite.js'
-    ]);
-  // return gulp.src('./src/sprites/*.png')
-  //   .pipe(gulpCopy('./public/images', {prefix: 2}));
+gulp.task('clean:spritejs', () => {
+  del(['./public/images/sprites/sprite.js']);
 })
 
 gulp.task('build:sprites', (cb) => {
-  runSequence('clean:sprites', 'sprites:generate', ['replace:sprite_url', 'move:spritejs'], cb);
+  runSequence('clean:sprites', 'sprites:generate', ['replace:sprite_url', 'clean:spritejs'], cb);
 });
