@@ -22,6 +22,8 @@ export default class SimpleCard extends Component {
             return this.getDescription(item);
           case 'LINK':
             return this.getLink(item, index);
+          case 'IMAGE':
+            return this.getImage(item, index);
           default:
             return null;
         }
@@ -69,6 +71,13 @@ export default class SimpleCard extends Component {
   getLink(data, index) {
     if (data && data.text && data.url) {
       return (<Link dangerouslySetInnerHTML={this.sanitize(data.text)} to={data.url} key={index} style={data.style}></Link>);
+    }
+    return null;
+  }
+
+  getImage(data, index) {
+    if (data && data.style) {
+      return (<div key={index} style={data.style}></div>);
     }
     return null;
   }
