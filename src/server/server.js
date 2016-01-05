@@ -4,6 +4,7 @@ import React from "react";
 import { renderToString } from 'react-dom/server';
 import { match, RoutingContext } from 'react-router';
 import routes from '../shared/routes';
+var config = require('../../config');
 
 const app = express();
 
@@ -28,9 +29,15 @@ app.get('/*', function (req, res) {
   });
 });
 
-var server = app.listen(3000, function () {
+app.set('ipaddress', config.get('ipaddress'));
+app.set('port', config.get('port'));
+
+var server = app.listen(app.get('port'), app.get('ipaddress'), function(err) {
+  if (err) {
+    console.log(err);
+  }
+
   var host = server.address().address;
   var port = server.address().port;
-
   console.log('Example app listening at http://%s:%s', host, port);
 });

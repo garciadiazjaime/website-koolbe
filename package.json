@@ -46,6 +46,7 @@
     "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {
+    "convict": "^1.0.2",
     "jade": "^1.11.0",
     "lodash": "^3.10.1",
     "webpack-sources": "^0.1.0"

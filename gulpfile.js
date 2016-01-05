@@ -5,6 +5,7 @@ var del = require('del');
 var runSequence = require('run-sequence');
 var replace = require('gulp-replace');
 var gulpCopy = require('gulp-copy');
+var config = require('./config');
 
 gulp.task('sprites:generate', () => {
   return sprity.src({
@@ -29,7 +30,7 @@ gulp.task('clean:sprites', () => {
 
 gulp.task('replace:sprite_url', () =>{
   gulp.src(['./public/images/sprites/sprite.js'])
-    .pipe(replace(/\.\.\/images/g, 'http://127.0.0.1:3000/images/sprites'))
+    .pipe(replace(/\.\.\/images/g, 'http://' + config.get('ipaddress') + ':' + config.get('port') + '/images/sprites'))
     .pipe(gulp.dest('./src/shared'));
 });
 
