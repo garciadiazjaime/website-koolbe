@@ -74,28 +74,5 @@ module.exports = {
             "backgroundImage": "url('http://127.0.0.1:3030/images/sprites/sprite-home.png')",
             "backgroundSize": "544px 338px"
         }
-    },
-    "HomeSliderProyectok": {
-        "AEscuela": {
-            "backgroundPosition": "-0px -0px",
-            "width": "514px",
-            "height": "351px",
-            "backgroundImage": "url('http://127.0.0.1:3030/images/sprites/sprite-home-slider-proyectok.png')",
-            "backgroundSize": "1028px 702px"
-        },
-        "BAlumnos": {
-            "backgroundPosition": "-514px -0px",
-            "width": "514px",
-            "height": "351px",
-            "backgroundImage": "url('http://127.0.0.1:3030/images/sprites/sprite-home-slider-proyectok.png')",
-            "backgroundSize": "1028px 702px"
-        },
-        "CProfesores": {
-            "backgroundPosition": "-0px -351px",
-            "width": "514px",
-            "height": "351px",
-            "backgroundImage": "url('http://127.0.0.1:3030/images/sprites/sprite-home-slider-proyectok.png')",
-            "backgroundSize": "1028px 702px"
-        }
     }
 }

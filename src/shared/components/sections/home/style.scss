@@ -102,3 +102,42 @@
     @extend .btnA
   }
 }
+
+.proyectoK{
+  background-color: $blueLight;
+  height: 330px;
+  padding-left: 52px;
+  margin-bottom: 60px;
+  margin-top: 20px;
+
+  h2 {
+    color: $yellow;
+    font-size: 10px;
+    font: $fontALigth;
+    padding-top: 32px;
+  }
+
+  h1 {
+    color: $yellow;
+    font-size: 30px;
+    font-weight: $fontBBold;
+    margin-top: 24px;
+  }
+
+  p {
+    font-family: $fontALigth;
+    font-size: 16px;
+    color: $white;
+    margin-top: 24px;
+  }
+
+  a {
+    margin-top: 30px;
+    color: $white;
+    font-family: $fontBBold;
+    font-size: 16px;
+    padding-left: 0;
+
+    @extend .btnA
+  }
+}
