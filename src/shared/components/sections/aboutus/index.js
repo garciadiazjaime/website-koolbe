@@ -7,6 +7,7 @@ import Title1 from '../../elements/titles/title1';
 import Title2 from '../../elements/titles/title2';
 import Title3 from '../../elements/titles/title3';
 import Title4 from '../../elements/titles/title4';
+import Title5 from '../../elements/titles/title5';
 import Par1 from '../../elements/paragraphs/paragraph1';
 import List1 from '../../elements/lists/list1';
 import List2 from '../../elements/lists/list2';
@@ -176,12 +177,10 @@ export default class AboutUs extends Component {
                 <li>Folio de traslado.</li>
 
               </List2>
-              <Title4>
-                Requisitos de edad para ingresar a los niveles de preescolar
-              </Title4>
-              <List3>
-                <li className="first"> 6 años cumplidos al 31 de diciembre (con certificado de preescolar)</li>
-              </List3>
+              <Title5>
+                Sin constancia del grado anterior, el alumno no se puede inscribir
+              </Title5>
+              
             </Wrapper1B>
           </div>
         </div>
