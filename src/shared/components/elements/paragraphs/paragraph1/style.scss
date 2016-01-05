@@ -1,0 +1,14 @@
+@import '../../../../constants';
+
+.paragraph1{
+  font-family: $fontALigth;
+  color: $grayDark;
+  font-size: 13px;
+  list-style: none;
+}
+@media screen and (max-width: 400px){
+	.paragraph{
+		margin-bottom: 15px;
+	}
+}
+

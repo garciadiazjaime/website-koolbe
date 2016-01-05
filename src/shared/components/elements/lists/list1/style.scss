@@ -1,0 +1,18 @@
+@import '../../../../constants';
+
+.list1{
+  font-family: $fontALigth;
+  color: $grayDark;
+  font-size: 13px;
+  padding-left: 50px;
+  list-style: none;
+  li{
+  	margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 400px){
+	.list1{
+		margin-bottom: 15px;
+	}
+}
+

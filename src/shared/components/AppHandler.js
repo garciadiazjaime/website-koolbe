@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from 'react-router';
 
 import Menu from './layout/menu/menuAAA';
+import Inscripciones from './sections/aboutus/';
 
 
 export default class AppHandler extends React.Component {
@@ -9,6 +10,7 @@ export default class AppHandler extends React.Component {
     return (
       <div>
         <Menu />
+        <Inscripciones />
       </div>
     );
   }

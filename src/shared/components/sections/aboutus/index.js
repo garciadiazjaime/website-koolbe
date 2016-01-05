@@ -1,233 +1,102 @@
-import React from "react";
-import { Link } from 'react-router';
+'use strict';
 
-var backgorund = {
-  backgroundColor: "#000000"
-}
-var amarillo = {
-  color: "#FFE400",
-  fontSize: "27px"
-}
-var amarilloB = {
-  color:"#FFE400",
-  fontSize: "18px"
-}
-var amarilloH = {
-  color: "#FFE400",
-  fontSize: "35px"
-}
-var blanco = {
-  color: "#FFFFFF",
-  fontSize: "13px"
-}
-var blancoB = {
-  color: "#FFFFFF",
-  fontSize: "16px"
-}
-var blancoC = {
-  color: "#FFFFFF",
-  fontSize: "19px"
-}
-var blancoD = {
-  color:"#FFFFFF",
-  fontSize: "12px"
-}
-var blancoE = {
-  color: "#FFFFFF",
-  fontSize: "35px"
-}
-var rojoH = {
-  color: "#E72227",
-  fontSize: "35px"
-}
-var azul = {
-  color: "#0055A0",
-  fontSize: "16px"
-}
-var azulB = {
-  color: "#0055A0",
-  fontSize: "15px"
-}
-var azulC = {
-  color: "#0055A0",
-  fontSize: "#"
-}
-var azulH = {
-  color: "#0055A0",
-  fontSize: "30px"
-}
-var rojo ={
-  color: "#0055A0",
-  fontSize: "15px"
-}
-var gris = {
-  color: "#4D4D4D",
-  fontSize: "13px"
-}
-var grisB = {
-  color: "#4D4D4D",
-  fontSize: "14"
-}
-var grisC ={
-  color: "#4D4D4D",
-  fontSize: "16px"
-}
-var verdeH2 = {
-  color: "#00A54F",
-  fontSize: "30px"
-}
-var verdeH3 = {
-  color: "#00A54F",
-  fontSize: "25px"
-}
-var boton = {
-  backgroundColor: "#0079BD",
-  color: "#FFFFFF",
-  fontSize: "16px"
-}
-var boton2 = {
-  backgroundColor: "#003A5E",
-  color: "#FFFFFF",
-  fontSize: "12px"
-}
+import React, { Component, PropTypes} from 'react';
+import _ from 'lodash';
 
-export default class AboutUsSection extends React.Component {
+import Title1 from '../../elements/titles/title1';
+import Title2 from '../../elements/titles/title2';
+import Title3 from '../../elements/titles/title3';
+import Title4 from '../../elements/titles/title4';
+import Par1 from '../../elements/paragraphs/paragraph1';
+import List1 from '../../elements/lists/list1';
+import List2 from '../../elements/lists/list2';
+import List3 from '../../elements/lists/list3';
+import Button1 from '../../elements/buttons/button1';
+import Wrapper1 from '../../elements/wrappers/wrapper1';
+import Wrapper1B from '../../elements/wrappers/wrapper1B';
+
+
+export default class AboutUs extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
   render() {
+
     return (
-      <div style={backgorund}>
-        <div>
-          <p style={blanco}>plantel</p>
-          <h1 style={amarillo}>SANTA FE</h1>
-          <p style={blanco}>plantel</p>
-          <h1 style={amarillo}>OTAY</h1>
+      <div className="container">
+        <div className="row">
+          <div className="col-xs-12 col-sm-8">
+            <Title1>
+              Requisitos de Admisión
+            </Title1>
+            <Title2>
+              Proceso de admisión (inscripción)<br />
+              para todos los niveles:
+            </Title2>
+            <List1>
+              <li>Ficha de inscripción debidamente llena.</li>
+              <li>Entrevista con Dirección Académica.</li>
+              <li>Cuestionario del departamento de Psicología debidamente lleno.</li>
+              <li>Entrevista con departamento de Psicología, solo en caso de ser necesario.</li>
+              <li>Realizar examen diagnóstico.</li>
+              <li>Entregar documentación completa del alumno solicitado por departamento 
+              de Control Escolar.</li>
+              <li>Realizar pago por concepto de Inscripción/Reinscripción.</li>
+            </List1>
+          </div>
+          <div className="col-xs-12  col-sm-4" style={{marginBottom: '100px'}}>
+              <Wrapper1>
+                <Title3> 
+                  Grados Escolares
+                </Title3>
+                <Par1>
+                  Instituto Ramiro Kolbe, es una institución privada que ofrece a niños y adolescentes una fórmula educativa de excelente nivel respaldados el Sistema SISEEKO.
+                </Par1>
+              </ Wrapper1>
+              <Button1 ref="/inscripcion">
+                FICHA DE INSCRIPCIÓN
+              </Button1>
+              <Button1 ref="/uniforme">
+                UNIFORME
+              </Button1>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-xs-12 col-sm-6">
+            Aquí va una imágen.
+          </div>
+          <div className="col-xs-12 col-sm-6">
+            <Wrapper1B>
+              <Title4>
+                Documentación
+              </Title4>
+              <List2>
+                <li>Acta de nacimiento original y 3 copias.</li>
 
-          <p style={blanco}>plantel</p>
-          <h1 style={amarillo}>PRESIDENTES</h1>
+                <li>Constancia de estudios original y 3 copias.<br />
+                (en caso de inscribir a 2º y 3º).</li>
 
-          <p style={blanco}>plantel</p>
-          <h1 style={amarilloH}>SANTA FE</h1>
+                <li>Cartilla de vacunación original y 3 copias.<br />
+                CURP original y 3 copias.</li>
 
-          <p><a style={blancoB} href="tel:6649752237">(664) 975 2237</a> y <a style={blancoB} href="tel:6649752268">68</a></p>
+                <li>Carta de no adeudo<br />
+                (en caso de provenir de escuela particular).</li>
+              </List2>
+              <Title4>
+                Requisitos de edad para ingresar a los niveles de preescolar
+              </Title4>
+              <List3>
+                <li className="first"> 3 años cumplidos al 31 de diciembre del año en curso.</li>
 
-          <p style={blancoC}>NIVELES ESCOLARES</p>
-          <p style={blancoD}>Preescolar | Primaria |
-              Secundaria | Preparatoria</p>
-          <button style={boton}>Contáctanos</button>
+                <li className="second"> 4 años cumplidos al 31 de diciembre del año en curso.</li>
 
-          <h1 style={rojoH}>REQUISITOS DE ADMISIÓN</h1>
-          <p style={azul}>Proceso de admisión (inscripción)
-            para todos los niveles:</p>
-          <p style={gris}>Ficha de inscripción debidamente llena.</p>
-          <p style={gris}>Entrevista con Dirección Académica.</p>
-          <p style={gris}>Cuestionario del departamento de Psicología debidamente lleno.</p>
-          <p style={gris}>Entrevista con departamento de Psicología, solo en caso de ser necesario.</p>
-          <p style={gris}>Realizar examen diagnóstico.</p>
-          <p style={gris}>Entregar documentación completa del alumno solicitado por departamento
-            de Control Escolar.</p>
-          <p style={gris}>Realizar pago por concepto de Inscripción/Reinscripción.</p>
-
-          <h2 style={azulB}>GRADOS ESCOLARES</h2>
-          <p style={gris}>Instituto Ramiro Kolbe, es una
-            institución privada que ofrece a niños y
-            adolescentes una fórmula educativa de
-            excelente nivel respaldados el Sistema
-            SISEEKO.</p>
-          <button style={boton2}>FICHA DE INSCRIPCIÓN</button>
-          <button style={boton2}>UNIFORME</button>
-
-          <p style={amarilloB}>NIVEL</p>
-          <h1 style={blancoE}>Preescolar</h1>
-
-          <p style={azulB}>DOCUMENTACIÓN</p>
-          <p style={grisB}>Acta de nacimiento original y 3 copias.</p>
-          <p style={grisB}>Constancia de estudios original y 3 copias
-            (en caso de inscribir a 2o y 3o).</p>
-          <p style={grisB}>Cartilla de vacunación original y 3 copias.</p>
-          <p style={grisB}>CURP original y 3 copias.</p>
-          <p style={grisB}>Carta de no adeudo
-            (en caso de provenir de escuela particular).</p>
-
-          <p style={azulB}>REQUISITOS DE EDAD PARA INGRESAR
-            A LOS NIVELES DE PREESCOLAR</p>
-          <p style={grisB}>3 años cumplidos al 31 de diciembre
-            del año en curso.</p>
-          <p style={grisB}>4 años cumplidos al 31 de diciembre
-            del año en curso.</p>
-          <p style={grisB}>5 años cumplidos al 31 de diciembre
-            del año en curso.</p>
-
-          <p style={amarilloB}>NIVEL</p>
-          <h1 style={blancoE}>Primaria</h1>
-
-          <p style={azulB}>DOCUMENTACIÓN</p>
-          <p style={grisB}>Acta de nacimiento original y 3 copias.</p>
-          <p style={grisB}>Última boleta de calificaciones o constancia de la escuela
-            donde estudia actualmente, original y 3 copias.</p>
-          <p style={grisB}>Certificado de preescolar original y 3 copias
-            (en caso de inscribir a 1o).</p>
-          <p style={grisB}>CURP original y 3 copias.</p>
-          <p style={grisB}>Cartilla de vacunación original y 3 copias
-            (en caso de inscribir a 1o).</p>
-          <p style={grisB}>Formato SUI (en caso de inscribir a 1o).</p>
-          <p style={grisB}>Carta de no adeudo
-            (en caso de provenir de escuela particular).</p>
-          <p style={grisB}>Carta de buena conducta.</p>
-          <p style={grisB}>Constancia de calificaciones
-            (Aplica sólo en caso de traslado avanzado el ciclo escolar).</p>
-
-          <p style={azulB}>REQUISITOS DE EDAD PARA INGRESAR
-            A LOS NIVELES DE PRIMARIA</p>
-          <p style={grisB}>6 años cumplidos al 31 de diciembre
-            (con certificado de preescolar)</p>
-
-            <p style={amarilloB}>NIVEL</p>
-            <h1 style={blancoE}>Secundarias</h1>
-
-            <p style={azulB}>DOCUMENTACIÓN</p>
-            <p style={grisB}>Acta de nacimiento original y 3 copias.</p>
-            <p style={grisB}>Última boleta de calificaciones o constancia de la escuela
-              donde estudia actualmente, original y 3 copias.</p>
-            <p style={grisB}>Certificado de primaria
-              (en caso de inscribir a 1o) original y 3 copias.</p>
-            <p style={grisB}>CURP original y 3 copias.</p>
-            <p style={grisB}>Formato SUI (en caso de inscribir a 1o).</p>
-            <p style={grisB}>Carta de no adeudo
-              (en caso de provenir de escuela particular).</p>
-            <p style={grisB}>Carta de buena conducta.</p>
-            <p style={grisB}>Revalidación USA.</p>
-            <p style={grisB}>Folio de traslado.</p>
-            <p style={rojo}>Sin constancia del grado anterior,
-              el alumno no se puede inscribir</p>
-
-            <p style={amarilloB}>NIVEL</p>
-            <h1 style={blancoE}>Preparatoria</h1>
-
-            <p style={azulB}>DOCUMENTACIÓN</p>
-            <p style={grisB}>Acta de nacimiento.</p>
-            <p style={grisB}>CURP.</p>
-            <p style={grisB}>Certificado de nivel o semestre anterior.
-              (Original y 2 copias de cada documento)</p>
-
-            <p style={azulB}>PROCEDIMIENTO PARA LA
-              REINSCRIPCIÓN AL COBACH</p>
-            <p style={azulC}>(COLEGIO DE BACHILLERES DEL ESTADO DE B.C.):</p>//no especifica tamano
-            <p style={grisB}>En el periodo que previamente el Instituto le
-              informe para realizar en línea su inscripción. Ingre-
-              sando a la siguiente dirección electrónica:</p>
-            <a style={azulC}>http//www.cobach.edu.mx</a>
-            <p style={grisB}>opción “<strong>alumnos</strong>”, “<strong>reinscripción en línea</strong>”.</p>
-
-            <h2 style={azulH}>Horarios de Atención</h2>
-            <p style={grisC}>Estamos disponibles para atenderle de manera
-              personal en cada uno de los planteles.</p>
-            <p style={grisC}>Lunes a Viernes de 7:00 am a 3:00 pm.</p>
-            <p style={grisC}>Horarios de caja de 7:00 am a 2:00 pm.</p>
-            <button style={boton}>Contáctanos</button>
-
-            <h2 style={verdeH2}>EL PROYECTO</h2>
-            <h3 style={verdeH3}>Metodo Académico</h3>
-            <button style={boton}>Conóce más</button>
-
+                <li className="third"> 5 años cumplidos al 31 de diciembre del año en curso.</li>
+              </List3>
+            </Wrapper1B>
+          </div>
         </div>
       </div>
     );
