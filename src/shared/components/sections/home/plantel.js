@@ -25,12 +25,13 @@ export default class Plantel extends Component {
   }
 
   getCards() {
+    var itemStyle = {
+      padding: '20px 24px 20px 24px'
+    };
+
     return [{
       wrapper: {
-        style: {
-          backgroundColor: Constants.blueMedium,
-          padding: '20px 33px 20px 33px'
-        }
+        style: _.merge({}, itemStyle, {backgroundColor: Constants.blueMedium})
       },
       elements: [{
         type: 'subtitle',
@@ -62,10 +63,7 @@ export default class Plantel extends Component {
       }]
     }, {
       wrapper: {
-        style: {
-          backgroundColor: Constants.red,
-          padding: '20px 33px 20px 33px'
-        }
+        style: _.merge({}, itemStyle, {backgroundColor: Constants.red})
       },
       elements: [{
         type: 'subtitle',
@@ -97,10 +95,7 @@ export default class Plantel extends Component {
       }]
     }, {
       wrapper: {
-        style: {
-          backgroundColor: Constants.green,
-          padding: '20px 33px 20px 33px'
-        }
+        style: _.merge({}, itemStyle, {backgroundColor: Constants.green})
       },
       elements: [{
         type: 'subtitle',
