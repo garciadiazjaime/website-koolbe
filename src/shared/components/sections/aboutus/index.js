@@ -14,6 +14,9 @@ import List3 from '../../elements/lists/list3';
 import Button1 from '../../elements/buttons/button1';
 import Wrapper1 from '../../elements/wrappers/wrapper1';
 import Wrapper1B from '../../elements/wrappers/wrapper1B';
+import Image1 from '../../elements/images/image1';
+import Image2 from '../../elements/images/image2';
+import Image3 from '../../elements/images/image3';
 
 
 export default class AboutUs extends Component {
@@ -66,7 +69,7 @@ export default class AboutUs extends Component {
         </div>
         <div className="row">
           <div className="col-xs-12 col-sm-6">
-            Aquí va una imágen.
+            <Image1 />
           </div>
           <div className="col-xs-12 col-sm-6">
             <Wrapper1B>
@@ -91,9 +94,93 @@ export default class AboutUs extends Component {
               <List3>
                 <li className="first"> 3 años cumplidos al 31 de diciembre del año en curso.</li>
 
-                <li className="second"> 4 años cumplidos al 31 de diciembre del año en curso.</li>
+                <li> 4 años cumplidos al 31 de diciembre del año en curso.</li>
 
                 <li className="third"> 5 años cumplidos al 31 de diciembre del año en curso.</li>
+              </List3>
+            </Wrapper1B>
+          </div>
+        </div>
+
+
+        <div className="row">
+          <div className="col-xs-12 col-sm-6">
+            <Image2 />
+          </div>
+          <div className="col-xs-12 col-sm-6">
+            <Wrapper1B>
+              <Title4>
+                Documentación
+              </Title4>
+              <List2>
+                <li>Acta de nacimiento original y 3 copias.</li>
+
+                <li>Última boleta de calificaciones o constancia de la escuela donde estudia actualmente, original y 3 copias.</li>
+
+                <li>Certificado de preescolar original y 3 copias<br />
+                (en caso de inscribir a 1º).</li>
+
+                <li>CURP original y 3 copias.</li>
+
+                <li>Cartilla de vacunación original y 3 copias<br />
+                (en caso de inscribir a 1º).</li>
+
+                <li>Formato SUI (en caso de inscribir a 1º).</li>
+
+                <li>Carta de no adeudo <br />
+                (en caso de provenir de escuela particular).</li>
+
+                <li>Carta de buena conducta.</li>
+
+                <li>Constancia de calificaciones <br />
+                (Aplica sólo en caso de traslado avanzado el ciclo escolar).</li>
+              </List2>
+              <Title4>
+                Requisitos de edad para ingresar a los niveles de preescolar
+              </Title4>
+              <List3>
+                <li className="first"> 6 años cumplidos al 31 de diciembre (con certificado de preescolar)</li>
+              </List3>
+            </Wrapper1B>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-xs-12 col-sm-6">
+            <Image3 />
+          </div>
+          <div className="col-xs-12 col-sm-6">
+            <Wrapper1B>
+              <Title4>
+                Documentación
+              </Title4>
+              <List2>
+                <li>Acta de nacimiento original y 3 copias.</li>
+
+                <li>Última boleta de calificaciones o constancia de la escuela donde estudia actualmente, original y 3 copias.</li>
+
+                <li>Certificado de primaria<br />
+                (en caso de inscribir a 1º) original y 3 copias.</li>
+
+                <li>CURP original y 3 copias.</li>
+
+                <li>Formato SUI (en caso de inscribir a 1º).</li>
+
+                <li>Carta de no adeudo<br />
+                (en caso de provenir de escuela particular).</li>
+
+                <li>Carta de buena conducta.</li>
+
+                <li>Revalidación USA.</li>
+
+                <li>Folio de traslado.</li>
+
+              </List2>
+              <Title4>
+                Requisitos de edad para ingresar a los niveles de preescolar
+              </Title4>
+              <List3>
+                <li className="first"> 6 años cumplidos al 31 de diciembre (con certificado de preescolar)</li>
               </List3>
             </Wrapper1B>
           </div>

@@ -10,7 +10,7 @@ export default class AppHandler extends React.Component {
     return (
       <div>
         <Menu />
-        <Inscripciones />
+        {this.props.children}
       </div>
     );
   }

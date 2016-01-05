@@ -9,7 +9,7 @@
   list-style: none;
   margin-bottom: 46px;
   li{
-  	margin-bottom: 20px;
+  	margin-bottom: 22px;
     &::before {
       float: left; 
       display: block;
@@ -18,7 +18,7 @@
       height: 8px;
       @include border-radius(4px);
       background-color: $yellow;
-      margin: 7px 10px 11px 4px;
+      margin: 7px 10px 26px 4px;
     }
   }
 }
