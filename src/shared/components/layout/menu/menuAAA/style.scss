@@ -1,17 +1,30 @@
 @import '../../../../constants';
 
-.wrapper {
-  height: 128px;
-}
 
 .navbarDefault {
+  background: none;
+  border: none;
+  height: 108px;
+}
 
+.navbarHeader {
+  margin-top: 37px;
+  margin-left: 52px;
+}
+
+.navbarNav {
+  margin-top: 21px;
+  margin-left: 142px;
 }
 
 .navbarBrand {
   color: $grayDark;
   font-size: 16px;
   font-family: $fontABold;
+}
+
+.navbarCollapse{
+  border: none;
 }
 
 .navbarNavAnchor {
@@ -24,4 +37,9 @@
     color: $blueMedium;
     background-color: initial;
   }
+}
+
+.socialNetwork {
+  margin-top: 30px;
+  float: right;
 }

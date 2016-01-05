@@ -4,6 +4,7 @@ import React, { Component, PropTypes} from 'react';
 import _ from 'lodash';
 
 import Main from './main';
+import Sprites from '../../../../sprite';
 
 export default class MenuAAA extends Component {
 
@@ -36,7 +37,9 @@ export default class MenuAAA extends Component {
 
     var icons = [{
       title: 'facebook',
-      icon: '',
+      style: _.merge({}, Sprites.General.Facebook, {
+        display: 'inline-block'
+      }),
       url: '#'
     }];
 

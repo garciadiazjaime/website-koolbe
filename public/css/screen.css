@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: nunito;
-  src: url(/fonts/nunito-regular.ttf);
+  src: url(/fonts/nunito/nunito-regular.ttf);
 }
 @font-face {
   font-family: nunito-bold;
@@ -18,4 +18,18 @@
 @font-face {
   font-family: nunito-light;
   src: url(/fonts/nunito/nunito-light.ttf);
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+      width: 1024px;
+  }
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+div{
+  /*border: 1px solid black;*/
 }
