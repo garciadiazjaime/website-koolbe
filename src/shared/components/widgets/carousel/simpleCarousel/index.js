@@ -17,7 +17,7 @@ export default class SimpleCarousel extends Component {
     var id = this.props.data.meta.id;
 
     return (
-      <div id={id} className="carousel slide" data-ride="carousel" data-interval={this.props.data.meta.interval || 20000}>
+      <div id={id} className="carousel slide" data-ride="carousel" data-interval={this.props.data.meta.interval || 10000}>
         <ol className="carousel-indicators">
           {indicatorsEl}
         </ol>

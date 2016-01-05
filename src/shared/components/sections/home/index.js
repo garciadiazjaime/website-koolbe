@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 
 var style = process.env.NODE_ENV === 'DEV' ? require("./style.scss") : {};
 import Carousel from '../../widgets/carousel/simpleCarousel';
+import Plantel from './plantel';
 
 
 var backgorund = {
@@ -70,45 +71,12 @@ var boton2 = {
 import carouselData from './carouselData';
 
 export default class HomeSection extends React.Component {
+
   render() {
     return (
-        <div style={backgorund}>
+        <div>
           <Carousel data={carouselData} />
-            
-
-
-            <div>
-                <h2 style={rojo}>Somos
-                      Escuela BEO</h2>
-                <p style={gris}>BRITISH ENGLISH OLYMPICS
-                    Certificación como escuela dentro
-                    del BEO BOARD</p>
-                <button style={boton2}>Conóce más</button>
-
-                <h2 style={rojo}>Actividades
-                  Extraescolares</h2>
-                <p style={gris}>El fin principal de las actividades
-                    extraescolares es canalizar la
-                    vocación de los niños.</p>
-                <button style={boton2}>Conóce más</button>
-
-                <h2 style={rojo}>Filosofía
-                      Religiosa</h2>
-                <p style={gris}>La educación a favor del hombre
-                    y de la mujer creados a imagen
-                    y semejanza de Dios.</p>
-                <button style={boton2}>Conóce más</button>
-
-                <p style={amarilloB}>MÉTODO ACADÉMICO</p>
-                <h2 style={amarilloH}>El Proyecto K</h2>
-                <p style={blancoF}>Instituto Ramiro Kolbe, es una institución privada
-                    que ofrece a niños y adolescentes una fórmula
-                    educativa de excelente nivel, sustentada por ser
-                    bicultural, bilingüe, tecnológica, integral y religiosa,
-                    con amplios valores</p>
-                <button style={boton2}>Conóce más</button>
-
-            </div>
+          <Plantel />
         </div>
   );
   }

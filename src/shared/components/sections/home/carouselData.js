@@ -20,7 +20,8 @@ module.exports = {
      indicators: {
      },
      showControl: false,
-     showIndicators: false
+     showIndicators: false,
+     interval: 10000
    },
    classes: {
      carouselInner: style.carouselInner,
