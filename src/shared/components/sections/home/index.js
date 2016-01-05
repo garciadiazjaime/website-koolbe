@@ -1,8 +1,12 @@
 import React from "react";
 import { Link } from 'react-router';
 
+var style = process.env.NODE_ENV === 'DEV' ? require("./style.scss") : {};
+import Carousel from '../../widgets/carousel/simpleCarousel';
+
+
 var backgorund = {
-  backgroundColor: "#000000"
+  backgroundColor: "#eee"
 }
 var blancoH = {
   color: "#FFFFFF",
@@ -63,40 +67,17 @@ var boton2 = {
   fontSize: "16px"
 }
 
+import carouselData from './carouselData';
+
 export default class HomeSection extends React.Component {
   render() {
     return (
         <div style={backgorund}>
-            <div>
-                <h1 style={blancoH}>Fórmula
-                  educativa
-                  de alto nivel</h1>
-                <p style={blanco}>Contamos con niveles escolares,
-                  respaldados por la formula educativa
-                  del Sistema SISEEKO</p>
-                <button style={boton}>Inscríbete</button>
+          <Carousel data={carouselData} />
+            
 
-                <div>
-                      <p style={blancob}>plantel</p>
-                      <h2 style={amarillo}>SANTE FE</h2>
-                      <p><a style={blancoE} href="tel:6649752237">(664) 975 2237</a> y <a style={blancoE} href="tel:6649752268">68</a></p>
-                      <p style={blacnoC}>Niveles Escolares</p>
-                      <p style={blancoD}>Preescolar | Primaria | Secundaria | Preparatoria</p>
-                </div>
-                <div>
-                      <p style={blancob}>plantel</p>
-                      <h2 style={amarillo}>OTAY</h2>
-                      <a style={blancoE} href="tel:6646244310">(664) 624 4310</a>
-                      <p style={blacnoC}>Niveles Escolares</p>
-                      <p style={blancoD}>Preescolar | Primaria | Secundaria</p>
-                </div>
-                <div>
-                      <p style={blancob}>plantel</p>
-                      <h2 style={amarillo}>PRESIDENTES</h2>
-                      <a style={blancoE} href="tel:6649783220">(664) 978 3220</a>
-                      <p style={blacnoC}>Niveles Escolares</p>
-                      <p style={blancoD}>Preescolar | Primaria | Secundaria</p>
-                </div>
+
+            <div>
                 <h2 style={rojo}>Somos
                       Escuela BEO</h2>
                 <p style={gris}>BRITISH ENGLISH OLYMPICS

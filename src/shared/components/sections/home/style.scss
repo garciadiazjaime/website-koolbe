@@ -1,0 +1,46 @@
+@import '../../../constants';
+
+.carouselInner {
+
+  h1 {
+    color: $white;
+    font-size: 45px;
+    font-family: $fontBBold;
+  }
+
+  p {
+    color: $white;
+    font-size: 20px;
+    font-family: $fontALigth;
+    margin-top: 62px;
+  }
+
+  a {
+    display: inline-block;
+    font-family: $fontBBold;
+    font-size: 16px;
+    color: $white;
+    padding: 15px 55px 15px 20px;
+    line-height: 10px;
+    margin-top: 50px;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 12px;
+      right: 15px;
+
+      background-position: -160px -46px;
+      width: 17px;
+      height: 17px;
+      background-image: url('http://127.0.0.1:3000/images/sprites/sprite-general.png');
+      background-size: 183px 143px
+    }
+  }
+}
+
+.item {
+  padding-left: 52px;
+  padding-top: 100px;
+}
