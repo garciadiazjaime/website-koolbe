@@ -1,0 +1,30 @@
+@import '../../../../constants';
+
+.list1{
+  font-family: $fontALigth;
+  color: $grayDark;
+  font-size: 13px;
+  padding-left: 50px;
+  list-style: none;
+  li{
+  	margin-bottom: 25px;
+    &::before {
+      content: "";
+      float: left;
+      margin: 0 0 0 -45px;
+      display: block;
+      background-position: -21px -22px;
+      width: 14px;
+      height: 16px;
+      background-image: url('http://127.0.0.1:3030/images/sprites/sprite-aboutus.png');
+      background-size: 43px 39px;
+      left: 15px;  
+  }
+  }
+}
+@media screen and (max-width: 400px){
+	.list1{
+		margin-bottom: 15px;
+	}
+}
+

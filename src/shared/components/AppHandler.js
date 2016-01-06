@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from 'react-router';
 
 import Menu from './layout/menu/menuAAA';
+import Inscripciones from './sections/aboutus/';
 import FooterAAA from './layout/footer/FooterAAA';
 
 

@@ -1,4 +1,27 @@
 module.exports = {
+    "Aboutus": {
+        "InscripcionProcesos": {
+            "backgroundPosition": "-21px -22px",
+            "width": "14px",
+            "height": "16px",
+            "backgroundImage": "url('http://127.0.0.1:3030/images/sprites/sprite-aboutus.png')",
+            "backgroundSize": "43px 39px"
+        },
+        "InscripcionesBanquito": {
+            "backgroundPosition": "-21px -0px",
+            "width": "22px",
+            "height": "22px",
+            "backgroundImage": "url('http://127.0.0.1:3030/images/sprites/sprite-aboutus.png')",
+            "backgroundSize": "43px 39px"
+        },
+        "InscripcionesMedalla": {
+            "backgroundPosition": "-0px -0px",
+            "width": "21px",
+            "height": "39px",
+            "backgroundImage": "url('http://127.0.0.1:3030/images/sprites/sprite-aboutus.png')",
+            "backgroundSize": "43px 39px"
+        }
+    },
     "Extra": {
         "Artisticas": {
             "backgroundPosition": "-0px -283px",
