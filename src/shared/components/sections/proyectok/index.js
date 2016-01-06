@@ -8,20 +8,30 @@ import _ from 'lodash';
 import Button2 from '../../elements/buttons/button2';
 
 import Image7 from '../../elements/images/image7';
+import Image8 from '../../elements/images/image8';
+import Image9 from '../../elements/images/image9';
+import Image10 from '../../elements/images/image10';
 
 import List4 from '../../elements/lists/list4';
 
 import Par1 from '../../elements/paragraphs/paragraph1';
 import Par2 from '../../elements/paragraphs/paragraph2';
 import Par4 from '../../elements/paragraphs/paragraph4';
+import Par5 from '../../elements/paragraphs/paragraph5';
 
 import Title8 from '../../elements/titles/title8';
 import Title11 from '../../elements/titles/title11';
 import Title12 from '../../elements/titles/title12';
 import Title13 from '../../elements/titles/title13';
 import Title14 from '../../elements/titles/title14';
+import Title15 from '../../elements/titles/title15';
+import Title16 from '../../elements/titles/title16';
+import Title17 from '../../elements/titles/title17';
+import Title18 from '../../elements/titles/title18';
 
 import Wrapper2 from '../../elements/wrappers/wrapper2';
+import Wrapper3 from '../../elements/wrappers/wrapper3';
+
 
 
 export default class AboutUs extends Component {
@@ -119,7 +129,76 @@ export default class AboutUs extends Component {
               </List4>
             </div>
           </div>
+          <div className="row" style={{marginBottom: '180px'}}>
+            <div className="col-xs-12 col-sm-6">
+              <Image8/>
+            </div>
+            <div className="col-xs-12 col-sm-6">
+              <Title15>
+                Somos Escuela BEO
+              </Title15>
+              <Title16>
+                (British English Olympics)
+              </Title16>
+              <Par1>
+                Certificación como escuela dentro del BEO BOARD. Cada año se llevan a cabo las Olimpiadas Británicas de Inglés en donde las escuelas más exclusivas del Reino Unido reciben a un grupo de estudiantes de todo el mundo se enfrentan a diferentes retos académicos en el idioma Inglés.
+              </Par1>
+              <Title17>
+                Objetivos y ventjas
+              </Title17>
+              <List4>
+                <li>Fortalece el aprendizaje integral para la excelencia en el uso del idioma inglés.</li>
+
+                <li>Fomenta el conocimiento de diferentes culturas.</li>
+
+                <li>Convivencia con personas de diferentes países, tradiciones y opiniones.</li>
+
+                <li>Crecimiento personal.</li>
+
+                <li>Vivir una experiencia única.</li>
+
+              </List4>
+            </div>
+          </div>
         </div>
+        <Wrapper3>
+          <div className="container">
+            <div className="row">
+              <div className="col-xs-12 col-sm-4 col-sm-offset-1">
+                <Image9 />
+                <Title18>
+                  Oración a<br />
+                  San Maximiliano Kolbe
+                </Title18>
+                <Par5>
+                  San Maximiliano Kolbe, Bendice el trabajo que estamos iniciando este nuevo día, bendice a nuestro padres, bendice su trabajo y cuídalos de toda enfermedad. Bendice a nuestros maestros y a toda su familia, bendice a nuestro instituto. Te ofrecemos este día de trabajo, te ofrecemos nuestras clases y nuestro recreo, te ofrecemos nuestras tareas, y nuestra convivencia con todos nuestros compañeros. Madre mía inmaculada, Que sea un buen estudiante, Que sea un buen hijo. Quiero ser obediente, respetuoso, Trabajador y un buen amigo para todos.<br/>
+                    Amén.
+                </Par5>
+              </div>
+              <div className="col-xs-12 col-sm-4 col-sm-offset-2">
+                <Image10 />
+                <Title18>
+                  Himno <br />
+                  del Instituto
+                </Title18>
+                <Par5>
+                  Yo soy alumno del Kolbe<br />
+                  Y lo grito con honor,<br />
+                  porque  a diario doy la vida<br />
+                  trabajando con amor.<br />
+                  Tú, Maximiliano, mártir y santo,<br />
+                  Nos inspiras y nos das valor.<br />
+                  A luchar por la patria y por Dios<br />
+                  En busca de un mundo mejor!<br />
+                  Que canten los jóvenes Kolbe<br />
+                  Al mundo donde hay odio y rencor,<br />
+                  Y que su mensaje alivie<br />
+                  El sufrimiento y dolor!<br />
+                </Par5>
+              </div>
+            </div>
+          </div>
+        </Wrapper3>
       </div>
     );
   }
