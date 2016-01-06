@@ -50,11 +50,13 @@ export default class FooterAAA extends Component {
   getMenu(data, className) {
     const items = data.map((item, index) => {
       var children = item.children ? this.getMenu(item.children) : null;
+
       return (<li key={index} className={className||style.menuChild}>
         <Link to={item.url}>{item.title}</Link>
         {children}
       </li>);
     }, this);
+
     return (<ul>{items}</ul>);
   }
 
@@ -66,6 +68,7 @@ export default class FooterAAA extends Component {
         </div>
       </div>);
     });
+
     return (<div id={style.addresses}>{items}</div>);
   }
 

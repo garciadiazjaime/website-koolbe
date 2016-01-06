@@ -1,0 +1,98 @@
+@import '../../../constants';
+
+.intro {
+  margin-top: 75px;
+  padding: 0 52px;
+
+  h2 {
+    font-family: $fontBBold;
+    font-size: 35px;
+    color: $green;
+  }
+
+  p {
+    font-family: $fontALigth;
+    font-size: 15px;
+    color: $grayDark;
+  }
+}
+
+.activities {
+  margin-top: 60px;
+  text-align: center;
+  padding: 0 52px;
+
+  h1 {
+    font-family: $fontBBold;
+    font-size: 25px;
+    color: $red;
+  }
+
+  p {
+    font-family: $fontALigth;
+    font-size: 18px;
+    color: $grayDark;
+  }
+}
+
+.contact {
+  margin-top: 120px;
+  padding: 0 52px;
+
+  p {
+    font-family: $fontALigth;
+    font-size: 16px;
+    color: $grayDark;
+  }
+
+  a {
+    font-family: $fontBBold;
+    font-size: 16px;
+    color: $white;
+    background-color: $blueLight;
+
+    @extend .btnA
+  }
+}
+
+.schedule {
+  margin-top: 70px;
+  margin-bottom: 60px;
+  padding: 0 32px;
+
+  h1 {
+    font-family: $fontBBold;
+    font-size: 25px;
+    color: $blueLight;
+    margin-top: 5px;
+    margin-bottom: 24px;
+  }
+
+  p {
+    font-family: $fontALigth;
+    font-size: 15px;
+    color: $grayDark;
+  }
+
+  span {
+    display: inline-block;
+    background-color: $yellow;
+    padding: 10px 20px;
+    color: $blueLight;
+    font-family: $fontA;
+  }
+
+  a {
+    font-family: $fontBBold;
+    font-size: 16px;
+    color: $white;
+    background-color: $blueLight;
+    margin-top: 24px;
+
+    @extend .btnA
+  }
+}
+
+.scheduleInfo {
+  padding-left: 40px;
+}

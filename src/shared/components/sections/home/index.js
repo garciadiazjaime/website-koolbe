@@ -7,7 +7,6 @@ import Extras from './extras';
 import SimpleCard from '../../widgets/card/simpleCard';
 import ProyectoK from './proyectok';
 import carouselData from './carouselBannerData';
-import FooterAAA from '../../layout/footer/FooterAAA';
 
 
 export default class HomeSection extends React.Component {
@@ -21,7 +20,6 @@ export default class HomeSection extends React.Component {
         <Extras />
         <SimpleCard data={card} />
         <ProyectoK />
-        <FooterAAA />
       </div>
     );
   }
