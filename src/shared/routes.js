@@ -20,8 +20,6 @@ export default(
       <Route path="contactanos" component={ContactanosSection} />
       <Route path="proyecto-k" component={ProyectokSection} />
       <Route path="Extraescolares" component={Extraescolares} />
-
-
     </Route>
   </Router>
 );
