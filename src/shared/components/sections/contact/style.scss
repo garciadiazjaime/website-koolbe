@@ -1,0 +1,47 @@
+@import '../../../constants';
+
+.contact {
+
+  h1 {
+    font-family: $fontBBold;
+    font-size: 35px;
+    color: $blueDark;
+  }
+
+  hr {
+    border-top: $grayLight 1px solid;
+    margin: 20px 0 50px;
+  }
+
+  p {
+    font-family: $fontALigth;
+    color: $grayDark;
+    font-size: 16px;
+  }
+
+  a {
+    color: $red;
+    font-family: $fontABold;
+  }
+
+  label {
+    font-family: $fontALigth;
+    font-size: 14px;
+    color: $blueLight;
+  }
+
+  input, textarea {
+    border: none;
+  }
+
+  button {
+    font-family: $fontBBold;
+    font-size: 16px;
+    color: $white;
+    background-color: $blueLight;
+    border: none;
+    margin-top: 20px;
+
+    @extend .btnA
+  }
+}

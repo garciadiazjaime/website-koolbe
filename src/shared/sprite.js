@@ -1,4 +1,27 @@
 module.exports = {
+    "Contact": {
+        "Otay": {
+            "backgroundPosition": "-0px -0px",
+            "width": "512px",
+            "height": "538px",
+            "backgroundImage": "url('http://127.0.0.1:3030/images/sprites/sprite-contact.png')",
+            "backgroundSize": "1536px 538px"
+        },
+        "Presidentes": {
+            "backgroundPosition": "-512px -0px",
+            "width": "512px",
+            "height": "538px",
+            "backgroundImage": "url('http://127.0.0.1:3030/images/sprites/sprite-contact.png')",
+            "backgroundSize": "1536px 538px"
+        },
+        "SantaFe": {
+            "backgroundPosition": "-1024px -0px",
+            "width": "512px",
+            "height": "538px",
+            "backgroundImage": "url('http://127.0.0.1:3030/images/sprites/sprite-contact.png')",
+            "backgroundSize": "1536px 538px"
+        }
+    },
     "Extra": {
         "Artisticas": {
             "backgroundPosition": "-0px -283px",
