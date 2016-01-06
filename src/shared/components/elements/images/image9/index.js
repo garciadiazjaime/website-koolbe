@@ -7,10 +7,10 @@ import _ from 'lodash';
 
 var style = process.env.NODE_ENV === 'DEV' ? require("./style.scss") : {};
 
-export default class Image7 extends React.Component {
+export default class Image9 extends React.Component {
   render() {
     return (
-      <img className={style.image7} src="http://127.0.0.1:3030/images/proyectok/banner.jpg" />
+      <img className={style.image9} src="http://127.0.0.1:3030/images/proyectok/mrkolbe.png" />
     );
   }
 }
