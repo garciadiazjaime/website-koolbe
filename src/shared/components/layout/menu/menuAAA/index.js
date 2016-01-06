@@ -5,6 +5,7 @@ import _ from 'lodash';
 
 import Main from './main';
 import Sprites from '../../../../sprite';
+import menuData from '../../../../menuData';
 
 export default class MenuAAA extends Component {
 
@@ -15,37 +16,8 @@ export default class MenuAAA extends Component {
 
   render() {
 
-    var items = [{
-      title: 'Inicio',
-      url:'inicio'
-    }, {
-      title: 'Inscripciones',
-      url:'inscripciones'
-    }, {
-      title: 'Proyecto K',
-      url:'proyecto-k'
-    }, {
-      title: 'Extraescolares',
-      url:'extraescolares'
-    }, {
-      title: 'Boletines',
-      url:'boletines'
-    }, {
-      title: 'Contacto',
-      url:'contacto'
-    }];
-
-    var icons = [{
-      title: 'facebook',
-      style: _.merge({}, Sprites.General.Facebook, {
-        display: 'inline-block'
-      }),
-      url: '#'
-    }];
-
-
     return (
-      <Main items={items} tel="logo" icons={icons} />
+      <Main items={menuData.items} tel="logo" icons={menuData.icons} />
     );
   }
 }

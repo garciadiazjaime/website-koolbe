@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 
 import Menu from './layout/menu/menuAAA';
 import Inscripciones from './sections/aboutus/';
+import FooterAAA from './layout/footer/FooterAAA';
 
 
 export default class AppHandler extends React.Component {
@@ -11,6 +12,7 @@ export default class AppHandler extends React.Component {
       <div>
         <Menu />
         {this.props.children}
+        <FooterAAA />
       </div>
     );
   }

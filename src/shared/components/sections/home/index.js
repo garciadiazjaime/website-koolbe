@@ -1,14 +1,12 @@
 import React from "react";
 import { Link } from 'react-router';
 
-var style = process.env.NODE_ENV === 'DEV' ? require("./style.scss") : {};
 import SimpleCarousel from '../../widgets/carousel/simpleCarousel';
 import Plantel from './plantel';
 import Extras from './extras';
 import SimpleCard from '../../widgets/card/simpleCard';
 import ProyectoK from './proyectok';
 import carouselData from './carouselBannerData';
-import FooterAAA from '../../layout/footer/FooterAAA';
 
 
 export default class HomeSection extends React.Component {
@@ -22,7 +20,6 @@ export default class HomeSection extends React.Component {
         <Extras />
         <SimpleCard data={card} />
         <ProyectoK />
-        <FooterAAA />
       </div>
     );
   }
@@ -31,14 +28,18 @@ export default class HomeSection extends React.Component {
     return [{
       wrapper: {
         style: {
-          marginTop: '70px'
+          marginTop: '70px',
+          textAlign: 'center'
         }
       },
       elements: [{
         type: 'image',
         src: 'images/home/noolvidenelamor.png',
         alt: 'no olviden el amor',
-        classes: 'img-responsive'
+        classes: 'img-responsive',
+        style: {
+          display: 'inline-block'
+        }
       }]
     }]
   }
