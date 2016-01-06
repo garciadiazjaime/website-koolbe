@@ -1,0 +1,30 @@
+@import '../../../../constants';
+
+.list2{
+  position: relative;
+  font-family: $fontALigth;
+  color: $grayDark;
+  font-size: 14px;
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 46px;
+  li{
+  	margin-bottom: 22px;
+    &::before {
+      float: left; 
+      display: block;
+      content: "";
+      width: 8px;
+      height: 8px;
+      @include border-radius(4px);
+      background-color: $yellow;
+      margin: 7px 10px 26px 4px;
+    }
+  }
+}
+@media screen and (max-width: 400px){
+	.list2{
+		margin-bottom: 15px;
+	}
+}
+
