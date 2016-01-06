@@ -1,4 +1,34 @@
 module.exports = {
+    "Extra": {
+        "Artisticas": {
+            "backgroundPosition": "-0px -283px",
+            "width": "272px",
+            "height": "169px",
+            "backgroundImage": "url('http://127.0.0.1:3030/images/sprites/sprite-extra.png')",
+            "backgroundSize": "736px 452px"
+        },
+        "Deportes": {
+            "backgroundPosition": "-464px -0px",
+            "width": "272px",
+            "height": "169px",
+            "backgroundImage": "url('http://127.0.0.1:3030/images/sprites/sprite-extra.png')",
+            "backgroundSize": "736px 452px"
+        },
+        "HorarioExtendido": {
+            "backgroundPosition": "-0px -0px",
+            "width": "464px",
+            "height": "283px",
+            "backgroundImage": "url('http://127.0.0.1:3030/images/sprites/sprite-extra.png')",
+            "backgroundSize": "736px 452px"
+        },
+        "Robotica": {
+            "backgroundPosition": "-464px -169px",
+            "width": "272px",
+            "height": "169px",
+            "backgroundImage": "url('http://127.0.0.1:3030/images/sprites/sprite-extra.png')",
+            "backgroundSize": "736px 452px"
+        }
+    },
     "General": {
         "Facebook": {
             "backgroundPosition": "-160px -0px",

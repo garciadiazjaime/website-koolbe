@@ -23,9 +23,12 @@ module.exports = {
       url: 'uniformes'
     }]
   }, {
-    title: 'Misión yVisión',
-    url: 'mision-vision',
+    title: 'PROYECTO K',
+    url: 'proyecto-k',
     children: [{
+      title: 'Misión yVisión',
+      url: 'mision-vision',
+    }, {
       title: 'Filosofía',
       url: 'filosofia'
     }, {
