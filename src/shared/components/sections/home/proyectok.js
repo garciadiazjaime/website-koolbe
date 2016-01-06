@@ -63,7 +63,7 @@ export default class ProyectoK extends Component {
   getStyle() {
     return {
       wrapper: {
-        marginTop: '30px;'
+        marginTop: '30px'
       }
     }
   }

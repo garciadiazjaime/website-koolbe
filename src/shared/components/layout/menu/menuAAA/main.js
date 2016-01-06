@@ -2,9 +2,8 @@
 
 import React, { Component, PropTypes} from 'react';
 import { Link } from 'react-router';
-import _ from 'lodash';
 
-var style = process.env.NODE_ENV === 'DEV' ? require("./style.scss") : {};
+var style = process.env.NODE_ENV === 'DEV' ? require('./style.scss') : {};
 import Sprites from '../../../../sprite';
 
 

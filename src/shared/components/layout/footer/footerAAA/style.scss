@@ -1,0 +1,82 @@
+@import '../../../../constants';
+
+#footer {
+  background-color: $blueDark;
+  padding-top: 50px;
+
+  ul {
+    padding: 0;
+    padding-top: 10px;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    font-size: 10px;
+  }
+}
+
+.footerWrapper {
+  position: relative;
+  padding-left: 52px;
+}
+
+.footerMenu {
+  margin-top: 30px;
+}
+
+.menuParent {
+  float: left;
+  padding-right: 30px;
+
+  a {
+    font-family: $fontALigth;
+    color: $grayLight;
+    text-transform: uppercase;
+  }
+}
+
+.menuChild {
+
+  a {
+    font-family: $fontABold;
+    color: $white;
+    text-transform: none;
+  }
+}
+
+#addresses {
+  width: 400px;
+  position: absolute;
+  right: 50px;
+
+  h2 {
+    font-family: $fontABold;
+    color: $white;
+    text-transform: none;
+    font-size: 10px;
+  }
+
+  p, a {
+    font-family: $fontALigth;
+    color: $white;
+    text-transform: none;
+    font-size: 10px;
+  }
+}
+
+.followUs {
+  padding-left: 30px;
+  margin-top: 10px;
+
+  p {
+    font-family: $fontALigth;
+    font-size: 10px;
+    color: $white;
+    float: left;
+    padding-right: 20px;
+    padding-top: 5px;
+  }
+}
