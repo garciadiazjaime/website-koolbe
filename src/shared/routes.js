@@ -8,7 +8,7 @@ import AboutUsSection from "./components/sections/aboutus";
 import ContactanosSection from "./components/sections/contactanos/index_a";
 import ProyectokSection from "./components/sections/proyectok";
 import Extraescolares from "./components/sections/extraescolares";
-
+import BulletinSection from './components/sections/bulletinSection'
 
 
 export default(
@@ -17,9 +17,10 @@ export default(
       <IndexRoute component={InicioSection} />
       <Route path="inicio" component={InicioSection} />
       <Route path="inscripciones" component={AboutUsSection} />
-      <Route path="contactanos" component={ContactanosSection} />
       <Route path="proyecto-k" component={ProyectokSection} />
-      <Route path="Extraescolares" component={Extraescolares} />
+      <Route path="extraescolares" component={Extraescolares} />
+      <Route path="boletines" component={BulletinSection} />
+      <Route path="contactanos" component={ContactanosSection} />
     </Route>
   </Router>
 );
