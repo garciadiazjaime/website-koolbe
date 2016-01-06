@@ -1,0 +1,15 @@
+@import '../../../../constants';
+
+.title11 {
+  font-family: $fontBBold;
+  color: $green;
+  font-size: 35px;
+  margin-bottom: 40px; 
+  text-transform: uppercase;
+}
+@media screen and (max-width: 400px){
+  title11 {
+  	font-size: 20px;
+  }
+}
+
