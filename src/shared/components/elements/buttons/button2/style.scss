@@ -3,7 +3,7 @@
 .button1{
   display: block;
   font-family: $fontBBold;
-  background-color: $blueMedium;
+  background-color: $blueLight;
   color: white;
   font-size: 12px;
   list-style: none;
@@ -11,7 +11,7 @@
   padding: 20px 0 20px 30px;
   position: relative;
   &:hover{
-    background-color: $blueDark;
+    background-color: $blueMedium;
     color: white; 
     text-decoration: none;
   }
