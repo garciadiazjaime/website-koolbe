@@ -4,11 +4,23 @@
   font-family: $fontBBold;
   color: $blueMedium;
   font-size: 15px;
-  padding-left: 25px;
+  padding-left: 40px;
   padding-bottom: 25px;
   text-transform: uppercase; 
   margin-bottom: 25px;
   border-bottom: 4px solid $blueMedium;
+  &::before {
+    content: "";
+    display: block;
+    background-position: -21px -0px;
+    width: 22px;
+    height: 22px;
+    background-image: url('http://127.0.0.1:3030/images/sprites/sprite-aboutus.png');
+    background-size: 43px 39px;
+    position: absolute;
+    left: 40px;  
+    top: 45px;
+  }
 }
 @media screen and (max-width: 400px){
 	.title3{

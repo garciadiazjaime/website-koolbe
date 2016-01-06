@@ -1,14 +1,14 @@
 @import '../../../../constants';
 
-.paragraph1{
-  font-family: $fontALigth;
+.paragraph2{
+  font-family: $fontA;
   color: $grayDark;
-  font-size: 13px;
-  list-style: none;
+  font-size: 16px;
+  margin-bottom: 14px;
+
 }
 @media screen and (max-width: 400px){
 	.paragraph2{
-		margin-bottom: 15px;
 	}
 }
 

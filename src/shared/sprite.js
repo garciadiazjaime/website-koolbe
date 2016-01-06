@@ -1,5 +1,12 @@
 module.exports = {
     "Aboutus": {
+        "InscripcionProcesos": {
+            "backgroundPosition": "-21px -22px",
+            "width": "14px",
+            "height": "16px",
+            "backgroundImage": "url('http://127.0.0.1:3030/images/sprites/sprite-aboutus.png')",
+            "backgroundSize": "43px 39px"
+        },
         "InscripcionesBanquito": {
             "backgroundPosition": "-21px -0px",
             "width": "22px",

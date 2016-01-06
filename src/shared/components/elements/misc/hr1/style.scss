@@ -1,0 +1,14 @@
+@import '../../../../constants';
+
+.hr1{
+  height: 1px;
+  margin: 0;
+  padding-bottom: 14px;
+  padding-top: 0;
+  backgroundcolor: #000;
+}
+@media screen and (max-width: 400px){
+	.wrapper1{
+	}
+}
+

@@ -1,0 +1,28 @@
+@import '../../../../constants';
+
+.button5{
+  display: block;
+  background: $green;
+  text-transform: uppercase;
+  color: $yellow;
+  cursor: pointer;
+  font-size: 27px;
+  font-family: $fontBBold;
+  padding: 30px 25px 25px 50px;
+  &:hover{
+    color: white; 
+    text-decoration: none;
+  }
+  h2{
+    color: white; 
+    font-size: 13px;
+    font-family: $fontA;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 400px){
+	.button5{
+	}
+}
+

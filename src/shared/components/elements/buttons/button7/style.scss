@@ -3,15 +3,13 @@
 .button1{
   display: block;
   font-family: $fontBBold;
-  background-color: $blueDark;
   color: white;
   font-size: 12px;
+  cursor: pointer;
   list-style: none;
   margin-bottom: 22px;
-  padding: 20px 0 20px 30px;
   position: relative;
   &:hover{
-    background-color: $blueMedium;
     color: white; 
     text-decoration: none;
   }
@@ -20,14 +18,14 @@
     content: '';
   	width: 0px;
     height: 0px;
-    transform: translate(-50%, -50%);
+    transform: translate(-100%, -75%);
   	position: absolute;
   	right: 11px;
     width: 0; 
     height: 0; 
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-top: 4px solid $blueDark;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid $blueDark;
   	top: 50%;
   }
   &:before{
