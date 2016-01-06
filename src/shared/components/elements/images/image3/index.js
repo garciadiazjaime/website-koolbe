@@ -10,7 +10,7 @@ var style = process.env.NODE_ENV === 'DEV' ? require("./style.scss") : {};
 export default class Image1 extends React.Component {
   render() {
     return (
-      <img  className={style.image3}  src="/images/aboutus/inscripcion_secundaria.jpg" />
+      <img  className={style.image3}  src="images/aboutus/inscripcion_secundaria.jpg" />
     );
   }
 }
