@@ -33,11 +33,11 @@ $fontBBold: 'montserrat-bold';
 @mixin rotate ($deg) {
   @include transform(rotate(#{$deg}deg));
 }
- 
+
 // scale
 @mixin scale($scale) {
 	 @include transform(scale($scale));
-} 
+}
 // translate
 @mixin translate ($x, $y) {
    @include transform(translate($x, $y));
@@ -138,16 +138,20 @@ $fontBBold: 'montserrat-bold';
   line-height: 10px;
   position: relative;
 
-  &:after {
-    content: '';
-    position: absolute;
-    top: 12px;
-    right: 15px;
+  @extend .arrow;
+ }
 
-    background-position: -160px -46px;
-    width: 17px;
-    height: 17px;
-    background-image: url('http://127.0.0.1:3030/images/sprites/sprite-general.png');
-    background-size: 183px 143px
-  }
+ .arrow {
+   &:after {
+     content: '';
+     position: absolute;
+     top: 12px;
+     right: 15px;
+
+     background-position: -160px -46px;
+     width: 17px;
+     height: 17px;
+     background-image: url('http://127.0.0.1:3030/images/sprites/sprite-general.png');
+     background-size: 183px 143px
+   }
  }
