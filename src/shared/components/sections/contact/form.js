@@ -20,29 +20,41 @@ export default class Form extends React.Component {
 
   render() {
 
-    return (<form id="form" className="navbar-form">
-        <div className="form-inline">
-          <label id="lab_name">Nombre</label>
-          <input type="text" id="name" name="name" placeholder="" onChange={this.onChangeHandler.bind(this, 'name')} value={this.state.formData.name.value} />
+    return (<form id="form" className={style.form + " form-horizontal"}>
+        <div className="form-group">
+          <label id="lab_name" className="col-sm-2 control-label">Nombre</label>
+          <div className="col-sm-10">
+            <input type="text" id="name" name="name" placeholder="" onChange={this.onChangeHandler.bind(this, 'name')} value={this.state.formData.name.value} />
+          </div>
+          <div className={style.borderBottom}></div>
         </div>
-        <div className="form-inline">
-            <label id="lab_email">Correo</label>
+
+        <div className="form-group">
+          <label id="lab_email" className="col-sm-2 control-label">Correo</label>
+          <div className="col-sm-10">
             <input type="text" id="email" name="email" placeholder="" onChange={this.onChangeHandler.bind(this, 'email')} value={this.state.formData.email.value}/>
+          </div>
+          <div className={style.borderBottom}></div>
         </div>
-        <div className="form-inline">
-            <label id="lab_tel">Teléfono</label>
+
+        <div className="form-group">
+          <label id="lab_tel" className="col-sm-2 control-label">Teléfono</label>
+          <div className="col-sm-10">
             <input type="tel" id="tel" name="tel" placeholder="" onChange={this.onChangeHandler.bind(this, 'tel')} value={this.state.formData.tel.value}/>
+          </div>
+          <div className={style.borderBottom}></div>
         </div>
-        <div className="form-inline">
-          <label id="lab_message">Mensaje</label>
-          <textarea id="message" name="message" placeholder="" onChange={this.onChangeHandler.bind(this, 'message')} value={this.state.formData.message.value}></textarea>
+
+        <div className="form-group">
+          <label id="lab_message" className="col-sm-2 control-label">Mensaje</label>
+          <div className="col-sm-10">
+            <textarea id="message" name="message" className="form-control" onChange={this.onChangeHandler.bind(this, 'message')} value={this.state.formData.message.value}></textarea>
+          </div>
+          <div className={style.borderBottom}></div>
         </div>
-        <div className="form-inline">
-          <span id="msg"></span>
-        </div>
-        <div>
-          { this.state.showLoading ? <span id="loader">Cargando</span> : null }
-        </div>
+
+        <div><span id="msg"></span></div>
+        <div>{ this.state.showLoading ? <span id="loader">Cargando</span> : null }</div>
         <div className="pull-right">
           <button onClick={this.submitFormHandler}>Enviar</button>
         </div>

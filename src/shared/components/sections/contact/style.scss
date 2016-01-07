@@ -2,6 +2,8 @@
 
 .contact {
 
+  margin: 0 52px 40px 52px;
+
   h1 {
     font-family: $fontBBold;
     font-size: 35px;
@@ -12,26 +14,32 @@
     border-top: $grayLight 1px solid;
     margin: 20px 0 50px;
   }
+}
 
-  p {
-    font-family: $fontALigth;
-    color: $grayDark;
-    font-size: 16px;
-  }
+.intro {
+  font-family: $fontALigth;
+  color: $grayDark;
+  font-size: 16px;
+}
 
-  a {
-    color: $red;
-    font-family: $fontABold;
-  }
+.form {
+  margin-top: -10px;
 
   label {
     font-family: $fontALigth;
     font-size: 14px;
     color: $blueLight;
+    text-align: left !important;
   }
 
   input, textarea {
+    margin-left: -15px;
     border: none;
+    width: 100%;
+  }
+
+  textarea {
+    min-height: 100px;
   }
 
   button {
@@ -41,7 +49,60 @@
     background-color: $blueLight;
     border: none;
     margin-top: 20px;
+    min-width: 160px;
+    text-align: left;
 
     @extend .btnA
   }
+
+  br {
+    border: solid 1px $blueDark;
+  }
+}
+
+.address {
+
+  font-family: $fontALigth;
+  color: $grayDark;
+  font-size: 14px;
+  margin-bottom: 40px;
+  margin-right: 30px;
+
+  h2 {
+    margin-top: 0;
+    border-bottom: 1px solid $grayLight;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    font-family: $fontBBold;
+    font-size: 25px;
+    position: relative;
+
+    @extend .arrow
+  }
+
+  a {
+    font-family: $fontBBold;
+    font-size: 12px;
+    margin: 10px 0;
+    display: inline-block;
+  }
+}
+
+.borderBottom {
+  clear: both;
+  height: 1px;
+  background-color: $blueLight;
+  margin: 30px 15px 0px 15px;
+}
+
+.santafeColor {
+  color: $blueMedium;
+}
+
+.otayColor {
+  color: $red;
+}
+
+.presidentesColor {
+  color: $green;
 }

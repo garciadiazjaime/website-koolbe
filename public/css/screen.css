@@ -30,6 +30,8 @@ a:hover {
   text-decoration: none;
 }
 
+*:focus {outline:0px none transparent;}
+
 div{
   /*border: 1px solid black;*/
 }

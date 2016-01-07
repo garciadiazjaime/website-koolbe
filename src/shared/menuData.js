@@ -84,6 +84,26 @@ module.exports = {
     }),
     url: '#'
   }],
+  // todo: tmp should be address onces footer gets adapted
+  tmp: [{
+    id: 'santafe',
+    title: 'Santa Fe',
+    location: 'Camino Vecinal 11998, Pórticos Santa Fe Tijuana B.C. 22666, México.',
+    gmaps: '#',
+    tels: '(664) 975 2237 y 68'
+  }, {
+    id: 'otay',
+    title: 'Otay',
+    location: 'Minería 150 Plaza Otay Tijuana B.C. 22510, México',
+    gmaps: '#',
+    tels: '(664) 624 4310'
+  }, {
+    id: 'presidentes',
+    title: 'Presidentes',
+    location: 'Ave. Del Águila Azteca 7072 Col. Guaycura 22216 Tijuana B.C.',
+    gmaps: '#',
+    tels: '(664) 978-3220'
+  }],
   addresses: [{
     elements: [{
       type: 'subtitle',
