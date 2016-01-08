@@ -7,9 +7,6 @@ var style = process.env.NODE_ENV === 'DEV' ? require("./style.scss") : {};
 import Constants from '../../../constants';
 import SimpleCard from '../../widgets/card/simpleCard';
 
-// import Sprites from '../../../../sprite';
-
-
 
 export default class Plantel extends Component {
 
@@ -17,8 +14,10 @@ export default class Plantel extends Component {
     var cards = this.getCards();
 
     return (<div className="container">
-        <div className={style.plantelTile}>
-          {cards.map((card, index) => { return <div className="col-md-4" key={index}><div className="row"><SimpleCard data={card} /></div></div> })}
+        <div className="row">
+          <div className={style.plantelTile}>
+            {cards.map((card, index) => { return <div className="col-md-4" key={index}><div className="row"><SimpleCard data={card} /></div></div> })}
+          </div>
         </div>
       </div>
     );
@@ -26,7 +25,7 @@ export default class Plantel extends Component {
 
   getCards() {
     var itemStyle = {
-      padding: '20px 24px 20px 24px'
+      padding: '20px 33px 20px 33px'
     };
 
     return [{

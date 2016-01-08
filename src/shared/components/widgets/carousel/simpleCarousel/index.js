@@ -36,7 +36,9 @@ export default class SimpleCarousel extends Component {
 
         return (<div className={"item " + activeState + " " + this.props.data.classes.item} key={index} style={slide.wrapper.style}>
             <div className="container">
-              <SimpleCard data={slide.card} />
+              <div className={this.props.data.classes.wrapperElement||''}>
+                <SimpleCard data={slide.card} />
+              </div>
             </div>
           </div>);
       }, this)
