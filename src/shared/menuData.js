@@ -110,7 +110,7 @@ module.exports = {
       text: ['Santa Fe'],
     }, {
       type: 'description',
-      text: ['Camino Vecinal 11998,<br /> Pórticos Santa Fe <br /> Tijuana B.C. 22666, <br /> México.']
+      text: ['Camino Vecinal 11998,<br /> Pórticos Santa Fe <br /> Tijuana B.C. 22666, México.<br /><br />']
     }, {
       type: 'description',
       text: ['<a href="tel:6649752237" title="6649752237">(664) 975 2237</a> y <a href="tel:6649752268" title="6649752268">68</a>']
@@ -121,7 +121,7 @@ module.exports = {
       text: ['Otay'],
     }, {
       type: 'description',
-      text: ['Minería 150 Plaza Otay<br /> Tijuana B.C. 22510,<br /> México <br /><br />']
+      text: ['Minería 150 Plaza Otay<br /> Tijuana B.C. 22510, México <br /><br /><br />']
     }, {
       type: 'description',
       text: ['<a href="tel:6646244310" title="6646244310">(664) 624 4310</a>']
@@ -132,7 +132,7 @@ module.exports = {
       text: ['Presidentes'],
     }, {
       type: 'description',
-      text: ['Ave. Del Águila Azteca <br />7072 Col. Guaycura<br />22216 Tijuana B.C.<br /><br />']
+      text: ['Ave. Del Águila Azteca <br />7072 Col. Guaycura 22216 <br />Tijuana B.C.<br /><br />']
     }, {
       type: 'description',
       text: ['<a href="tel:6649783220" title="6649783220">(664) 978-3220</a>']
