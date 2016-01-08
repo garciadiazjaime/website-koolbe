@@ -11,6 +11,19 @@ import Address from './address';
 
 export default class Contact extends React.Component {
 
+  constructor(...args) {
+    super(...args);
+    this.changeLocation = this.changeLocation.bind(this);
+    this.state = {
+      locations: {
+        santafe: Sprites.Contact.SantaFe,
+        otay: Sprites.Contact.Otay,
+        presidentes: Sprites.Contact.Presidentes
+      },
+      location: 'santafe'
+    };
+  }
+
   render() {
 
     return (<div className="container">
@@ -28,9 +41,15 @@ export default class Contact extends React.Component {
     );
   }
 
+  changeLocation(locationID) {
+    this.setState({
+      location: locationID
+    })
+  }
+
   getLocations(data) {
     const places = data.map((place, index)=> {
-      return (<Address data={place} key={index} />)
+      return (<Address data={place} key={index} changeLocation={this.changeLocation} />)
     });
 
     return (<div className="row">
@@ -38,7 +57,7 @@ export default class Contact extends React.Component {
           {places}
         </div>
         <div className="col-sm-7">
-          <div style={Sprites.Contact.SantaFe} className="pull-right"></div>
+          <div style={this.state.locations[this.state.location]} className="pull-right"></div>
         </div>
       </div>)
   }

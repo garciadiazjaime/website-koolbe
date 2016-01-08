@@ -1,17 +1,30 @@
 import express from "express";
 import React from "react";
-
 import { renderToString } from 'react-dom/server';
 import { match, RoutingContext } from 'react-router';
+const bodyParser = require('body-parser');
+
+const config = require('../../config');
+const apiRoutes = require('./lib/api');
+
+
 import routes from '../shared/routes';
-var config = require('../../config');
 
 const app = express();
 
 app.set('views', './views');
 app.set('view engine', 'jade');
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+    extended: false
+}));
+
+
 app.use(express.static('bower_components'));
 app.use(express.static('public'));
+
+app.use('/api/', apiRoutes);
 
 app.get('/*', function (req, res) {
   match({ routes, location: req.url }, (error, redirectLocation, renderProps) => {

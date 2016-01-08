@@ -18,4 +18,6 @@ module.exports = {
 
   fontB: 'montserrat',
   fontBBold: 'montserrat-bold',
+
+  emailSubject: 'Forma de Contacto Website: Kolbe'
 }
