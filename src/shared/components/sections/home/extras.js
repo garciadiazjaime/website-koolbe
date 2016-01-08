@@ -25,7 +25,7 @@ export default class Extras extends Component {
   getCards() {
     return [{
       elements: [{
-        type: 'image',
+        type: 'sprite',
         style: _.merge({}, Sprites.Home.Beo, {
           display: 'inline-block'
         })
@@ -42,7 +42,7 @@ export default class Extras extends Component {
       }]
     }, {
       elements: [{
-        type: 'image',
+        type: 'sprite',
         style: _.merge({}, Sprites.Home.Extraescolares, {
           display: 'inline-block'
         })
@@ -59,7 +59,7 @@ export default class Extras extends Component {
       }]
     }, {
       elements: [{
-        type: 'image',
+        type: 'sprite',
         style: _.merge({}, Sprites.Home.Religioso, {
           display: 'inline-block'
         })

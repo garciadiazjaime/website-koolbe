@@ -38,6 +38,9 @@
     font-family: $fontBBold;
     margin-top: 26px;
     margin-bottom: 32px;
+    position: relative;
+
+    @extend .arrowB;
   }
 
   h2 {
@@ -89,7 +92,7 @@
 
 .proyectoK{
   background-color: $blueLight;
-  height: 330px;
+  height: 310px;
   padding-left: 52px;
   margin-bottom: 60px;
   margin-top: 20px;
@@ -97,14 +100,14 @@
   h2 {
     color: $yellow;
     font-size: 10px;
-    font: $fontALigth;
+    font-family: $fontALigth;
     padding-top: 32px;
   }
 
   h1 {
     color: $yellow;
     font-size: 30px;
-    font-weight: $fontBBold;
+    font-family: $fontBBold;
     margin-top: 24px;
   }
 
@@ -112,11 +115,12 @@
     font-family: $fontALigth;
     font-size: 16px;
     color: $white;
-    margin-top: 24px;
+    margin-top: 14px;
+    max-width: 430px;
   }
 
   a {
-    margin-top: 30px;
+    margin-top: 10px;
     color: $white;
     font-family: $fontBBold;
     font-size: 16px;
@@ -124,4 +128,8 @@
 
     @extend .btnA
   }
+}
+
+.wrapperElement {
+  padding-left: 10px;
 }

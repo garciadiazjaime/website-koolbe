@@ -2,7 +2,8 @@
 
 #footer {
   background-color: $blueDark;
-  padding-top: 50px;
+  padding-top: 80px;
+  margin-top: 20px;
 
   ul {
     padding: 0;
@@ -48,9 +49,9 @@
 }
 
 #addresses {
-  width: 400px;
+  width: 450px;
   position: absolute;
-  right: 50px;
+  right: 5px;
 
   h2 {
     font-family: $fontABold;
@@ -78,5 +79,19 @@
     float: left;
     padding-right: 20px;
     padding-top: 5px;
+  }
+}
+
+.powered {
+  margin-top: 80px;
+  background-color: $blueMedium;
+  color: $blueDark;
+  padding: 15px 0;
+  font-family: $fontA;
+  font-size: 10px;
+  padding-left: 52px;
+
+  p {
+    margin: 0;
   }
 }

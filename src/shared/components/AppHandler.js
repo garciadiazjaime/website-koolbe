@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 import Menu from './layout/menu/menuAAA';
 import Inscripciones from './sections/aboutus/';
-import FooterAAA from './layout/footer/FooterAAA';
+import FooterAAA from './layout/footer/footerAAA';
 
 
 export default class AppHandler extends React.Component {

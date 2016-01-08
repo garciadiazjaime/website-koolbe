@@ -70,7 +70,7 @@ $fontBBold: 'montserrat-bold';
              / nth($conversion-factors, index($convertable-units, unit($value)))
              * nth($conversion-factors, index($convertable-units, $unit));
   }
-  
+
   @warn "Cannot convert `#{unit($value)}` to `#{$unit}`.";
 }
 
@@ -80,7 +80,7 @@ $fontBBold: 'montserrat-bold';
 @function is-direction($value) {
   $is-direction: index((to top, to top right, to right top, to right, to bottom right, to right bottom, to bottom, to bottom left, to left bottom, to left, to left top, to top left), $value);
   $is-angle: type-of($value) == 'number' and index('deg' 'grad' 'turn' 'rad', unit($value));
-  
+
   @return $is-direction or $is-angle;
 }
 
@@ -92,8 +92,8 @@ $fontBBold: 'montserrat-bold';
   @if is-direction($value) == false {
     @warn "Cannot convert `#{$value}` to legacy syntax because it doesn't seem to be an angle or a direction";
   }
-  
-  $conversion-map: ( 
+
+  $conversion-map: (
     to top          : bottom,
     to top right    : bottom left,
     to right top    : left bottom,
@@ -107,16 +107,16 @@ $fontBBold: 'montserrat-bold';
     to left top     : right bottom,
     to top left     : bottom right
   );
-    
+
   @if map-has-key($conversion-map, $value) {
     @return map-get($conversion-map, $value);
   }
-  
+
   @return 90deg - convert-angle($value, 'deg');
 }
 
-/// Mixin printing a linear-gradient 
-/// as well as a plain color fallback 
+/// Mixin printing a linear-gradient
+/// as well as a plain color fallback
 /// and the `-webkit-` prefixed declaration
 /// @access public
 /// @param {String | List | Angle} $direction - Linear gradient direction
@@ -126,7 +126,7 @@ $fontBBold: 'montserrat-bold';
     $color-stops: ($direction, $color-stops);
     $direction: 180deg;
   }
-  
+
   background: nth(nth($color-stops, 1), 1);
   background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
   background: linear-gradient($direction, $color-stops);
@@ -153,5 +153,20 @@ $fontBBold: 'montserrat-bold';
      height: 17px;
      background-image: url('http://127.0.0.1:3030/images/sprites/sprite-general.png');
      background-size: 183px 143px
+   }
+ }
+
+ .arrowB {
+   &:after {
+     content: '';
+     position: absolute;
+     top: 4px;
+     right: 4px;
+
+    background-position: -160px -23px;
+    width: 23px;
+    height: 23px;
+    background-image: url('http://127.0.0.1:3030/images/sprites/sprite-general.png');
+    background-size: 183px 143px;
    }
  }
