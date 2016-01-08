@@ -17,6 +17,7 @@ export default class FooterAAA extends Component {
     const cards = this.getCards();
 
     return (<div id={style.footer}>
+
         <div className="container">
           <div className={style.footerWrapper}>
 
@@ -43,6 +44,21 @@ export default class FooterAAA extends Component {
 
           </div>
         </div>
+
+        <div className={style.powered}>
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-7">
+                Todos los derechos reservados Branding Pool 2015
+              </div>
+              <div className="col-sm-5">
+                Un proyecto de: <a href="http://somospool.com" title="somos pool" target="_blank">POOL</a> &nbsp;&nbsp;
+                Código por: <a href="http://mintitmedia.com" title="Diseño y Desarrollo web en Tijuana" target="_blank">MINT</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     );
   }
