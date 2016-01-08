@@ -21,11 +21,12 @@ module.exports = {
      },
      showControl: false,
      showIndicators: false,
-     interval: 10000
+     interval: 20000
    },
    classes: {
      carouselInner: style.carouselInner,
-     item: style.item
+     item: style.item,
+     wrapperElement: style.wrapperElement
    },
    slides: [{
      wrapper: {

@@ -51,7 +51,7 @@ export default class ProyectoK extends Component {
         text: ['El Proyecto K']
       }, {
         type: 'description',
-        text: ['Instituto Ramiro Kolbe, es una institución privada <br />que ofrece a niños y adolescentes una fórmula <br />educativa de excelente nivel, sustentada por ser <br />bicultural, bilingüe, tecnológica, integral y religiosa, <br /> con amplios valores']
+        text: ['Instituto Ramiro Kolbe, es una institución privada que ofrece a niños y adolescentes una fórmula educativa de excelente nivel, sustentada por ser bicultural, bilingüe, tecnológica, integral y religiosa, con amplios valores axiológicos y transmisora de cultura y tradiciones.']
       }, {
         type: 'link',
         text: 'Conóce más',
