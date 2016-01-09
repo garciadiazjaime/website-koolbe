@@ -1,9 +1,10 @@
-import React from "react";
-import { Link } from 'react-router';
+import React from 'react';
+import _ from 'lodash';
 
-var style = process.env.NODE_ENV === 'DEV' ? require("./style.scss") : {};
-import RestClient from '../../../../server/lib/rest-client';
-var constants = require('../../../constants');
+const style = process.env.NODE_ENV === 'DEV' ? require('./style.scss') : {};
+const constants = require('../../../constants');
+import restClient from '../../../../server/lib/rest-client';
+
 
 export default class Form extends React.Component {
 
@@ -12,55 +13,28 @@ export default class Form extends React.Component {
     this.state = {
       formData: this.getInitialFormState(),
       requiredFields: this.getRequiredFields(this.getInitialFormState()),
-      showLoading: false
+      showLoading: false,
     };
 
     this.submitFormHandler = this.submitFormHandler.bind(this);
     this.onChangeHandler = this.onChangeHandler.bind(this);
   }
 
-  render() {
+  onChangeHandler(event) {
+    const formData = this.state.formData;
+    const { name, value } = event.target;
+    formData[name].value = value;
+    this.setState({ formData });
+  }
 
-    return (<form id="form" className={style.form + " form-horizontal"}>
-        <div className="form-group">
-          <label id="lab_name" className="col-sm-2 control-label">Nombre</label>
-          <div className="col-sm-10">
-            <input type="text" id="name" name="name" placeholder="" onChange={this.onChangeHandler} value={this.state.formData.name.value} />
-          </div>
-          <div className={style.borderBottom}></div>
-        </div>
-
-        <div className="form-group">
-          <label id="lab_email" className="col-sm-2 control-label">Correo</label>
-          <div className="col-sm-10">
-            <input type="text" id="email" name="email" placeholder="" onChange={this.onChangeHandler} value={this.state.formData.email.value}/>
-          </div>
-          <div className={style.borderBottom}></div>
-        </div>
-
-        <div className="form-group">
-          <label id="lab_tel" className="col-sm-2 control-label">Teléfono</label>
-          <div className="col-sm-10">
-            <input type="tel" id="tel" name="tel" placeholder="" onChange={this.onChangeHandler} value={this.state.formData.tel.value}/>
-          </div>
-          <div className={style.borderBottom}></div>
-        </div>
-
-        <div className="form-group">
-          <label id="lab_message" className="col-sm-2 control-label">Mensaje</label>
-          <div className="col-sm-10">
-            <textarea id="message" name="message" className="form-control" onChange={this.onChangeHandler} value={this.state.formData.message.value}></textarea>
-          </div>
-          <div className={style.borderBottom}></div>
-        </div>
-
-        <div><span id="msg"></span></div>
-        <div>{ this.state.showLoading ? <span className={style.loader}>Cargando</span> : null }</div>
-        <div className="pull-right">
-          <button onClick={this.submitFormHandler}>Enviar</button>
-        </div>
-      </form>
-    );
+  getRequiredFields(data) {
+    const fields = {};
+    _.map(data, (item, index) => {
+      if (item.require) {
+        fields[index] = item;
+      }
+    });
+    return fields;
   }
 
   getInitialFormState() {
@@ -68,32 +42,47 @@ export default class Form extends React.Component {
       name: {
         title: 'Nombre',
         value: '',
-        require: true
+        require: true,
       },
       email: {
         title: 'Correo',
         value: '',
-        require: true
+        require: true,
       },
       tel: {
         title: 'Teléfono',
         value: '',
-        require: true
+        require: true,
       },
       message: {
         title: 'Mensaje',
         value: '',
-        require: true
-      }
+        require: true,
+      },
     };
   }
 
-  onChangeHandler(event) {
-    var formData = this.state.formData;
-    formData[event.target.name].value = event.target.value;
-    this.setState({
-      formData: formData
+  getHTMLMessage(data) {
+    const response = _.map(data, (item) => {
+      return item.title + ': ' + item.value + '<br />';
     });
+    return response.join('');
+  }
+
+  validateForm(data, requiredFields) {
+    let response = true;
+    _.map(requiredFields, (item, property) => {
+      const labelElement = $('#lab_' + property);
+      if (!data.hasOwnProperty(property) || !data[property].value.length) {
+        if (response) {
+          response = false;
+        }
+        labelElement.addClass(style.errorCSSClass);
+      } else {
+        labelElement.removeClass(style.errorCSSClass);
+      }
+    });
+    return response;
   }
 
   /*
@@ -101,81 +90,97 @@ export default class Form extends React.Component {
   */
   submitFormHandler(event) {
     event.preventDefault();
-    var formData = this.state.formData;
-    var isFormValid = this.validateForm(formData, this.state.requiredFields);
-    var msgElement = $('#msg');
+    const formData = this.state.formData;
+    const isFormValid = this.validateForm(formData, this.state.requiredFields);
+    const msgElement = $('#msg');
     msgElement.removeClass(style.errorCSSClass + ' ' + style.successCSSClass);
+    msgElement.html('');
 
-    if(isFormValid) {
+    if (isFormValid) {
       this.setState({
-        showLoading: true
+        showLoading: true,
       });
-
-      var _this = this;
-      var html = this.getHTMLMessage(formData);
-      var data = {
+      msgElement.html('Enviando...');
+      const _this = this;
+      const html = this.getHTMLMessage(formData);
+      const data = {
         fromname: formData.name.value,
         replyto: formData.email.value,
         subject: constants.emailSubject,
-        html: html
+        html,
       };
 
-      RestClient({
+      restClient({
         path: '/api/send_email',
         method: 'POST',
-        entity: data
-      }).then(function(response) {
-        var state = {
-          showLoading: false
+        entity: data,
+      }).then((response) => {
+        const state = {
+          showLoading: false,
         };
-        if(response.entity.status){
-          state['formData'] = _this.getInitialFormState();
+        if (response.entity.status) {
+          state.formData = _this.getInitialFormState();
         }
         _this.setState(state);
-        msgElement.addClass(response.entity.status ? style.successCSSClass :style.errorCSSClass);
+        msgElement.addClass(response.entity.status ? style.successCSSClass : style.errorCSSClass);
         msgElement.html(response.entity.status ?
-        'Información enviada de manera exitosa, gracias.':
-        'Lo sentimos, favor de intentar más tarde.');
+          'Información enviada de manera exitosa, gracias.' :
+          'Lo sentimos, favor de intentar más tarde.');
       });
-    }else{
+    } else {
       msgElement.addClass(style.errorCSSClass);
     }
     msgElement.html(!isFormValid ? 'Favor de llenar los campos en rojo.' : '');
   }
 
-  getRequiredFields(data) {
-    var response = [];
-    for(var property in data){
-      if(data[property].require){
-        response.push(property);
-      }
-    }
-    return response;
-  }
+  render() {
+    const { name, email, tel, message } = this.state.formData;
 
-  validateForm(data, requiredFields) {
-    var response = true;
-    for(var i = 0, len = requiredFields.length; i<len; i++) {
-      var property = requiredFields[i];
-      var labelElement = $('#lab_' + property);
-      if( !data.hasOwnProperty(property) || !data[property].value.length){
-        if(response){
-          response = false;
-        }
-        labelElement.addClass(style.errorCSSClass);
-      }
-      else{
-        labelElement.removeClass(style.errorCSSClass);
-      }
-    }
-    return response;
-  }
+    return (<form id="form" className={style.form + ' form-horizontal'}>
+        <div className="form-group">
+          <label id="lab_name" className="col-sm-2 control-label">Nombre</label>
+          <div className="col-sm-10">
+            <input type="text" name="name" onChange={this.onChangeHandler} value={name.value} />
+          </div>
+          <div className={style.borderBottom}></div>
+        </div>
 
-  getHTMLMessage(data) {
-    var response = '';
-    for(var property in data){
-      response += data[property].title + ': ' + data[property].value + '<br />'
-    }
-    return response;
+        <div className="form-group">
+          <label id="lab_email" className="col-sm-2 control-label">Correo</label>
+          <div className="col-sm-10">
+            <input type="text" name="email" onChange={this.onChangeHandler} value={email.value}/>
+          </div>
+          <div className={style.borderBottom}></div>
+        </div>
+
+        <div className="form-group">
+          <label id="lab_tel" className="col-sm-2 control-label">Teléfono</label>
+          <div className="col-sm-10">
+            <input type="tel" name="tel" onChange={this.onChangeHandler} value={tel.value}/>
+          </div>
+          <div className={style.borderBottom}></div>
+        </div>
+
+        <div className="form-group">
+          <label id="lab_message" className="col-sm-2 control-label">Mensaje</label>
+          <div className="col-sm-10">
+            <textarea name="message" onChange={this.onChangeHandler} value={message.value} />
+          </div>
+          <div className={style.borderBottom}></div>
+        </div>
+
+        <div><span id="msg"></span></div>
+        <div>
+          {
+            this.state.showLoading ?
+              (<span className={style.loader}>Cargando</span>)
+              : null
+          }
+        </div>
+        <div className="pull-right">
+          <button onClick={this.submitFormHandler}>Enviar</button>
+        </div>
+      </form>
+    );
   }
 }

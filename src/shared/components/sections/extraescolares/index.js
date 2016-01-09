@@ -1,8 +1,6 @@
-import React from "react";
-import { Link } from 'react-router';
+import React from 'react';
 
-var style = process.env.NODE_ENV === 'DEV' ? require("./style.scss") : {};
-// import Constants from '../../../constants';
+const style = process.env.NODE_ENV === 'DEV' ? require('./style.scss') : {};
 import SimpleCard from '../../widgets/card/simpleCard';
 import Intro from './intro';
 import Activities from './activities';
@@ -11,6 +9,17 @@ import Schedule from './schedule';
 
 
 export default class ExtraescolaresSection extends React.Component {
+
+  getCards() {
+    return [{
+      elements: [{
+        type: 'image',
+        src: 'images/extra/banner.png',
+        alt: 'Extraescolares',
+        classes: 'img-responsive',
+      }],
+    }];
+  }
 
   render() {
     const cards = this.getCards();
@@ -33,16 +42,5 @@ export default class ExtraescolaresSection extends React.Component {
         </div>
       </div>
     );
-  }
-
-  getCards() {
-    return [{
-      elements: [{
-        type: 'image',
-        src: 'images/extra/banner.png',
-        alt: 'Extraescolares',
-        classes: 'img-responsive'
-      }]
-    }]
   }
 }

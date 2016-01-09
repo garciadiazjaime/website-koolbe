@@ -1,4 +1,4 @@
-import React, { Component, PropTypes} from 'react';
+import React, { Component } from 'react';
 import _ from 'lodash';
 
 import SimpleCard from '../../card/simpleCard';
@@ -9,87 +9,100 @@ export default class SimpleCarousel extends Component {
     super(props);
   }
 
-
-  render(){
-    var slidesEl = this.getSlides(this.props.data.slides);
-    var controls = this.props.data.meta.showControl !== false ? this.getControls(this.props.data.meta, this.props.data.meta.id) : null;
-    var indicatorsEl = this.props.data.meta.showIndicators !== false ? this.getIndicators(this.props.data.slides, this.props.data.meta.id, this.props.data.meta.indicators) : null;
-    var id = this.props.data.meta.id;
-
-    return (
-      <div id={id} className="carousel slide" data-ride="carousel" data-interval={this.props.data.meta.interval || 10000}>
-        <ol className="carousel-indicators">
-          {indicatorsEl}
-        </ol>
-        <div className={this.props.data.classes.carouselInner + " carousel-inner"} role="listbox">
-          {slidesEl}
-        </div>
-        {controls}
-      </div>
-    );
-  }
-
   getSlides(slides) {
     if (_.isArray(slides) && slides.length) {
-      return slides.map(function(slide, index) {
-        var activeState = this.getActiveState(index);
+      return slides.map((slide, index) => {
+        const { data } = this.props;
+        const activeState = this.getActiveState(index);
+        const classes = 'item ' + activeState + ' ' + data.classes.item;
 
-        return (<div className={"item " + activeState + " " + this.props.data.classes.item} key={index} style={slide.wrapper.style}>
+        return (<div className={classes} key={index} style={slide.wrapper.style}>
             <div className="container">
-              <div className={this.props.data.classes.wrapperElement||''}>
+              <div className={data.classes.wrapperElement || ''}>
                 <SimpleCard data={slide.card} />
               </div>
             </div>
           </div>);
-      }, this)
+      }, this);
     }
     return null;
   }
 
-  getIndicators(slides, carouselID, indicatorStyle) {
-    if (_.isArray(slides) && slides.length) {
-      return slides.map(function(slide, index) {
-        var activeState = this.getActiveState(index);
-        return (<li data-target={carouselID} data-slide-to={index} key={index} className={activeState} style={indicatorStyle}></li>);
-      },this);
+  getIndicators(data, cID, iS) {
+    if (_.isArray(data) && data.length) {
+      return data.map((slide, i) => {
+        const s = this.getActiveState(i);
+        return (
+          <li data-target={cID} data-slide-to={i} key={i} className={s} style={iS}></li>
+        );
+      }, this);
     }
 
     return null;
   }
 
   getActiveState(index) {
-    return index === 0 ? "active" : null;
+    return index === 0 ? 'active' : null;
   }
 
   getControls(meta, carouselID) {
-    var ArrowStyle = {
+    const ArrowStyle = {
       leftArrow: _.merge({}, meta.arrowLeft, {
-          position: 'absolute',
-          top: '50%',
-          left: '50%',
-          transform: 'translateY(-50%) translateX(-50%)'
-        }),
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translateY(-50%) translateX(-50%)',
+      }),
       rightArrow: _.merge({}, meta.arrowRight, {
-          position: 'absolute',
-          top: '50%',
-          left: '50%',
-          transform: 'translateY(-50%) translateX(-50%)'
-        })
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translateY(-50%) translateX(-50%)',
+      }),
     };
 
+    const leftClasses = 'left carousel-control';
+    const rightClasses = 'right carousel-control';
+    const href = '#' + carouselID;
     return (<div>
-        <a className="left carousel-control" href={"#" + carouselID} role="button" data-slide="prev" style={meta.style}>
+        <a className={leftClasses} href={href} role="button" data-slide="prev" style={meta.style}>
           <div style= {ArrowStyle.leftArrow} aria-hidden="true"></div>
           <span className="sr-only">Previous</span>
         </a>
-        <a className="right carousel-control" href={"#" + carouselID} role="button" data-slide="next" style={meta.style}>
+        <a className={rightClasses} href={href} role="button" data-slide="next" style={meta.style}>
           <div style= {ArrowStyle.rightArrow} aria-hidden="true"></div>
           <span className="sr-only">Next</span>
         </a>
       </div>);
   }
+
+
+  render() {
+    const { data } = this.props;
+    const slidesEl = data ? this.getSlides(data.slides) : null;
+    const controls = data.meta.showControl !== false ?
+      this.getControls(data.meta, data.meta.id)
+      : null;
+    const indicatorsEl = data.meta.showIndicators !== false ?
+      this.getIndicators(data.slides, data.meta.id, data.meta.indicators)
+      : null;
+    const { id } = data.meta;
+    const interval = data.meta.interval ? data.meta.interval : 8000;
+
+    return (
+      <div id={id} className="carousel slide" data-ride="carousel" data-interval={interval}>
+        <ol className="carousel-indicators">
+          {indicatorsEl}
+        </ol>
+        <div className={data.classes.carouselInner + ' carousel-inner'} role="listbox">
+          {slidesEl}
+        </div>
+        {controls}
+      </div>
+    );
+  }
 }
 
-SimpleCarousel.PropTypes = {
-  data: React.PropTypes.object.isRequired
+SimpleCarousel.propTypes = {
+  data: React.PropTypes.object.isRequired,
 };

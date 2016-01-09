@@ -1,13 +1,9 @@
-'use strict';
+import React from 'react';
 
-import React, { Component, PropTypes} from 'react';
-import { Link } from 'react-router';
-import _ from 'lodash';
+const style = process.env.NODE_ENV === 'DEV' ? require('./style.scss') : {};
 
 
-var style = process.env.NODE_ENV === 'DEV' ? require("./style.scss") : {};
-
-export default class Title4 extends React.Component {
+export default class Title5 extends React.Component {
   render() {
     return (
       <h1 className={style.title4}>
@@ -16,3 +12,7 @@ export default class Title4 extends React.Component {
     );
   }
 }
+
+Title5.propTypes = {
+  children: React.PropTypes.string.isRequired,
+};

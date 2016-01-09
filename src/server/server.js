@@ -1,5 +1,5 @@
-import express from "express";
-import React from "react";
+import express from 'express';
+import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { match, RoutingContext } from 'react-router';
 const bodyParser = require('body-parser');
@@ -17,7 +17,7 @@ app.set('view engine', 'jade');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
-    extended: false
+  extended: false,
 }));
 
 
@@ -33,8 +33,8 @@ app.get('/*', function (req, res) {
     } else if (redirectLocation) {
       res.redirect(302, redirectLocation.pathname + redirectLocation.search);
     } else if (renderProps) {
-      let content = renderToString(<RoutingContext {...renderProps} />);
-      res.render('index', { content: content });
+      const content = renderToString(<RoutingContext {...renderProps} />);
+      res.render('index', { content });
       // res.status(200).send(renderToString(<RoutingContext {...renderProps} />))
     } else {
       res.status(404).send('Not found');
@@ -45,12 +45,12 @@ app.get('/*', function (req, res) {
 app.set('ipaddress', config.get('ipaddress'));
 app.set('port', config.get('port'));
 
-var server = app.listen(app.get('port'), app.get('ipaddress'), function(err) {
+const server = app.listen(app.get('port'), app.get('ipaddress'), (err) => {
   if (err) {
     console.log(err);
   }
 
-  var host = server.address().address;
-  var port = server.address().port;
+  const host = server.address().address;
+  const port = server.address().port;
   console.log('Example app listening at http://%s:%s', host, port);
 });

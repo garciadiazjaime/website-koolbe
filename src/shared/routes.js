@@ -1,14 +1,13 @@
 import React from 'react';
-import { render } from 'react-dom';
-import { IndexRoute, Router, Route, Link } from 'react-router';
+import { IndexRoute, Router, Route } from 'react-router';
 
-import AppHandler from "./components/AppHandler";
-import InicioSection from "./components/sections/home";
-import AboutUsSection from "./components/sections/aboutus";
-import ContactSection from "./components/sections/contact";
-import ProyectokSection from "./components/sections/proyectok";
-import Extraescolares from "./components/sections/extraescolares";
-import BulletinSection from './components/sections/bulletinSection'
+import AppHandler from './components/AppHandler';
+import InicioSection from './components/sections/home';
+import AboutUsSection from './components/sections/aboutus';
+import ContactSection from './components/sections/contact';
+import ProyectokSection from './components/sections/proyectok';
+import Extraescolares from './components/sections/extraescolares';
+import BulletinSection from './components/sections/bulletinSection';
 
 
 export default(

@@ -5,23 +5,23 @@ import Sprites from './sprite';
 module.exports = {
   items: [{
     title: 'Inicio',
-    url: 'inicio'
+    url: 'inicio',
   }, {
     title: 'Inscripciones',
     url: 'inscripciones',
     children: [{
       title: 'Planteles',
-      url: 'planteles'
+      url: 'planteles',
     }, {
       title: 'Grados',
-      url: 'grados'
+      url: 'grados',
     }, {
       title: 'Requisitos',
-      url: 'requisitos'
+      url: 'requisitos',
     }, {
       title: 'Uniformes',
-      url: 'uniformes'
-    }]
+      url: 'uniformes',
+    }],
   }, {
     title: 'PROYECTO K',
     url: 'proyecto-k',
@@ -30,59 +30,59 @@ module.exports = {
       url: 'mision-vision',
     }, {
       title: 'Filosofía',
-      url: 'filosofia'
+      url: 'filosofia',
     }, {
       title: 'Metas',
-      url: 'metas'
+      url: 'metas',
     }, {
       title: 'Ideario',
-      url: 'ideario'
+      url: 'ideario',
     }, {
       title: 'Valores',
-      url: 'valores'
+      url: 'valores',
     }, {
       title: 'Oración',
-      url: 'oracion'
+      url: 'oracion',
     }, {
       title: 'Himno',
-      url: 'himno'
-    }]
+      url: 'himno',
+    }],
   }, {
     title: 'Extraescolares',
     url: 'extraescolares',
     children: [{
       title: 'Actividades Deportivas',
-      url: 'actividades-deportivas'
+      url: 'actividades-deportivas',
     }, {
       title: 'Actividades Artisticas',
-      url: 'actividades-artisticas'
+      url: 'actividades-artisticas',
     }, {
       title: 'Áreas del conocmiento',
-      url: 'areas-conocmiento'
-    }]
+      url: 'areas-conocmiento',
+    }],
   }, {
     title: 'Boletines',
     url: 'boletines',
     children: [{
       title: 'Santa Fe',
-      url: 'santa-fe'
+      url: 'santa-fe',
     }, {
       title: 'Otay',
-      url: 'otay'
+      url: 'otay',
     }, {
       title: 'Presidentes',
-      url: 'presidentes'
-    }]
+      url: 'presidentes',
+    }],
   }, {
     title: 'Contacto',
-    url: 'contacto'
+    url: 'contacto',
   }],
   icons: [{
     title: 'facebook',
     style: _.merge({}, Sprites.General.Facebook, {
-      display: 'inline-block'
+      display: 'inline-block',
     }),
-    url: '#'
+    url: '#',
   }],
   // todo: tmp should be address onces footer gets adapted
   tmp: [{
@@ -90,19 +90,19 @@ module.exports = {
     title: 'Santa Fe',
     location: 'Camino Vecinal 11998, Pórticos Santa Fe Tijuana B.C. 22666, México.',
     gmaps: '#',
-    tels: '(664) 975 2237 y 68'
+    tels: '(664) 975 2237 y 68',
   }, {
     id: 'otay',
     title: 'Otay',
     location: 'Minería 150 Plaza Otay Tijuana B.C. 22510, México',
     gmaps: '#',
-    tels: '(664) 624 4310'
+    tels: '(664) 624 4310',
   }, {
     id: 'presidentes',
     title: 'Presidentes',
     location: 'Ave. Del Águila Azteca 7072 Col. Guaycura 22216 Tijuana B.C.',
     gmaps: '#',
-    tels: '(664) 978-3220'
+    tels: '(664) 978-3220',
   }],
   addresses: [{
     elements: [{
@@ -110,32 +110,36 @@ module.exports = {
       text: ['Santa Fe'],
     }, {
       type: 'description',
-      text: ['Camino Vecinal 11998,<br /> Pórticos Santa Fe <br /> Tijuana B.C. 22666, México.<br /><br />']
+      text: ['Camino Vecinal 11998,<br /> Pórticos Santa Fe <br />' +
+        ' Tijuana B.C. 22666, México.<br /><br />'],
     }, {
       type: 'description',
-      text: ['<a href="tel:6649752237" title="6649752237">(664) 975 2237</a> y <a href="tel:6649752268" title="6649752268">68</a>']
-    }]
+      text: ['<a href="tel:6649752237" title="6649752237">(664) 975 2237</a>' +
+        ' y <a href="tel:6649752268" title="6649752268">68</a>'],
+    }],
   }, {
     elements: [{
       type: 'subtitle',
       text: ['Otay'],
     }, {
       type: 'description',
-      text: ['Minería 150 Plaza Otay<br /> Tijuana B.C. 22510, México <br /><br /><br />']
+      text: ['Minería 150 Plaza Otay<br /> Tijuana B.C. 22510, México ' +
+        '<br /><br /><br />'],
     }, {
       type: 'description',
-      text: ['<a href="tel:6646244310" title="6646244310">(664) 624 4310</a>']
-    }]
+      text: ['<a href="tel:6646244310" title="6646244310">(664) 624 4310</a>'],
+    }],
   }, {
     elements: [{
       type: 'subtitle',
       text: ['Presidentes'],
     }, {
       type: 'description',
-      text: ['Ave. Del Águila Azteca <br />7072 Col. Guaycura 22216 <br />Tijuana B.C.<br /><br />']
+      text: ['Ave. Del Águila Azteca <br />7072 Col. Guaycura 22216 <br />' +
+        'Tijuana B.C.<br /><br />'],
     }, {
       type: 'description',
-      text: ['<a href="tel:6649783220" title="6649783220">(664) 978-3220</a>']
-    }]
-  }]
+      text: ['<a href="tel:6649783220" title="6649783220">(664) 978-3220</a>'],
+    }],
+  }],
 };

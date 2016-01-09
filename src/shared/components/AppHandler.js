@@ -1,8 +1,6 @@
-import React from "react";
-import { Link } from 'react-router';
+import React from 'react';
 
 import Menu from './layout/menu/menuAAA';
-import Inscripciones from './sections/aboutus/';
 import FooterAAA from './layout/footer/footerAAA';
 
 
@@ -17,3 +15,7 @@ export default class AppHandler extends React.Component {
     );
   }
 }
+
+AppHandler.propTypes = {
+  children: React.PropTypes.object.isRequired,
+};
