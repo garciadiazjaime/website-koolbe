@@ -74,7 +74,7 @@ export default class Extras extends Component {
           {
             cards.map((card, index) => {
               return (
-                <div className="col-md-4" key={index}>
+                <div className="col-sm-4" key={index}>
                   <div className="row">
                     <SimpleCard data={card} />
                   </div>

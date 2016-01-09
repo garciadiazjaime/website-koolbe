@@ -32,7 +32,7 @@ export default class FooterAAA extends Component {
       </div>);
     });
 
-    return (<div id={style.addresses}>{items}</div>);
+    return (<div id={style.addresses} className="hidden-sm hidden-xs">{items}</div>);
   }
 
   getCards() {

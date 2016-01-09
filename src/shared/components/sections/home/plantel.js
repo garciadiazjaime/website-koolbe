@@ -9,13 +9,10 @@ import SimpleCard from '../../widgets/card/simpleCard';
 export default class Plantel extends Component {
 
   getCards() {
-    const itemStyle = {
-      padding: '20px 33px 20px 33px',
-    };
-
     return [{
       wrapper: {
-        style: _.merge({}, itemStyle, { backgroundColor: Constants.blueMedium }),
+        style: _.merge({}, { backgroundColor: Constants.blueMedium }),
+        className: style.plantelItem,
       },
       elements: [{
         type: 'subtitle',
@@ -48,7 +45,8 @@ export default class Plantel extends Component {
       }],
     }, {
       wrapper: {
-        style: _.merge({}, itemStyle, { backgroundColor: Constants.red }),
+        style: _.merge({}, { backgroundColor: Constants.red }),
+        className: style.plantelItem,
       },
       elements: [{
         type: 'subtitle',
@@ -80,7 +78,8 @@ export default class Plantel extends Component {
       }],
     }, {
       wrapper: {
-        style: _.merge({}, itemStyle, { backgroundColor: Constants.green }),
+        style: _.merge({}, { backgroundColor: Constants.green }),
+        className: style.plantelItem,
       },
       elements: [{
         type: 'subtitle',
@@ -122,7 +121,7 @@ export default class Plantel extends Component {
             {
               cards.map((card, index) => {
                 return (
-                  <div className="col-md-4" key={index}>
+                  <div className="col-sm-4" key={index}>
                     <div className="row">
                       <SimpleCard data={card} />
                     </div>

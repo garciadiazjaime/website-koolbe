@@ -26,7 +26,7 @@ module.exports = {
     title: 'PROYECTO K',
     url: 'proyecto-k',
     children: [{
-      title: 'Misión yVisión',
+      title: 'Misión y Visión',
       url: 'mision-vision',
     }, {
       title: 'Filosofía',
