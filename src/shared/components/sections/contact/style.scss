@@ -2,7 +2,11 @@
 
 .contact {
 
-  margin: 0 52px 40px 52px;
+  padding: 0 52px 40px 52px;
+
+  @media #{$isTablet} {
+    padding: 0;
+  }
 
   h1 {
     font-family: $fontBBold;

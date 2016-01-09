@@ -1,35 +1,5 @@
 @import '../../../constants';
 
-.intro {
-  margin-top: 75px;
-  padding: 0 52px;
-
-  @media #{$isTablet} {
-    padding: 0 15px;
-  }
-
-  h2 {
-    font-family: $fontBBold;
-    font-size: 35px;
-    color: $green;
-    margin-top: 0;
-
-    @media #{$isTablet} {
-      font-size: 30px;
-    }
-  }
-
-  p {
-    font-family: $fontALigth;
-    font-size: 15px;
-    color: $grayDark;
-
-    @media #{$isTablet} {
-      font-size: 13px;
-    }
-  }
-}
-
 .activities {
   margin-top: 60px;
   text-align: center;
@@ -61,11 +31,7 @@
     padding: 0;
   }
 
-  p {
-    font-family: $fontALigth;
-    font-size: 16px;
-    color: $grayDark;
-  }
+  @extend .parragraph1;
 
   a {
     font-family: $fontBBold;

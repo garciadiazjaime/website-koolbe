@@ -17,7 +17,9 @@ export default class ExtraescolaresSection extends React.Component {
       });
 
       return (<div className="col-sm-4" key={index}>
-          <h2 style={place.styleTile}>{place.title}</h2>
+          <h2 style={place.styleTile}>
+            <span dangerouslySetInnerHTML={this.sanitize(place.title)} />
+          </h2>
           <ul>
             {bulletines}
           </ul>
@@ -27,7 +29,10 @@ export default class ExtraescolaresSection extends React.Component {
     const extras = data.map((place, index) => {
       const files = place.extra.map((item, index2) => {
         return (<li key={index2}>
-          <h3><i className="glyphicon glyphicon-file" aria-hidden="true"></i>{item.title}</h3>
+          <h3>
+            <i className="glyphicon glyphicon-file" aria-hidden="true" ></i>
+            {item.title}
+          </h3>
           <Link to={item.url} style={place.styleLink}>descargar</Link>
         </li>);
       });
@@ -46,6 +51,12 @@ export default class ExtraescolaresSection extends React.Component {
           {extras}
         </div>
       </div>);
+  }
+
+  sanitize(value) {
+    return {
+      __html: value,
+    };
   }
 
   render() {

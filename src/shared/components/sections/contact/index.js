@@ -32,7 +32,7 @@ export default class Contact extends React.Component {
           {places}
         </div>
         <div className="col-sm-7">
-          <div style={this.state.locations[this.state.location]} className="pull-right"></div>
+          <div style={this.state.locations[this.state.location]} className="img-responsive"></div>
         </div>
       </div>);
   }

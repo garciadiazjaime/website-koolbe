@@ -1,6 +1,7 @@
 import React from 'react';
 
-import SimpleCard from '../../widgets/card/simpleCard';
+const style = process.env.NODE_ENV === 'DEV' ? require('./style.scss') : {};
+import SimpleCard from '../../../widgets/card/simpleCard';
 
 
 export default class ExtraescolaresSection extends React.Component {
@@ -31,15 +32,17 @@ export default class ExtraescolaresSection extends React.Component {
   render() {
     const cards = this.getCards();
 
-    return (<div className="row">
-        <div className="col-sm-5">
-          <div className="row">
-            <SimpleCard data={cards[0]} />
+    return (<div className={style.intro}>
+        <div className="row">
+          <div className="col-sm-5">
+            <div className="row">
+              <SimpleCard data={cards[0]} />
+            </div>
           </div>
-        </div>
-        <div className="col-sm-7">
-          <div className="row">
-            <SimpleCard data={cards[1]} />
+          <div className="col-sm-7">
+            <div className="row">
+              <SimpleCard data={cards[1]} />
+            </div>
           </div>
         </div>
       </div>
