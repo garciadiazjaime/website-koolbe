@@ -1,3 +1,8 @@
+Kolbe Website
+----
+
+[![Build Status](https://travis-ci.org/garciadiazjaime/website-koolbe.svg)](https://travis-ci.org/garciadiazjaime/website-koolbe)
+
 Run project:
 ----
 a) let's install all packages:
