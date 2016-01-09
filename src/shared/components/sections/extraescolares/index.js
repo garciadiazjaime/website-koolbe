@@ -25,7 +25,7 @@ export default class ExtraescolaresSection extends React.Component {
     const cards = this.getCards();
 
     return (<div className="container">
-        <div>
+        <div className="row">
           <SimpleCard data={cards[0]} />
         </div>
         <div className={style.intro}>

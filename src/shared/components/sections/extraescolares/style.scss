@@ -4,28 +4,45 @@
   margin-top: 75px;
   padding: 0 52px;
 
+  @media #{$isTablet} {
+    padding: 0 15px;
+  }
+
   h2 {
     font-family: $fontBBold;
     font-size: 35px;
     color: $green;
+    margin-top: 0;
+
+    @media #{$isTablet} {
+      font-size: 30px;
+    }
   }
 
   p {
     font-family: $fontALigth;
     font-size: 15px;
     color: $grayDark;
+
+    @media #{$isTablet} {
+      font-size: 13px;
+    }
   }
 }
 
 .activities {
   margin-top: 60px;
   text-align: center;
-  padding: 0 52px;
+  padding: 0;
 
   h1 {
     font-family: $fontBBold;
     font-size: 25px;
     color: $red;
+
+    @media #{$isTablet} {
+      font-size: 16px;
+    }
   }
 
   p {
@@ -36,8 +53,13 @@
 }
 
 .contact {
+  clear: both;
+  padding: 0px 52px;
   margin-top: 120px;
-  padding: 0 52px;
+
+  @media #{$isTablet} {
+    padding: 0;
+  }
 
   p {
     font-family: $fontALigth;
@@ -60,6 +82,10 @@
   margin-bottom: 60px;
   padding: 0 32px;
 
+  @media #{$isTablet} {
+    padding: 0;
+  }
+
   h1 {
     font-family: $fontBBold;
     font-size: 25px;
@@ -72,14 +98,18 @@
     font-family: $fontALigth;
     font-size: 15px;
     color: $grayDark;
+
+    @media #{$isTablet} {
+      font-size: 12px;
+    }
   }
 
   span {
     display: inline-block;
     background-color: $yellow;
-    padding: 10px 20px;
+    padding: 10px 20px 10px 0;
     color: $blueLight;
-    font-family: $fontA;
+    font-family: $fontABold;
   }
 
   a {
@@ -95,4 +125,8 @@
 
 .scheduleInfo {
   padding-left: 40px;
+
+  @media #{$isTablet} {
+    padding-left: 0;
+  }
 }

@@ -13,6 +13,7 @@ export default class Schedule extends React.Component {
       elements: [{
         type: 'sprite',
         style: _.merge({}, Sprites.Extra.HorarioExtendido),
+        className: 'img-responsive',
       }],
     }, {
       elements: [{
