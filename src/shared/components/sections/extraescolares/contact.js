@@ -1,11 +1,26 @@
-import React from "react";
-import { Link } from 'react-router';
-import _ from 'lodash';
+import React from 'react';
 
 import SimpleCard from '../../widgets/card/simpleCard';
-import Sprites from '../../../sprite';
+
 
 export default class Activities extends React.Component {
+
+  getCards() {
+    return [{
+      elements: [{
+        type: 'description',
+        text: ['*Los grupos se abren según la demanda que haya de los <br />' +
+        'mismos, siendo el mínimo de 8 a 10 alumnos según la <br /> actividad. ' +
+        'Estas tienen un costo adicional mensual y <br />horarios específicos.'],
+      }],
+    }, {
+      elements: [{
+        type: 'link',
+        url: 'contactanos',
+        text: 'Contáctanos',
+      }],
+    }];
+  }
 
   render() {
     const cards = this.getCards();
@@ -19,20 +34,5 @@ export default class Activities extends React.Component {
         </div>
       </div>
     );
-  }
-
-  getCards() {
-    return [{
-      elements: [{
-        type: 'description',
-        text: ['*Los grupos se abren según la demanda que haya de los <br />mismos, siendo el mínimo de 8 a 10 alumnos según la <br /> actividad. Estas tienen un costo adicional mensual y <br />horarios específicos.']
-      }]
-    }, {
-      elements: [{
-        type: 'link',
-        url: 'contactanos',
-        text: 'Contáctanos'
-      }]
-    }]
   }
 }

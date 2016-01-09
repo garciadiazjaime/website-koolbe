@@ -1,24 +1,26 @@
-import React from "react";
-import { Link } from 'react-router';
+import React from 'react';
 
-var style = process.env.NODE_ENV === 'DEV' ? require("./style.scss") : {};
-import Sprites from '../../../sprite';
-import Constants from '../../../constants';
+const style = process.env.NODE_ENV === 'DEV' ? require('./style.scss') : {};
 
 
-export default class Contact extends React.Component {
+export default class Address extends React.Component {
+
+  constructor(...args) {
+    super(...args);
+    this.changeLoc = this.props.changeLocation;
+  }
 
 
   render() {
-    const {data, changeLocation} = this.props;
+    const { data } = this.props;
     const classes = {
       santafe: style.santafeColor,
       otay: style.otayColor,
-      presidentes: style.presidentesColor
+      presidentes: style.presidentesColor,
     };
 
     return (<div className={style.address}>
-        <h2 className={classes[data.id]} onClick={changeLocation.bind(this, data.id)}>{data.title}</h2>
+        <h2 className={classes[data.id]} onClick={this.changeLoc} id={data.id}>{data.title}</h2>
 
         <div className="row">
           <div className="col-sm-1">
@@ -31,7 +33,9 @@ export default class Contact extends React.Component {
 
         <div className="row">
           <div className="col-sm-offset-1 col-sm-11">
-            <a href={data.gmaps} className={classes[data.id]} title="Ver en Google Maps" target="_blank">Ver en Google Maps</a>
+            <a href={data.gmaps} className={classes[data.id]} target="_blank">
+              Ver en Google Maps
+            </a>
           </div>
         </div>
 
@@ -49,3 +53,8 @@ export default class Contact extends React.Component {
   }
 
 }
+
+Address.propTypes = {
+  data: React.PropTypes.object.isRequired,
+  changeLocation: React.PropTypes.func.isRequired,
+};

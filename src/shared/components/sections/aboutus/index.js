@@ -1,9 +1,4 @@
-'use strict';
-
-import React, { Component, PropTypes} from 'react';
-import _ from 'lodash';
-
-
+import React, { Component } from 'react';
 
 import Button1 from '../../elements/buttons/button1';
 import Button2 from '../../elements/buttons/button2';
@@ -18,7 +13,6 @@ import Hr1 from '../../elements/misc/hr1';
 import Image1 from '../../elements/images/image1';
 import Image2 from '../../elements/images/image2';
 import Image3 from '../../elements/images/image3';
-import Image4 from '../../elements/images/image4';
 import Image5 from '../../elements/images/image5';
 import Image6 from '../../elements/images/image6';
 
@@ -49,22 +43,21 @@ import Wrapper2 from '../../elements/wrappers/wrapper2';
 export default class AboutUs extends Component {
 
   render() {
-
     return (
       <div>
         <div className="container">
           <div className="row">
-            <div className="col-xs-12 col-sm-4" style={{paddingRight: '0'}}>
+            <div className="col-xs-12 col-sm-4" style={{ paddingRight: '0' }}>
               <Button3>
                 Santa Fé
               </Button3>
             </div>
-            <div className="col-xs-12 col-sm-4" style={{paddingRight: '0', paddingLeft: '0'}}>
+            <div className="col-xs-12 col-sm-4" style={{ paddingRight: '0', paddingLeft: '0' }}>
               <Button4>
                 Otay
               </Button4>
             </div>
-            <div className="col-xs-12 col-sm-4" style={{paddingLeft: '0'}}>
+            <div className="col-xs-12 col-sm-4" style={{ paddingLeft: '0' }}>
               <Button5>
                 Presidentes
               </Button5>
@@ -84,16 +77,16 @@ export default class AboutUs extends Component {
                 <Title10>
                   Niveles escolares
                 </Title10>
-                <div style={{marginBottom: '35px'}}>
+                <div style={{ marginBottom: '35px' }}>
                   <Button6>
-                    Preescolar |&nbsp; 
+                    Preescolar |&nbsp;
                   </Button6>
                   <Button6>
                     Primaria |&nbsp;
                   </Button6>
                   <br />
                   <Button6>
-                    Secundaria |&nbsp; 
+                    Secundaria |&nbsp;
                   </Button6>
                   <Button6>
                     Preparatoria
@@ -129,18 +122,20 @@ export default class AboutUs extends Component {
                 <li>Cuestionario del departamento de Psicología debidamente lleno.</li>
                 <li>Entrevista con departamento de Psicología, solo en caso de ser necesario.</li>
                 <li>Realizar examen diagnóstico.</li>
-                <li>Entregar documentación completa del alumno solicitado por departamento 
+                <li>Entregar documentación completa del alumno solicitado por departamento
                 de Control Escolar.</li>
                 <li>Realizar pago por concepto de Inscripción/Reinscripción.</li>
               </List1>
             </div>
-            <div className="col-xs-12  col-sm-4" style={{marginBottom: '100px'}}>
+            <div className="col-xs-12  col-sm-4" style={{ marginBottom: '100px' }}>
                 <Wrapper1>
-                  <Title3> 
+                  <Title3>
                     Grados Escolares
                   </Title3>
                   <Par1>
-                    Instituto Ramiro Kolbe, es una institución privada que ofrece a niños y adolescentes una fórmula educativa de excelente nivel respaldados el Sistema SISEEKO.
+                    Instituto Ramiro Kolbe, es una institución privada que ofrece a niños y
+                    adolescentes una fórmula educativa de excelente nivel respaldados el
+                    Sistema SISEEKO.
                   </Par1>
                 </ Wrapper1>
                 <Button1 ref="/inscripcion">
@@ -199,7 +194,10 @@ export default class AboutUs extends Component {
                 <List2>
                   <li>Acta de nacimiento original y 3 copias.</li>
 
-                  <li>Última boleta de calificaciones o constancia de la escuela donde estudia actualmente, original y 3 copias.</li>
+                  <li>
+                    Última boleta de calificaciones o constancia de la escuela donde estudia
+                    actualmente, original y 3 copias.
+                  </li>
 
                   <li>Certificado de preescolar original y 3 copias<br />
                   (en caso de inscribir a 1º).</li>
@@ -223,7 +221,8 @@ export default class AboutUs extends Component {
                   Requisitos de edad para ingresar a los niveles de preescolar
                 </Title4>
                 <List3>
-                  <li className="first"> 6 años cumplidos al 31 de diciembre (con certificado de preescolar)</li>
+                  <li className="first"> 6 años cumplidos al 31 de diciembre
+                    (con certificado de preescolar)</li>
                 </List3>
               </Wrapper1B>
             </div>
@@ -241,7 +240,8 @@ export default class AboutUs extends Component {
                 <List2>
                   <li>Acta de nacimiento original y 3 copias.</li>
 
-                  <li>Última boleta de calificaciones o constancia de la escuela donde estudia actualmente, original y 3 copias.</li>
+                  <li>Última boleta de calificaciones o constancia de la escuela donde
+                    estudia actualmente, original y 3 copias.</li>
 
                   <li>Certificado de primaria<br />
                   (en caso de inscribir a 1º) original y 3 copias.</li>
@@ -272,7 +272,8 @@ export default class AboutUs extends Component {
                   Horarios de Atención
                 </Title6>
                 <Par2>
-                  Estamos disponibles para atenderle de manera personal en cada uno de los planteles.
+                  Estamos disponibles para atenderle de manera personal en cada uno
+                  de los planteles.
                 </Par2>
                 <Par2>
                   Lunes a Viernes de 7:00 am a 3:00 pm.
@@ -281,7 +282,7 @@ export default class AboutUs extends Component {
                 <Par2>
                   Horarios de caja de 7:00 am a 2:00 pm.
                 </Par2>
-                
+
               </div>
               <div className="col-xs-12 col-sm-6">
                 <Title7>
