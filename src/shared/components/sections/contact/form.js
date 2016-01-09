@@ -3,7 +3,7 @@ import _ from 'lodash';
 
 const style = process.env.NODE_ENV === 'DEV' ? require('./style.scss') : {};
 const constants = require('../../../constants');
-import restClient from '../../../../server/lib/rest-client';
+import restClient from '../../../../server/helpers/rest-client';
 
 
 export default class Form extends React.Component {

@@ -4,4 +4,4 @@ node_js:
 before_script:
   - npm install -g bower
   - bower install
-script: cd website && npm install && npm test
+script: npm install && npm test

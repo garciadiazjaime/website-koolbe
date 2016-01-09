@@ -5,7 +5,7 @@ import { match, RoutingContext } from 'react-router';
 const bodyParser = require('body-parser');
 
 const config = require('../../config');
-const apiRoutes = require('./lib/api');
+const apiRoutes = require('./helpers/api');
 
 
 import routes from '../shared/routes';
