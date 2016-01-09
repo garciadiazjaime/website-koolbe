@@ -20,17 +20,8 @@ $fontB: 'montserrat';
 $fontBBold: 'montserrat-bold';
 
 $isTablet: "only screen and (min-width : 768px) and (max-width: 1023px)";
+$isPhone: "only screen and (max-width : 320px)";
 
-
-.parragraph1 {
-	font-family: $fontALigth;
-	font-size: 15px;
-	color: $grayDark;
-
-	@media #{$isTablet} {
-		font-size: 13px;
-	}
-}
 
 // ****************** mixins *********************
 

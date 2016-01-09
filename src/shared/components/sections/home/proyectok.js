@@ -37,6 +37,7 @@ export default class ProyectoK extends Component {
     return {
       wrapper: {
         marginTop: '30px',
+        marginBottom: '20px',
       },
     };
   }

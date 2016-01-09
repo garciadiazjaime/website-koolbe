@@ -31,7 +31,15 @@
     padding: 0;
   }
 
-  @extend .parragraph1;
+  p {
+    font-family: $fontALigth;
+  	font-size: 15px;
+  	color: $grayDark;
+
+  	@media #{$isTablet} {
+  		font-size: 13px;
+  	}
+  }
 
   a {
     font-family: $fontBBold;
