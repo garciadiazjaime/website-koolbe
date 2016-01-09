@@ -72,9 +72,13 @@ export default class SimpleCard extends Component {
   }
 
   render() {
-    if (_.isArray(this.props.data.elements) && this.props.data.elements.length) {
-      const wrapperStyle = this.getWrapper(this.props.data.wrapper);
-      const Components = this.props.data.elements.map((item, index) => {
+    const { data } = this.props;
+
+    if (_.isArray(data.elements) && data.elements.length) {
+      const wrapperStyle = this.getWrapper(data.wrapper);
+      const wrapperClass = data.wrapper && data.wrapper.className ? data.wrapper.className : null;
+
+      const Components = data.elements.map((item, index) => {
         switch (item.type.toUpperCase()) {
           case 'TITLE':
             return this.getTitle(item);
@@ -93,7 +97,7 @@ export default class SimpleCard extends Component {
         }
       });
       return (
-        <div style={wrapperStyle}>
+        <div style={wrapperStyle} className={wrapperClass}>
           {Components}
         </div>
       );
