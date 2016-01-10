@@ -52,7 +52,7 @@ export default class SimpleCard extends Component {
 
   getSprite(data, index) {
     if (data && data.style) {
-      return (<div key={index} style={data.style}></div>);
+      return (<div key={index} style={data.style} className={data.className}></div>);
     }
     return null;
   }

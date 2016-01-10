@@ -3,7 +3,6 @@
 #footer {
   background-color: $blueDark;
   padding-top: 80px;
-  margin-top: 20px;
 
   ul {
     padding: 0;
@@ -22,6 +21,10 @@
 .footerWrapper {
   position: relative;
   padding-left: 52px;
+
+  @media #{$isPhone} {
+    padding-left: 15px;
+  }
 }
 
 .footerMenu {
@@ -31,6 +34,10 @@
 .menuParent {
   float: left;
   padding-right: 30px;
+
+  @media #{$isPhone} {
+    padding-bottom: 20px;
+  }
 
   a {
     font-family: $fontALigth;
@@ -52,6 +59,10 @@
   width: 450px;
   position: absolute;
   right: 5px;
+
+  @media screen and (max-width: 1201px) {
+    right: -50px;
+  }
 
   h2 {
     font-family: $fontABold;
@@ -90,6 +101,10 @@
   font-family: $fontA;
   font-size: 10px;
   padding-left: 52px;
+
+  @media #{$isPhone} {
+    padding-left: 15px;
+  }
 
   p {
     margin: 0;

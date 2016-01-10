@@ -79,12 +79,12 @@ export default class FooterAAA extends Component {
           <div className={style.footerWrapper}>
 
             <div className="row">
-              <div className="col-sm-8">
+              <div className="col-sm-8 col-xs-5">
                 <div className="row">
                   <SimpleCard data={cards[0]} />
                 </div>
               </div>
-              <div className="col-sm-4">
+              <div className="col-sm-4 col-xs-6">
                 <div className={style.followUs}>
                   <SimpleCard data={cards[1]} />
                 </div>
@@ -109,10 +109,10 @@ export default class FooterAAA extends Component {
                 Todos los derechos reservados Branding Pool 2015
               </div>
               <div className="col-sm-5">
-                Un proyecto de:
+                Un proyecto de:&nbsp;
                 <a href={data[0].url} title={data[0].title} target="_blank">{data[0].name}</a>
                 &nbsp;&nbsp;
-                Código por:
+                Código por:&nbsp;
                 <a href={data[1].url} title={data[1].title} target="_blank">{data[1].name}</a>
               </div>
             </div>

@@ -24,38 +24,35 @@ export default class MainMenu extends Component {
   }
 
   render() {
-    const id = '#bs-navbar-main-menu';
-    const c = 'navbar-toggle collapsed';
-
-    return (
-      <div className="container">
+    /*eslint-disable */
+    return (<div className="container">
         <nav className={style.navbarDefault + ' navbar navbar-default'}>
-          <div className={style.navbarHeader + ' navbar-header'}>
+          <div className="container-fluid">
 
-            <a title="Inicio" className="navbar-brand" href="/" style={Sprites.General.Logo} />
-
-            <button className={c} data-toggle="collapse" data-target={id} aria-expanded="false">
-              <span className="sr-only">Toggle navigation</span>
-              <span className="icon-bar"></span>
-              <span className="icon-bar"></span>
-              <span className="icon-bar"></span>
-            </button>
-
-          </div>
-
-          <div className="hidden-xs hidden-sm">&nbsp;</div>
-
-          <div className={style.navbarCollapse + ' collapse navbar-collapse'} id={id}>
-            <ul className={style.navbarNav + ' nav navbar-nav'}>
-              {this.getItems(this.props.items)}
-            </ul>
-            <div className={style.socialNetwork}>
-              {this.getIcons(this.props.icons)}
+            <div className={style.navbarHeader + ' navbar-header'}>
+              <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainmenu" aria-expanded="false">
+                <span className="sr-only">Toggle navigation</span>
+                <span className="icon-bar"></span>
+                <span className="icon-bar"></span>
+                <span className="icon-bar"></span>
+              </button>
+              <a className="navbar-brand" href="#" style={Sprites.General.Logo}></a>
             </div>
+
+            <div className={style.navbarCollapse + ' collapse navbar-collapse'} id='mainmenu'>
+              <ul className={style.navbarNav + ' nav navbar-nav'}>
+                {this.getItems(this.props.items)}
+              </ul>
+              <div className={style.socialNetwork}>
+                {this.getIcons(this.props.icons)}
+              </div>
+            </div>
+
           </div>
         </nav>
       </div>
     );
+    /*eslint-enable */
   }
 }
 

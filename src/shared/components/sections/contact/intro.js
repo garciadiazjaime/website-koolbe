@@ -18,8 +18,8 @@ export default class ContactForm extends React.Component {
         <div className="col-sm-6">
           <p className={style.intro}>
             Para cualquier pregunta o comentario por favor llene la
-            siguiente forma o contáctenos a través del correo
-            <a href={ 'mailto:' + mailTo } alt={ 'mailto:' + mailTo } style={anchorRed}>
+            siguiente forma o contáctenos a través del
+            correo <a href={ 'mailto:' + mailTo } alt={ 'mailto:' + mailTo } style={anchorRed}>
               { mailTo }
             </a>
           </p>
