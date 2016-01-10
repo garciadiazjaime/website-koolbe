@@ -10,11 +10,19 @@
 .navbarHeader {
   margin-top: 37px;
   margin-left: 37px;
+  @media #{$isTablet} {
+    margin-left: 0;
+  }
 }
 
 .navbarNav {
   margin-top: 21px;
   margin-left: 112px;
+
+  @media #{$isTablet} {
+    margin-left: 10px;
+    margin-top: 50px;
+  }
 }
 
 .navbarBrand {
@@ -33,6 +41,10 @@
   color: $grayLight;
   text-transform: uppercase;
 
+  @media #{$isTablet} {
+    padding: 10px !important;
+  }
+
   &:hover {
     color: $blueMedium;
     background-color: initial;
@@ -42,4 +54,9 @@
 .socialNetwork {
   margin-top: 30px;
   float: right;
+
+  @media #{$isTablet} {
+    margin-top: 55px;
+    margin-right: -15px;
+  }
 }

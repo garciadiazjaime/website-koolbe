@@ -24,6 +24,14 @@ module.exports = {
     extensions: ['', '.js']
   },
   module: {
+    preLoaders: [
+      {
+        test: /\.jsx$|\.js$/,
+        loader: 'eslint-loader',
+        include: __dirname + '/src/',
+        exclude: /app\.js$/
+      }
+    ],
    loaders: [
       { test: /\.jsx?$/, loaders: ['react-hot', 'babel'], exclude: /node_modules/ },
       { test: /\.css$/, loader: 'style!css?modules&localIdentName=[name]---[local]---[hash:base64:5]'},
