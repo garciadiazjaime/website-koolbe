@@ -1,11 +1,19 @@
 @import '../../../../constants';
 
-.title2{
+.title1 {
+  display: block;
+  text-transform: uppercase;
+  color: $yellow;
+  font-size: 27px;
   font-family: $fontBBold;
-  color: $blueMedium;
-  font-size: 16px;
-  padding-left: 50px;
-  margin-bottom: 50px;
+  padding: 25px 0 31px;
+  h2{
+    color: white; 
+    font-size: 13px;
+    font-family: $fontA;
+    margin-top: 0;
+    margin-bottom: 18px;
+  }
 }
 @media screen and (max-width: 400px){
 	.title2{

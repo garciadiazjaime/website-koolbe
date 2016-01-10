@@ -6,7 +6,6 @@
   background-color: $blueDark;
   color: white;
   font-size: 12px;
-  list-style: none;
   margin-bottom: 22px;
   padding: 20px 0 20px 30px;
   position: relative;
@@ -41,6 +40,43 @@
     right: 13px;
     top: 50%;
   }
+}
+.button2{
+  @extend .button1;
+  background-color: $blueLight;
+  &::after{
+    transform: translate(-100%, -75%);
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid $blueDark;
+    right: 3px;
+  }
+}
+
+.button3{
+  color: white;
+  font: fontA;
+  font-size: 12px;
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 13px;
+  &:hover{
+    color: white;
+    text-decoration: underline;   
+  }
+  h2{
+    color: white; 
+    font-size: 13px;
+    font-family: $fontA;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+}
+.button4{
+  @extend .button2;
+  background: none;
+  padding: 0;
+
 }
 @media screen and (max-width: 400px){
 	.button1{
