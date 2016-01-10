@@ -1,72 +1,72 @@
-var Constants = require('../../../constants')
+const Constants = require('../../../constants');
 
 module.exports = [{
   title: 'SANTA FE',
   styleTile: {
-    color: Constants.blueLight
+    color: Constants.blueLight,
   },
   styleLink: {
-    backgroundColor: Constants.blueLight
+    backgroundColor: Constants.blueLight,
   },
   bulletin: [{
     title: 'Boletín Preescolar',
-    url: '#'
+    url: '#',
   }, {
     title: 'Boletín Primaria',
-    url: '#'
+    url: '#',
   }, {
     title: 'Boletín Secundaria',
-    url: '#'
+    url: '#',
   }, {
     title: 'Boletín Preparatoria',
-    url: '#'
+    url: '#',
   }],
   extra: [{
     title: 'Ficha de Inscripción',
-    url: '#'
-  }]
+    url: '#',
+  }],
 }, {
   title: 'OTAY',
   styleTile: {
-    color: Constants.red
+    color: Constants.red,
   },
   styleLink: {
-    backgroundColor: Constants.red
+    backgroundColor: Constants.red,
   },
   bulletin: [{
     title: 'Boletín Preescolar',
-    url: '#'
+    url: '#',
   }, {
     title: 'Boletín Primaria',
-    url: '#'
+    url: '#',
   }, {
     title: 'Boletín Secundaria',
-    url: '#'
+    url: '#',
   }],
   extra: [{
     title: 'Ficha de Inscripción',
-    url: '#'
-  }]
+    url: '#',
+  }],
 }, {
   title: 'PRESIDENTES',
   styleTile: {
-    color: Constants.green
+    color: Constants.green,
   },
   styleLink: {
-    backgroundColor: Constants.green
+    backgroundColor: Constants.green,
   },
   bulletin: [{
     title: 'Boletín Preescolar',
-    url: '#'
+    url: '#',
   }, {
     title: 'Boletín Primaria',
-    url: '#'
+    url: '#',
   }, {
     title: 'Boletín Secundaria',
-    url: '#'
+    url: '#',
   }],
   extra: [{
     title: 'Ficha de Inscripción',
-    url: '#'
-  }]
-}]
+    url: '#',
+  }],
+}];
