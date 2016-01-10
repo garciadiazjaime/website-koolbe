@@ -10,8 +10,7 @@
   	margin-bottom: 25px;
     &::before {
       content: "";
-      float: left;
-      margin: 0 0 0 -45px;
+      position: absolute;
       display: block;
       background-position: -21px -22px;
       width: 14px;
@@ -28,20 +27,21 @@
   font-family: $fontALigth;
   color: $grayDark;
   font-size: 14px;
-  padding-left: 0;
+  padding-left: 25px;
   list-style: none;
   margin-bottom: 0;
   li{
     margin-bottom: 22px;
     &::before {
-      float: left; 
+      position: absolute;
+      left: 4px;
       display: block;
       content: "";
       width: 8px;
       height: 8px;
       @include border-radius(4px);
       background-color: $yellow;
-      margin: 7px 10px 26px 4px;
+      margin: 7px 0 0 0;
     }
   }
   li:last-child{
@@ -51,6 +51,7 @@
 
 .list3{
   @extend .list2;
+  padding-left: 40px;
   li {
     margin-bottom: 20px;
     &::before {

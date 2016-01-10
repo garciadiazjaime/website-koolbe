@@ -1,8 +1,8 @@
 $blueDark: #003A5E;
 $blueMedium: #0055A0;
 $blueLight: #0079BD;
-$blueLightest: #F1F8FF;
 $blueLighter: #F3FAFF;
+$blueLightest: #F1F8FF;
 $red: #E72227;
 $green: #00A54F;
 $yellow: #FFE400;
@@ -173,3 +173,24 @@ $isTablet: "only screen and (min-width : 768px) and (max-width: 1023px)";
     background-size: 183px 143px;
    }
  }
+
+// **************** PADDINGS & MARGINS *************************
+.colNopad{
+  padding-left: 0;
+  padding-right: 0;
+}
+.sidePadded50{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.bottom20{
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 400px){
+  .sidePadded50{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+

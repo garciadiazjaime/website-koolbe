@@ -10,7 +10,7 @@ var style = process.env.NODE_ENV === 'DEV' ? require("./style.scss") : {};
 export default class Hr1 extends React.Component {
   render() {
     return (
-      <hr className={style.hr1} />
+      <hr className={style[this.props.className]} />
     );
   }
 }

@@ -37,11 +37,11 @@ export default class AboutUs extends Component {
                 El proyecto Kolbe
               </Title1>
               <div style={{marginBottom: '45px'}}>
-                <Par1 classTitle="par1">
+                <Par1 classTitle="par2">
                   El Instituto Ramiro Kolbe surge de la inquietud  del Padre Jesús Quesada Martínez, de ayudar a los demás a través de la educación, ya que él cree firmemente en la idea de que la educación es la base de una sociedad en progreso inspirados en la filosofía de San Maximiliano Kobe – 
                 </Par1>
               </div>
-              <Par1 classTitle="par1">
+              <Par1 classTitle="par2">
                 De esta manera y gracias a al apoyo de un grupo de inversionistas, inicia el reclutamiento de un muy valioso equipo docente y administrativo, así como el diseño y estructuración del Sistema Educativo y Editorial Kolbe (SISEEKO).
               </Par1>
             </div>
@@ -95,7 +95,7 @@ export default class AboutUs extends Component {
               </div>
             </div>
             <div className="col-xs-12 col-sm-6">
-              <Title1 className="title13">
+              <Title1 className="title12">
                 Ideario
               </Title1>
               <List1 classTitle="list4">
