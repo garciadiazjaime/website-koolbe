@@ -79,12 +79,12 @@ export default class FooterAAA extends Component {
           <div className={style.footerWrapper}>
 
             <div className="row">
-              <div className="col-sm-8">
+              <div className="col-sm-8 col-xs-5">
                 <div className="row">
                   <SimpleCard data={cards[0]} />
                 </div>
               </div>
-              <div className="col-sm-4">
+              <div className="col-sm-4 col-xs-6">
                 <div className={style.followUs}>
                   <SimpleCard data={cards[1]} />
                 </div>
