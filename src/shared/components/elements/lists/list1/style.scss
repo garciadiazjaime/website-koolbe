@@ -19,12 +19,90 @@
       background-image: url('http://127.0.0.1:3030/images/sprites/sprite-aboutus.png');
       background-size: 43px 39px;
       left: 15px;  
+    }
   }
+}
+
+.list2{
+  position: relative;
+  font-family: $fontALigth;
+  color: $grayDark;
+  font-size: 14px;
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0;
+  li{
+    margin-bottom: 22px;
+    &::before {
+      float: left; 
+      display: block;
+      content: "";
+      width: 8px;
+      height: 8px;
+      @include border-radius(4px);
+      background-color: $yellow;
+      margin: 7px 10px 26px 4px;
+    }
+  }
+  li:last-child{
+    margin-bottom: 0;
+  }
+}
+
+.list3{
+  @extend .list2;
+  li {
+    margin-bottom: 20px;
+    &::before {
+      content: "2º";
+      width: 26px;
+      padding: 3px 6px;
+      height: 26px;
+      @include border-radius(13px);
+      margin: -2px 10px 11px 0;
+    }
+  }
+  li:first-child {
+    &::before {
+      content: '1º';
+    }
+  }
+  li:last-child {
+    &::before {
+      content: '3º';
+    }
+  }
+  li:only-child {
+    &::before {
+      content: '1º';
+    }
+  }
+}
+
+.list4{
+  position: relative;
+  font-family: $fontALigth;
+  color: $grayDark;
+  font-size: 12px;
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 46px;
+  li{
+    margin-bottom: 22px;
+    &::before {
+      float: left; 
+      display: block;
+      content: "";
+      width: 8px;
+      height: 8px;
+      @include border-radius(4px);
+      background-color: $yellow;
+      margin: 4px 10px 20px 4px;
+    }
   }
 }
 @media screen and (max-width: 400px){
 	.list1{
-		margin-bottom: 15px;
 	}
 }
 

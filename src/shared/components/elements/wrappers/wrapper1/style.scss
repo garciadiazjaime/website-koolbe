@@ -5,6 +5,21 @@
   padding: 30px 25px 75px;
   margin-bottom: 25px;
 }
+.wrapper2 {
+  background: $blueLightest;
+  padding: 30px 65px 30px 80px;
+  margin-bottom: 60px;
+}
+.wrapper3{
+  background: $blueMedium;
+  padding: 35px 15px 40px;
+  margin-bottom: 68px;
+}
+.wrapper4{
+  padding: 35px 15px 40px;
+  margin-bottom: 0;
+  @include linear-gradient(to left, $blueMedium 50%, $green 50.1%);
+}
 @media screen and (max-width: 400px){
 	.wrapper1{
 	}

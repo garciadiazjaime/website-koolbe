@@ -6,7 +6,7 @@ const style = process.env.NODE_ENV === 'DEV' ? require('./style.scss') : {};
 export default class Wrapper1 extends React.Component {
   render() {
     return (
-      <div className={style.wrapper1}>
+      <div className={style[this.props.className]}>
         {this.props.children}
       </div>
     );
