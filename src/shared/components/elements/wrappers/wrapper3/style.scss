@@ -3,7 +3,7 @@
 .wrapper3{
   padding: 35px 15px 40px;
   margin-bottom: 0;
-  @include linear-gradient(to right, $blueMedium 50%, $green 50.1%);
+  @include linear-gradient(to left, $blueMedium 50%, $green 50.1%);
 }
 @media screen and (max-width: 400px){
 	.wrapper3{

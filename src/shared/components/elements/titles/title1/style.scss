@@ -20,6 +20,139 @@
     left: 15px;  
   }
 }
+.title2{
+  font-family: $fontBBold;
+  color: $blueMedium;
+  font-size: 16px;
+  padding-left: 50px;
+  margin-bottom: 50px;
+}
+.title3{
+  font-family: $fontBBold;
+  color: $blueMedium;
+  font-size: 15px;
+  padding-left: 40px;
+  padding-bottom: 25px;
+  text-transform: uppercase; 
+  margin-bottom: 25px;
+  border-bottom: 4px solid $blueMedium;
+  &::before {
+    content: "";
+    display: block;
+    background-position: -21px -0px;
+    width: 22px;
+    height: 22px;
+    background-image: url('http://127.0.0.1:3030/images/sprites/sprite-aboutus.png');
+    background-size: 43px 39px;
+    position: absolute;
+    left: 40px;  
+    top: 45px;
+  }
+}
+.title4 {
+  font-family: $fontBBold;
+  color: $blueMedium;
+  font-size: 15px;
+  margin-bottom: 20px;
+  text-transform: uppercase; 
+}
+.title5 {
+  font-family: $fontBBold;
+  color: $red;
+  font-size: 15px;
+}
+.title6 {
+  font-family: $fontBBold;
+  color: $blueMedium;
+  font-size: 40px;
+  margin-bottom: 50px; 
+}
+.title7 {
+  font-family: $fontBBold;
+  color: $green;
+  font-size: 30px;
+  margin-bottom: 10px; 
+  text-transform: uppercase;
+  text-align: center;
+}
+.title8 {
+  font-family: $fontBBold;
+  color: $green;
+  font-size: 25px;
+  margin-bottom: 25px; 
+  text-align: center; 
+}
+
+// og tiltle 10
+.title9 {
+  font-family: $fontABold;
+  color: white;
+  font-size: 20;
+  margin-top: 0;
+  margin-bottom: 18px; 
+  text-transform: uppercase;
+}
+//og title11
+.title10 {
+  font-family: $fontBBold;
+  color: $green;
+  font-size: 35px;
+  margin-bottom: 40px; 
+  text-transform: uppercase;
+}
+//og title 12
+.title11 {
+  font-family: $fontBBold;
+  color: $yellow;
+  font-size: 25px;
+  margin-bottom: 70px; 
+  margin-top: 40px;
+  text-transform: uppercase;
+  text-align: center;
+}
+//og title 13
+.title12 {
+  font-family: $fontBBold;
+  color: $red;
+  font-size: 25px;
+  margin-bottom: 34px;
+}
+//og title14
+.title13 {
+  font-family: $fontBBold;
+  color: $blueMedium;
+  font-size: 18px;
+  margin-bottom: 34px;
+}
+//og Title 15
+.title14 {
+  font-family: $fontBBold;
+  color: $blueMedium;
+  font-size: 25px;
+}
+//og title 16
+.title15 {
+  font-family: $fontBBold;
+  color: $blueMedium;
+  font-size: 18px;
+  margin-bottom: 34px;
+  text-transform: uppercase;
+  margin-bottom: 34px;
+}
+//og title17
+.title16 {
+  font-family: $fontBBold;
+  color: $grayDark;
+  font-size: 18px;
+  margin-bottom: 34px;
+}
+//og title18
+.title17 {
+  font-family: $fontBBold;
+  color: $yellow;
+  font-size: 25px;
+  margin-bottom: 28px;
+}
 @media screen and (max-width: 400px){
   title1 {
     font-size: 20px;

@@ -10,7 +10,7 @@ var style = process.env.NODE_ENV === 'DEV' ? require("./style.scss") : {};
 export default class List1 extends React.Component {
   render() {
     return (
-      <ul className={style.list1}>
+      <ul className={style[this.props.classTitle]}>
         {this.props.children}
       </ul>
     );
