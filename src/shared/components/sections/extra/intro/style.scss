@@ -8,6 +8,10 @@
     padding: 0 15px;
   }
 
+  @media #{$isPhone} {
+    padding: 0 15px;
+  }
+
   h2 {
     font-family: $fontBBold;
     font-size: 35px;

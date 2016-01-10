@@ -21,13 +21,13 @@ export default class Schedule extends React.Component {
         text: ['Horario Extendido'],
       }, {
         type: 'description',
-        text: ['Este servicio se ofrece para todos los niveles. <br />' +
-          'El horario extendido continúa el proceso formativo del <br />alumno. ' +
-          'No es guardería, sino apoyo educativo profesional;<br /> a las tareas, ' +
-          'al descanso y los buenos hábitos <br /> después de los horarios de ' +
-          'clases formales. En  <br />cuanto a los alimentos el padre de familia puede <br />' +
-          'optar por solicitar el servicio en la cooperativa escolar <br />' +
-          'de su plantel escolar o enviar la comida. De preferencia <br /> ' +
+        text: ['Este servicio se ofrece para todos los niveles. ' +
+          'El horario extendido continúa el proceso formativo del alumno. ' +
+          'No es guardería, sino apoyo educativo profesional; a las tareas, ' +
+          'al descanso y los buenos hábitos después de los horarios de ' +
+          'clases formales. En cuanto a los alimentos el padre de familia puede ' +
+          'optar por solicitar el servicio en la cooperativa escolar ' +
+          'de su plantel escolar o enviar la comida. De preferencia ' +
           'cambio de ropa para el alumno.<br /><br />'],
       }, {
         type: 'description',
