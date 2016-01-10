@@ -1,9 +1,4 @@
-'use strict';
-
-import React, { Component, PropTypes} from 'react';
-import _ from 'lodash';
-
-
+import React, { Component } from 'react';
 
 import Button1 from '../../elements/buttons/button1';
 import Button2 from '../../elements/buttons/button2';
@@ -25,23 +20,22 @@ import Wrapper1 from '../../elements/wrappers/wrapper1';
 export default class AboutUs extends Component {
 
   render() {
-
     return (
       <div>
         <div className="container">
           <div className="row">
-            <div className="col-xs-12 col-sm-4" style={{paddingRight: '0'}}>
+            <div className="col-xs-12 col-sm-4" style={{ paddingRight: '0' }}>
               <Button2 refs="plantelSantaFe" classTitle="blue">
                 Santa Fé
               </Button2>
             </div>
-            <div className="col-xs-12 col-sm-4" style={{paddingRight: '0', paddingLeft: '0'}}>
-              <Button2 refs="plantelOtay"  classTitle="red">
+            <div className="col-xs-12 col-sm-4" style={{ paddingRight: '0', paddingLeft: '0' }}>
+              <Button2 refs="plantelOtay" classTitle="red">
                 Otay
               </Button2>
             </div>
-            <div className="col-xs-12 col-sm-4" style={{paddingLeft: '0'}}>
-              <Button2  refs="plantelPresidentes"  classTitle="green">
+            <div className="col-xs-12 col-sm-4" style={{ paddingLeft: '0' }}>
+              <Button2 refs="plantelPresidentes" classTitle="green">
                 Presidentes
               </Button2>
             </div>
@@ -51,7 +45,7 @@ export default class AboutUs extends Component {
           <div className="container">
             <div className="row">
               <div className="col-xs-6 col-sm-4">
-                <Title2  className="title1">
+                <Title2 className="title1">
                   Santa Fé
                 </Title2>
                 <Par1 classTitle="par3">
@@ -60,31 +54,31 @@ export default class AboutUs extends Component {
                 <Title1 className="title9">
                   Niveles escolares
                 </Title1>
-                <div style={{marginBottom: '35px'}}>
-                  <Button1 refs={"preescolar"} classTitle="button3">
-                    Preescolar |&nbsp; 
+                <div style={{ marginBottom: '35px' }}>
+                  <Button1 refs="preescolar" classTitle="button3">
+                    Preescolar |&nbsp;
                   </Button1>
-                  <Button1 refs={"primaria"} classTitle="button3">
+                  <Button1 refs="primaria" classTitle="button3">
                     Primaria |&nbsp;
                   </Button1>
                   <br />
-                  <Button1 refs={"secundaria"} classTitle="button3">
-                    Secundaria |&nbsp; 
+                  <Button1 refs="secundaria" classTitle="button3">
+                    Secundaria |&nbsp;
                   </Button1>
-                  <Button1  refs={"preparatoria"} classTitle="button3">
+                  <Button1 refs="preparatoria" classTitle="button3">
                     Preparatoria
                   </Button1>
                 </div>
                 <div className="row">
                   <div className="col-xs-6">
-                    <Button1  refs={"contact"} classTitle="button4">
+                    <Button1 refs="contact" classTitle="button4">
                       Contáctanos
                     </Button1>
                   </div>
                 </div>
               </div>
               <div className="col-xs-6 col-sm-8">
-                <ImageInsert url={"images/aboutus/plantelBlue.jpg"} classTitle={'image1'}/>
+                <ImageInsert url="images/aboutus/plantelBlue.jpg" classTitle="image1"/>
               </div>
             </div>
           </div>
@@ -105,31 +99,33 @@ export default class AboutUs extends Component {
                 <li>Cuestionario del departamento de Psicología debidamente lleno.</li>
                 <li>Entrevista con departamento de Psicología, solo en caso de ser necesario.</li>
                 <li>Realizar examen diagnóstico.</li>
-                <li>Entregar documentación completa del alumno solicitado por departamento 
+                <li>Entregar documentación completa del alumno solicitado por departamento
                 de Control Escolar.</li>
                 <li>Realizar pago por concepto de Inscripción/Reinscripción.</li>
               </List1>
             </div>
-            <div className="col-xs-12  col-sm-4" style={{marginBottom: '100px'}}>
+            <div className="col-xs-12  col-sm-4" style={{ marginBottom: '100px' }}>
                 <Wrapper1 className="wrapper1">
-                  <Title1 className="title3"> 
+                  <Title1 className="title3">
                     Grados Escolares
                   </Title1>
                   <Par1 classTitle="par1">
-                    Instituto Ramiro Kolbe, es una institución privada que ofrece a niños y adolescentes una fórmula educativa de excelente nivel respaldados el Sistema SISEEKO.
+                    Instituto Ramiro Kolbe, es una institución privada que ofrece a niños y
+                    adolescentes una fórmula educativa de excelente nivel respaldados
+                    el Sistema SISEEKO.
                   </Par1>
                 </ Wrapper1>
-                <Button1 refs={"inscripcion"} classTitle="button1">
+                <Button1 refs="inscripcion" classTitle="button1">
                   FICHA DE INSCRIPCIÓN
                 </Button1>
-                <Button1 refs={"uniforme"} classTitle="button1">
+                <Button1 refs="uniforme" classTitle="button1">
                   UNIFORME
                 </Button1>
             </div>
           </div>
           <div className="row">
             <div className="col-xs-12 col-sm-6">
-              <ImageInsert url={"images/aboutus/inscripcion_preescolar.jpg"} classTitle={'image1'}/>
+              <ImageInsert url="images/aboutus/inscripcion_preescolar.jpg" classTitle="image1"/>
             </div>
             <div className="col-xs-12 col-sm-6">
               <Wrapper1 className="wrapper2">
@@ -175,7 +171,8 @@ export default class AboutUs extends Component {
                 <List1 classTitle="list2">
                   <li>Acta de nacimiento original y 3 copias.</li>
 
-                  <li>Última boleta de calificaciones o constancia de la escuela donde estudia actualmente, original y 3 copias.</li>
+                  <li>Última boleta de calificaciones o constancia de la escuela donde
+                  estudia actualmente, original y 3 copias.</li>
 
                   <li>Certificado de preescolar original y 3 copias<br />
                   (en caso de inscribir a 1º).</li>
@@ -199,7 +196,8 @@ export default class AboutUs extends Component {
                   Requisitos de edad para ingresar a los niveles de preescolar
                 </Title1>
                 <List1 classTitle="list3">
-                  <li className="first"> 6 años cumplidos al 31 de diciembre (con certificado de preescolar)</li>
+                  <li className="first"> 6 años cumplidos al 31 de diciembre
+                  (con certificado de preescolar)</li>
                 </List1>
               </Wrapper1>
             </div>
@@ -217,7 +215,8 @@ export default class AboutUs extends Component {
                 <List1 classTitle="list2">
                   <li>Acta de nacimiento original y 3 copias.</li>
 
-                  <li>Última boleta de calificaciones o constancia de la escuela donde estudia actualmente, original y 3 copias.</li>
+                  <li>Última boleta de calificaciones o constancia de la escuela
+                  donde estudia actualmente, original y 3 copias.</li>
 
                   <li>Certificado de primaria<br />
                   (en caso de inscribir a 1º) original y 3 copias.</li>
@@ -236,7 +235,7 @@ export default class AboutUs extends Component {
                   <li>Folio de traslado.</li>
 
                 </List1>
-                <Title1  className="title5">
+                <Title1 className="title5">
                   Sin constancia del grado anterior, el alumno no se puede inscribir
                 </Title1>
               </Wrapper1>
@@ -248,7 +247,8 @@ export default class AboutUs extends Component {
                   Horarios de Atención
                 </Title1>
                 <Par1 classTitle="par2">
-                  Estamos disponibles para atenderle de manera personal en cada uno de los planteles.
+                  Estamos disponibles para atenderle de manera personal en cada
+                  uno de los planteles.
                 </Par1>
                 <Par1 classTitle="par2">
                   Lunes a Viernes de 7:00 am a 3:00 pm.
@@ -257,13 +257,13 @@ export default class AboutUs extends Component {
                 <Par1 classTitle="par2">
                   Horarios de caja de 7:00 am a 2:00 pm.
                 </Par1>
-                
+
               </div>
               <div className="col-xs-12 col-sm-6">
                 <Title1 className="title7">
                   El proyecto
                 </Title1>
-                <ImageInsert url={"images/aboutus/inscripcion_pie.jpg"} classTitle={'image2'}/>
+                <ImageInsert url="images/aboutus/inscripcion_pie.jpg" classTitle="image2"/>
                 <Title1 className="title8">
                   Método Académico
                 </Title1>
