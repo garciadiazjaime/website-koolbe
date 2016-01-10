@@ -28,7 +28,7 @@ export default class AboutUs extends Component {
         <div className="container">
           <div className="row">
             <div className="col-xs-12">
-              <ImageInsert url={"images/proyectok/banner.jpg"} classTitle='image3' />
+              <ImageInsert url="images/proyectok/banner.jpg" classTitle='image3' />
             </div>          
           </div>
           <div className="row" style={{marginBottom: '50px'}}> 
@@ -116,7 +116,7 @@ export default class AboutUs extends Component {
           </div>
           <div className="row" style={{marginBottom: '180px'}}>
             <div className="col-xs-12 col-sm-6">
-              <ImageInsert url={"images/proyectok/slider/slide1.jpg"} classTitle={'image1'}/>
+              <ImageInsert url="images/proyectok/slider/slide1.jpg" classTitle='image1'/>
             </div>
             <div className="col-xs-12 col-sm-6">
               <Title1 className="title14">
@@ -150,7 +150,7 @@ export default class AboutUs extends Component {
           <div className="container">
             <div className="row">
               <div className="col-xs-12 col-sm-4 col-sm-offset-1">
-                <ImageInsert url={"images/proyectok/mrkolbe.png"} classTitle={'image4'}/>
+                <ImageInsert url="images/proyectok/mrkolbe.png" classTitle='image4'/>
                 <Title1 className="title17">
                   Oración a<br />
                   San Maximiliano Kolbe
@@ -161,7 +161,7 @@ export default class AboutUs extends Component {
                 </Par1>
               </div>
               <div className="col-xs-12 col-sm-4 col-sm-offset-2">
-                <ImageInsert url={"images/proyectok/escudo.png"} classTitle={'image4'}/>
+                <ImageInsert url="images/proyectok/escudo.png" classTitle='image4'/>
                 <Title1 className="title17">
                   Himno <br />
                   del Instituto

@@ -61,30 +61,30 @@ export default class AboutUs extends Component {
                   Niveles escolares
                 </Title1>
                 <div style={{marginBottom: '35px'}}>
-                  <Button1 refs={"preescolar"} classTitle="button3">
+                  <Button1 refs="preescolar" classTitle="button3">
                     Preescolar |&nbsp; 
                   </Button1>
-                  <Button1 refs={"primaria"} classTitle="button3">
+                  <Button1 refs="primaria" classTitle="button3">
                     Primaria |&nbsp;
                   </Button1>
                   <br />
-                  <Button1 refs={"secundaria"} classTitle="button3">
+                  <Button1 refs="secundaria" classTitle="button3">
                     Secundaria |&nbsp; 
                   </Button1>
-                  <Button1  refs={"preparatoria"} classTitle="button3">
+                  <Button1  refs="preparatoria" classTitle="button3">
                     Preparatoria
                   </Button1>
                 </div>
                 <div className="row">
                   <div className="col-xs-6">
-                    <Button1  refs={"contact"} classTitle="button4">
+                    <Button1  refs="contact" classTitle="button4">
                       Contáctanos
                     </Button1>
                   </div>
                 </div>
               </div>
               <div className="col-xs-6 col-sm-8">
-                <ImageInsert url={"images/aboutus/plantelBlue.jpg"} classTitle={'image1'}/>
+                <ImageInsert url="images/aboutus/plantelBlue.jpg" classTitle='image1'/>
               </div>
             </div>
           </div>
@@ -119,17 +119,17 @@ export default class AboutUs extends Component {
                     Instituto Ramiro Kolbe, es una institución privada que ofrece a niños y adolescentes una fórmula educativa de excelente nivel respaldados el Sistema SISEEKO.
                   </Par1>
                 </ Wrapper1>
-                <Button1 refs={"inscripcion"} classTitle="button1">
+                <Button1 refs="inscripcion" classTitle="button1">
                   FICHA DE INSCRIPCIÓN
                 </Button1>
-                <Button1 refs={"uniforme"} classTitle="button1">
+                <Button1 refs="uniforme" classTitle="button1">
                   UNIFORME
                 </Button1>
             </div>
           </div>
           <div className="row">
             <div className="col-xs-12 col-sm-6">
-              <ImageInsert url={"images/aboutus/inscripcion_preescolar.jpg"} classTitle={'image1'}/>
+              <ImageInsert url="images/aboutus/inscripcion_preescolar.jpg" classTitle='image1'/>
             </div>
             <div className="col-xs-12 col-sm-6">
               <Wrapper1 className="wrapper2">
@@ -263,7 +263,7 @@ export default class AboutUs extends Component {
                 <Title1 className="title7">
                   El proyecto
                 </Title1>
-                <ImageInsert url={"images/aboutus/inscripcion_pie.jpg"} classTitle={'image2'}/>
+                <ImageInsert url="images/aboutus/inscripcion_pie.jpg" classTitle='image2'/>
                 <Title1 className="title8">
                   Método Académico
                 </Title1>
