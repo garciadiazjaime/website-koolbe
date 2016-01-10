@@ -2,9 +2,14 @@
 
 .contact {
   margin-top: 40px;
+  margin-bottom: 60px;
   padding: 0 52px 40px 52px;
 
   @media #{$isTablet} {
+    padding: 0;
+  }
+
+  @media #{$isPhone} {
     padding: 0;
   }
 
@@ -29,6 +34,10 @@
 .form {
   margin-top: -10px;
 
+  @media #{$isPhone} {
+    margin-top: 10px;
+  }
+
   label {
     font-family: $fontALigth;
     font-size: 14px;
@@ -41,6 +50,10 @@
     border: none;
     width: 100%;
     height: 30px;
+
+    @media #{$isPhone} {
+      margin-left: 0;
+    }
   }
 
   textarea {
@@ -73,6 +86,10 @@
   margin-bottom: 40px;
   margin-right: 30px;
 
+  @media #{$isPhone} {
+    margin-right: 0;
+  }
+
   h2 {
     margin-top: 0;
     border-bottom: 1px solid $grayLight;
@@ -99,6 +116,10 @@
   height: 1px;
   background-color: $blueLight;
   margin: 30px 15px 0px 15px;
+
+  @media #{$isPhone} {
+    margin: 0 15px;
+  }
 }
 
 .santafeColor {

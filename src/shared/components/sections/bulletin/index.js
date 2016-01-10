@@ -30,10 +30,13 @@ export default class ExtraescolaresSection extends React.Component {
       const files = place.extra.map((item, index2) => {
         return (<li key={index2}>
           <h3>
-            <i className="glyphicon glyphicon-file" aria-hidden="true" ></i>
+            <i className="glyphicon glyphicon-file" aria-hidden="true"></i>
             {item.title}
+            <span dangerouslySetInnerHTML={this.sanitize(place.title)} className="visible-xs" />
           </h3>
-          <Link to={item.url} style={place.styleLink}>descargar</Link>
+          <Link to={item.url} style={place.styleLink}>
+            <span>descargar</span>
+          </Link>
         </li>);
       });
 

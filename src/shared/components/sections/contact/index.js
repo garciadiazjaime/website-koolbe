@@ -31,7 +31,7 @@ export default class Contact extends React.Component {
         <div className="col-sm-5">
           {places}
         </div>
-        <div className="col-sm-7">
+        <div className="col-sm-7 hidden-xs">
           <div style={this.state.locations[this.state.location]} className="img-responsive"></div>
         </div>
       </div>);
@@ -49,7 +49,7 @@ export default class Contact extends React.Component {
           <h1>Contáctanos</h1>
           <hr />
           <Intro />
-
+          <br className="visible-xs" />
           <h1>Planteles</h1>
           <hr />
           { this.getLocations(menuData.tmp) }
