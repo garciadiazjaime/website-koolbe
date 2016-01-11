@@ -17,12 +17,16 @@
 }
 .wrapper4{
   padding: 35px 15px 40px;
-  margin-bottom: 0;
+  margin-bottom: -20px;
   @include linear-gradient(to left, $blueMedium 50%, $green 50.1%);
 }
 @media screen and (max-width: 400px){
 	.wrapper2{
     padding: 30px 20px 30px;
 	}
+  .wrapper4{
+    background-image: none; 
+    background-color: $blueMedium;
+  }
 }
 

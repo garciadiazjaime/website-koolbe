@@ -3,7 +3,7 @@
 import React, { Component, PropTypes} from 'react';
 import _ from 'lodash';
 
-
+var style = process.env.NODE_ENV === 'DEV' ? require("./style.scss") : {};
 
 import Button1 from '../../elements/buttons/button1';
 
@@ -32,7 +32,7 @@ export default class AboutUs extends Component {
             </div>          
           </div>
           <div className="row" style={{marginBottom: '50px'}}> 
-            <div className="col-xs-12 col-sm-6">
+            <div className="col-xs-12 col-sm-5 col-sm-offset-1">
               <Title1 className="title10">
                 El proyecto Kolbe
               </Title1>
@@ -45,7 +45,7 @@ export default class AboutUs extends Component {
                 De esta manera y gracias a al apoyo de un grupo de inversionistas, inicia el reclutamiento de un muy valioso equipo docente y administrativo, así como el diseño y estructuración del Sistema Educativo y Editorial Kolbe (SISEEKO).
               </Par1>
             </div>
-            <div className="col-xs-12 col-sm-6" style={{marginTop: '110px'}}>
+            <div className={"col-xs-12 col-sm-5 " + style.vAligner }>
               <Title1 className="title8">
                 “No olviden el amor, hay que educar a quienes puedan ayudar a los necesitados”. 
               </Title1>
@@ -87,7 +87,7 @@ export default class AboutUs extends Component {
                 Para mayor información de horarios y costos comunicarse a las oficinas de cada plantel.
               </Par1>
               <div className="row" style={{marginTop: '45px'}}>
-                <div className="col-xs-12 col-sm-6">
+                <div className="col-xs-12 col-sm-7">
                   <Button1 refs="contact" classTitle="button2">
                     Contáctanos
                   </Button1>
@@ -114,7 +114,7 @@ export default class AboutUs extends Component {
               </List1>
             </div>
           </div>
-          <div className="row" style={{marginBottom: '180px'}}>
+          <div className={"row "+ style.bottom180} >
             <div className="col-xs-12 col-sm-6">
               <ImageInsert url="images/proyectok/slider/slide1.jpg" classTitle='image1'/>
             </div>

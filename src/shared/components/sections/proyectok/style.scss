@@ -1,0 +1,18 @@
+@import '../../../constants';
+
+.vAligner{
+	margin-top: 100px;
+}
+.bottom180{
+	margin-bottom: 180px;
+}
+
+@media screen and (max-width: 400px){
+	.vAligner{
+		margin-top: 30px;
+	}
+	.bottom180{
+		margin-bottom: 30px;
+	}
+}
+
