@@ -1,8 +1,4 @@
-'use strict';
-
-import React, { Component, PropTypes} from 'react';
-import _ from 'lodash';
-
+import React, { Component } from 'react';
 
 import Button1 from '../../elements/buttons/button1';
 import Button2 from '../../elements/buttons/button2';
@@ -15,11 +11,9 @@ import Hr1 from '../../elements/misc/hr1';
 import Par from '../../elements/paragraphs/paragraph1';
 
 
-
 export default class AboutUs extends Component {
 
   render() {
-
     return (
       <div>
         <Button1 refs="http://www.google.com" classTitle="button1">
