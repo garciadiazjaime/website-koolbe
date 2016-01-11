@@ -6,13 +6,15 @@
   "scripts": {
     "test": "npm run lint",
     "clean": "rm -rf lib",
-    "watch-js": "./node_modules/.bin/babel src --out-dir lib",
+    "watch-js": "./node_modules/.bin/babel src --out-dir lib -D",
     "dev-server": "node lib/server/webpack",
     "server": "./node_modules/.bin/nodemon lib/server/server",
-    "start": "npm run watch-js & npm run dev-server & npm run server",
+    "dev": "npm run watch-js & npm run dev-server & npm run server",
+    "start": "node lib/server/server.js",
     "build": "npm run clean && ./node_modules/.bin/babel src -d lib --experimental",
     "sprites": "./node_modules/.bin/gulp build:sprites",
-    "lint": "./node_modules/.bin/eslint --ignore-pattern **/app-*.js, **/**/sprite.js --ext .js,.jsx src"
+    "lint": "./node_modules/.bin/eslint --ignore-pattern **/app-*.js, **/**/sprite.js --ext .js,.jsx src",
+    "deploy": "NODE_ENV=production webpack -p --config webpack.config.prod.js"
   },
   "author": "",
   "license": "ISC",

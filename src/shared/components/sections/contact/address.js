@@ -23,16 +23,16 @@ export default class Address extends React.Component {
         <h2 className={classes[data.id]} onClick={this.changeLoc} id={data.id}>{data.title}</h2>
 
         <div className="row">
-          <div className="col-sm-1">
+          <div className="col-sm-1 col-xs-1">
             <i>m</i>
           </div>
-          <div className="col-sm-10">
+          <div className="col-sm-10 col-xs-10">
             {data.location}
           </div>
         </div>
 
         <div className="row">
-          <div className="col-sm-offset-1 col-sm-11">
+          <div className="col-sm-offset-1 col-sm-11 col-xs-11 col-xs-offset-1">
             <a href={data.gmaps} className={classes[data.id]} target="_blank">
               Ver en Google Maps
             </a>
@@ -40,10 +40,10 @@ export default class Address extends React.Component {
         </div>
 
         <div className="row">
-          <div className="col-sm-1">
+          <div className="col-sm-1 col-xs-1">
             <i>t</i>
           </div>
-          <div className="col-sm-10">
+          <div className="col-sm-10 col-xs-10">
             {data.tels}
           </div>
         </div>

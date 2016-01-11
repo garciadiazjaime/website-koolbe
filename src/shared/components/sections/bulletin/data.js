@@ -26,7 +26,7 @@ module.exports = [{
     url: '#',
   }],
 }, {
-  title: 'OTAY',
+  title: '&nbsp;&nbsp;&nbsp;&nbsp;OTAY',
   styleTile: {
     color: Constants.red,
   },
@@ -48,7 +48,7 @@ module.exports = [{
     url: '#',
   }],
 }, {
-  title: 'PRESIDENTES',
+  title: '&nbsp;&nbsp;&nbsp;&nbsp;PRESIDENTES',
   styleTile: {
     color: Constants.green,
   },
