@@ -6,10 +6,10 @@
   "scripts": {
     "test": "npm run lint",
     "clean": "rm -rf lib",
-    "watch-js": "./node_modules/.bin/babel src --out-dir lib -D",
+    "babel": "./node_modules/.bin/babel src --out-dir lib -D",
     "dev-server": "node lib/server/webpack",
     "server": "./node_modules/.bin/nodemon lib/server/server",
-    "dev": "npm run watch-js & npm run dev-server & npm run server",
+    "dev": "npm run babel & npm run dev-server & npm run server",
     "start": "node lib/server/server.js",
     "build": "npm run clean && ./node_modules/.bin/babel src -d lib --experimental",
     "sprites": "./node_modules/.bin/gulp build:sprites",

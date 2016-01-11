@@ -1,13 +1,9 @@
-'use strict';
+import React from 'react';
+const style = process.env.NODE_ENV === 'DEV' ? require('./style.scss') : {};
 
-import React, { Component, PropTypes} from 'react';
-import { Link } from 'react-router';
-import _ from 'lodash';
-
-
-var style = process.env.NODE_ENV === 'DEV' ? require("./style.scss") : {};
 
 export default class Title1 extends React.Component {
+
   render() {
     return (
       <h1 className={style[this.props.className]}>
@@ -16,3 +12,8 @@ export default class Title1 extends React.Component {
     );
   }
 }
+
+Title1.propTypes = {
+  children: React.PropTypes.object,
+  className: React.PropTypes.string,
+};
