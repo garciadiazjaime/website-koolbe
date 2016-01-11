@@ -12,7 +12,7 @@ import Hr1 from '../../elements/misc/hr1';
 
 import ImageInsert from '../../elements/images/image';
 
-import List1 from '../../elements/lists/list1';
+import List1 from '../../elements/lists/list1'; 
 
 import Par1 from '../../elements/paragraphs/paragraph1';
 
