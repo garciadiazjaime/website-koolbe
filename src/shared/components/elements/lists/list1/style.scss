@@ -47,6 +47,17 @@
   li:last-child{
     margin-bottom: 0;
   }
+  a{
+    color: $blueLight; 
+    font-family: $fontABold;
+    &:hover{
+      color: $blueMedium;
+      text-decoration: none;
+    }
+  }
+  strong{
+    font-family: $fontABold;
+  }
 }
 
 .list3{

@@ -23,6 +23,52 @@ export default class AboutUs extends Component {
     this.clickHandler = this.clickHandler.bind(this);
   }
 
+  getPrepa() {
+    const plantelImages = sectionData[this.state.selectedPlace].images;
+    if (sectionData[this.state.selectedPlace].title === 'Santa Fé') {
+      return (
+        <div>
+          <div className="row">
+          <div className="col-xs-12 col-sm-6">
+            <Image url={plantelImages.preparatoria} classTitle="image1" />
+          </div>
+          <div className="col-xs-12 col-sm-6">
+            <Wrapper1 className="wrapper2">
+              <Title1 className="title4">
+                Documentación
+              </Title1>
+              <List1 classTitle="list2">
+                <li>Acta de nacimiento original.</li>
+
+                <li>CURP</li>
+
+                <li>Certificado de nivel o semestre anterior.<br />
+                (Original y 2 copias de cada documento)</li>
+
+              </List1>
+              <Title1 className="title19">
+                PROCEDIMIENTO PARA LA REINSCRIPCIÓN AL COBACH
+              </Title1>
+              <Title1 className="title18">
+                (COLEGIO DE BACHILLERES DEL ESTADO DE B.C.):
+              </Title1>
+              <List1 classTitle="list2">
+                <li>
+                  En el periodo que previamente el Instituto le informe para realizar en línea su
+                  inscripción. Ingresando a la siguiente dirección electrónica: <br />
+                  <a href="http://www.cobach.edu.mx">www.cobach.edu.mx</a><br />
+                  opción <strong>“alumnos”</strong>, <strong>“reinscripción en línea”</strong>.
+                </li>
+              </List1>
+            </Wrapper1>
+          </div>
+        </div>
+
+        <Hr1 className="hr2" />
+      </div>);
+    }
+  }
+
   clickHandler(index) {
     this.setState({
       selectedPlace: index,
@@ -30,6 +76,8 @@ export default class AboutUs extends Component {
   }
 
   render() {
+    const plantelImages = sectionData[this.state.selectedPlace].images;
+
     return (
       <div>
 
@@ -77,7 +125,7 @@ export default class AboutUs extends Component {
           </div>
           <div className="row">
             <div className="col-xs-12 col-sm-6">
-              <Image url="images/aboutus/inscripcion_preescolar.jpg" classTitle="image1"/>
+              <Image url={plantelImages.preescolar} classTitle="image1" />
             </div>
             <div className="col-xs-12 col-sm-6">
               <Wrapper1 className="wrapper2">
@@ -114,7 +162,7 @@ export default class AboutUs extends Component {
 
           <div className="row">
             <div className="col-xs-12 col-sm-6">
-              <Image url="images/aboutus/inscripcion_primaria.jpg" classTitle="image1" />
+              <Image url={plantelImages.primaria} classTitle="image1" />
             </div>
             <div className="col-xs-12 col-sm-6">
               <Wrapper1 className="wrapper2">
@@ -160,7 +208,7 @@ export default class AboutUs extends Component {
 
           <div className="row">
             <div className="col-xs-12 col-sm-6">
-              <Image url="images/aboutus/inscripcion_secundaria.jpg" classTitle="image1" />
+              <Image url={plantelImages.secundaria} classTitle="image1" />
             </div>
             <div className="col-xs-12 col-sm-6">
               <Wrapper1 className="wrapper2">
@@ -198,6 +246,8 @@ export default class AboutUs extends Component {
           </div>
 
           <Hr1 className="hr2" />
+
+          {this.getPrepa()}
 
           <div className={'row ' + style.bottom20}>
             <div className="col-xs-12 col-sm-6">
