@@ -5,7 +5,15 @@
   margin: 0;
   padding-bottom: 14px;
   padding-top: 0;
-  backgroundcolor: #000;
+  background-color: #000;
+}
+.hr2{
+  border: none; 
+  height: 3px;
+  margin: 0;
+  padding-top: 0;
+  background-color: $blueLightest;
+  margin-bottom: 60px;
 }
 @media screen and (max-width: 400px){
 	.wrapper1{

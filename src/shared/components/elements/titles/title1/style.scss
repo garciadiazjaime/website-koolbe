@@ -35,6 +35,7 @@
   padding-bottom: 25px;
   text-transform: uppercase; 
   margin-bottom: 25px;
+  margin-top: 0;
   border-bottom: 4px solid $blueMedium;
   &::before {
     content: "";
@@ -46,7 +47,7 @@
     background-size: 43px 39px;
     position: absolute;
     left: 40px;  
-    top: 45px;
+    top: 27px;
   }
 }
 .title4 {
@@ -60,6 +61,7 @@
   font-family: $fontBBold;
   color: $red;
   font-size: 15px;
+  margin-top: 22px;
 }
 .title6 {
   font-family: $fontBBold;
@@ -128,6 +130,7 @@
   font-family: $fontBBold;
   color: $blueMedium;
   font-size: 25px;
+  margin-bottom: 0;
 }
 
 .title15 {
@@ -137,6 +140,7 @@
   margin-bottom: 34px;
   text-transform: uppercase;
   margin-bottom: 34px;
+  margin-top: 0;
 }
 
 .title16 {
@@ -153,10 +157,13 @@
   margin-bottom: 28px;
 }
 @media screen and (max-width: 400px){
-  title1 {
+  .title1 {
     font-size: 20px;
     margin-top: 0;
     margin-bottom: 15px;
+  }
+  .title6 {
+    font-size: 22px;
   }
 }
 
