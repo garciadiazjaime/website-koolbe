@@ -1,19 +1,25 @@
-'use strict';
-
-import React, { Component, PropTypes} from 'react';
+import React from 'react';
 import { Link } from 'react-router';
-import _ from 'lodash';
+const style = process.env.NODE_ENV === 'DEV' ? require('./style.scss') : {};
 
-
-var style = process.env.NODE_ENV === 'DEV' ? require("./style.scss") : {};
 
 export default class Button1 extends React.Component {
 
   render() {
+    // todo: let's use className and href instead of classTitle/refs
     return (
-      <a className={style[this.props.classTitle]} href={this.props.refs}>
+      <Link className={style[this.props.classTitle]} to={this.props.refs}>
         {this.props.children}
-      </a>
+      </Link>
     );
   }
 }
+
+Button1.propTypes = {
+  children: React.PropTypes.oneOfType([
+    React.PropTypes.array,
+    React.PropTypes.string,
+  ]),
+  classTitle: React.PropTypes.string,
+  refs: React.PropTypes.string.isRequired,
+};

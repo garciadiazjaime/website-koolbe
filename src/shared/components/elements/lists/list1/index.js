@@ -1,14 +1,11 @@
-'use strict';
+import React from 'react';
+const style = process.env.NODE_ENV === 'DEV' ? require('./style.scss') : {};
 
-import React, { Component, PropTypes} from 'react';
-import { Link } from 'react-router';
-import _ from 'lodash';
-
-
-var style = process.env.NODE_ENV === 'DEV' ? require("./style.scss") : {};
 
 export default class List1 extends React.Component {
+
   render() {
+    // todo: let's use className instead of classTitle
     return (
       <ul className={style[this.props.classTitle]}>
         {this.props.children}
@@ -16,3 +13,11 @@ export default class List1 extends React.Component {
     );
   }
 }
+
+List1.propTypes = {
+  children: React.PropTypes.oneOfType([
+    React.PropTypes.object,
+    React.PropTypes.array,
+  ]),
+  classTitle: React.PropTypes.string,
+};
