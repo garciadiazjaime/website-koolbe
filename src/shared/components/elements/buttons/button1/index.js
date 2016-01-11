@@ -16,7 +16,10 @@ export default class Button1 extends React.Component {
 }
 
 Button1.propTypes = {
-  children: React.PropTypes.object,
+  children: React.PropTypes.oneOfType([
+    React.PropTypes.array,
+    React.PropTypes.string,
+  ]),
   classTitle: React.PropTypes.string,
   refs: React.PropTypes.string.isRequired,
 };

@@ -14,6 +14,9 @@ export default class Wrapper1 extends React.Component {
 }
 
 Wrapper1.propTypes = {
-  children: React.PropTypes.array.isRequired,
+  children: React.PropTypes.oneOfType([
+    React.PropTypes.array.isRequired,
+    React.PropTypes.object,
+  ]),
   className: React.PropTypes.string,
 };

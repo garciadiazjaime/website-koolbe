@@ -12,5 +12,5 @@ export default class Hr1 extends React.Component {
 }
 
 Hr1.propTypes = {
-  className: React.PropTypes.object,
+  className: React.PropTypes.string,
 };

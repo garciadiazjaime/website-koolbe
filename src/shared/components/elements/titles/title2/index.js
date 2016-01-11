@@ -16,6 +16,6 @@ export default class Title2 extends React.Component {
 }
 
 Title2.propTypes = {
-  children: React.PropTypes.array.isRequired,
+  children: React.PropTypes.string.isRequired,
   className: React.PropTypes.string,
 };

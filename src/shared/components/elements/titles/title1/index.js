@@ -14,6 +14,9 @@ export default class Title1 extends React.Component {
 }
 
 Title1.propTypes = {
-  children: React.PropTypes.object,
+  children: React.PropTypes.oneOfType([
+    React.PropTypes.string,
+    React.PropTypes.array,
+  ]),
   className: React.PropTypes.string,
 };

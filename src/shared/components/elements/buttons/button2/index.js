@@ -1,24 +1,36 @@
 import React from 'react';
-import { Link } from 'react-router';
 const style = process.env.NODE_ENV === 'DEV' ? require('./style.scss') : {};
 
 
 export default class Button2 extends React.Component {
 
+  constructor(...args) {
+    super(...args);
+    this.clickHandler = this.clickHandler.bind(this);
+  }
+
+  clickHandler() {
+    this.props.onClick(this.props.index);
+  }
+
   render() {
-    // todo: why is "plantel" hardcoded ? cant' be insde children?
-    // todo: let's use className and href instead of classTitle/refs
+    // improve element to handle multiple cases eg- no onClick fn sent
+    const { className } = this.props;
     return (
-      <Link className={style[this.props.classTitle]} to={this.props.refs}>
-        <h2>Plantel</h2>
+      <a className={style[className]} onClick={this.clickHandler}>
         {this.props.children}
-      </Link>
+      </a>
     );
   }
 }
 
 Button2.propTypes = {
-  children: React.PropTypes.object,
-  classTitle: React.PropTypes.string,
-  refs: React.PropTypes.string.isRequired,
+  children: React.PropTypes.oneOfType([
+    React.PropTypes.array,
+    React.PropTypes.string,
+  ]),
+  className: React.PropTypes.string,
+  href: React.PropTypes.string,
+  onClick: React.PropTypes.func.isRequired,
+  index: React.PropTypes.number,
 };

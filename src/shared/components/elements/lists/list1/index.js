@@ -15,6 +15,9 @@ export default class List1 extends React.Component {
 }
 
 List1.propTypes = {
-  children: React.PropTypes.object,
+  children: React.PropTypes.oneOfType([
+    React.PropTypes.object,
+    React.PropTypes.array,
+  ]),
   classTitle: React.PropTypes.string,
 };

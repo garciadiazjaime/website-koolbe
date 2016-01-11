@@ -3,7 +3,7 @@ import { IndexRoute, Router, Route } from 'react-router';
 
 import AppHandler from './components/AppHandler';
 import HomeSection from './components/sections/home';
-import AboutUsSection from './components/sections/aboutus';
+import RegisterSection from './components/sections/register';
 import ContactSection from './components/sections/contact';
 import ProjectkSection from './components/sections/projectk';
 import ExtraSection from './components/sections/extra';
@@ -15,7 +15,7 @@ export default(
     <Route path="/" component={AppHandler}>
       <IndexRoute component={HomeSection} />
       <Route path="inicio" component={HomeSection} />
-      <Route path="inscripciones" component={AboutUsSection} />
+      <Route path="inscripciones" component={RegisterSection} />
       <Route path="proyecto-k" component={ProjectkSection} />
       <Route path="extraescolares" component={ExtraSection} />
       <Route path="boletines" component={BulletinSection} />
