@@ -25,7 +25,7 @@ export default class Extras extends Component {
       }, {
         type: 'link',
         text: 'Conóce más',
-        url: '#',
+        url: 'proyecto-k/somos-escuela-beo',
       }],
     }, {
       elements: [{
@@ -43,7 +43,7 @@ export default class Extras extends Component {
       }, {
         type: 'link',
         text: 'Conóce más',
-        url: '#',
+        url: 'extraescolares',
       }],
     }, {
       elements: [{
@@ -61,7 +61,7 @@ export default class Extras extends Component {
       }, {
         type: 'link',
         text: 'Conóce más',
-        url: '#',
+        url: 'proyecto-k/filosofia-religiosa',
       }],
     }];
   }

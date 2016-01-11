@@ -18,12 +18,12 @@ export default class Plantel extends Component {
         type: 'subtitle',
         text: ['plantel'],
       }, {
-        type: 'title',
+        type: 'link',
         text: ['SANTE FE'],
+        url: 'inscripciones/santa-fe',
       }, {
         type: 'description',
-        text: ['<a style={blancoE} href="tel:6649752237">(664) 975 2237</a> y ' +
-          '<a style={blancoE} href="tel:6649752268">68</a>', '<hr />'],
+        text: ['<span style={blancoE}>(664) 975 2237 y 68</span>', '<hr />'],
         style: {
           fontFamily: Constants.fontABold,
           fontSize: '18px',
@@ -52,11 +52,12 @@ export default class Plantel extends Component {
         type: 'subtitle',
         text: ['plantel'],
       }, {
-        type: 'title',
+        type: 'link',
         text: ['OTAY'],
+        url: 'inscripciones/otay',
       }, {
         type: 'description',
-        text: ['<a style={blancoE} href="tel:6646244310">(664) 624 4310</a>', '<hr />'],
+        text: ['<span style={blancoE}>(664) 624 4310</span>', '<hr />'],
         style: {
           fontFamily: Constants.fontABold,
           fontSize: '18px',
@@ -85,11 +86,12 @@ export default class Plantel extends Component {
         type: 'subtitle',
         text: ['plantel'],
       }, {
-        type: 'title',
+        type: 'link',
         text: ['PRESIDENTES'],
+        url: 'inscripciones/presidentes',
       }, {
         type: 'description',
-        text: ['<a style={blancoE} href="tel:6649783220">(664) 978 3220</a>', '<hr />'],
+        text: ['<span style={blancoE}>(664) 978 3220</span>', '<hr />'],
         style: {
           fontFamily: Constants.fontABold,
           fontSize: '18px',

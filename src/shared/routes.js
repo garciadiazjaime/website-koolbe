@@ -16,7 +16,14 @@ export default(
       <IndexRoute component={HomeSection} />
       <Route path="inicio" component={HomeSection} />
       <Route path="inscripciones" component={RegisterSection} />
+        <Route path="inscripciones/santa-fe" component={RegisterSection} />
+        <Route path="inscripciones/otay" component={RegisterSection} />
+        <Route path="inscripciones/presidentes" component={RegisterSection} />
+
       <Route path="proyecto-k" component={ProjectkSection} />
+        <Route path="proyecto-k/somos-escuela-beo" component={ProjectkSection} />
+        <Route path="proyecto-k/filosofia-religiosa" component={ProjectkSection} />
+
       <Route path="extraescolares" component={ExtraSection} />
       <Route path="boletines" component={BulletinSection} />
       <Route path="contacto" component={ContactSection} />
