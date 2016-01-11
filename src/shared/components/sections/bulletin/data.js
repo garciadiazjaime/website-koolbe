@@ -23,7 +23,7 @@ module.exports = [{
   }],
   extra: [{
     title: 'Ficha de Inscripción',
-    url: '#',
+    url: '/pdfs/santafe/ficha-Inscripcion.pdf',
   }],
 }, {
   title: '&nbsp;&nbsp;&nbsp;&nbsp;OTAY',
@@ -45,7 +45,7 @@ module.exports = [{
   }],
   extra: [{
     title: 'Ficha de Inscripción',
-    url: '#',
+    url: '/pdfs/otay/ficha-Inscripcion.pdf',
   }],
 }, {
   title: '&nbsp;&nbsp;&nbsp;&nbsp;PRESIDENTES',
@@ -67,6 +67,6 @@ module.exports = [{
   }],
   extra: [{
     title: 'Ficha de Inscripción',
-    url: '#',
+    url: '/pdfs/presidentes/ficha-Inscripcion.pdf',
   }],
 }];

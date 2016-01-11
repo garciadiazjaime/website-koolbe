@@ -16,16 +16,35 @@ export default(
       <IndexRoute component={HomeSection} />
       <Route path="inicio" component={HomeSection} />
       <Route path="inscripciones" component={RegisterSection} />
+        <Route path="inscripciones/planteles" component={RegisterSection} />
+        <Route path="inscripciones/grados" component={RegisterSection} />
+        <Route path="inscripciones/requisitos" component={RegisterSection} />
+        <Route path="inscripciones/uniformes" component={RegisterSection} />
+
         <Route path="inscripciones/santa-fe" component={RegisterSection} />
         <Route path="inscripciones/otay" component={RegisterSection} />
         <Route path="inscripciones/presidentes" component={RegisterSection} />
 
       <Route path="proyecto-k" component={ProjectkSection} />
         <Route path="proyecto-k/somos-escuela-beo" component={ProjectkSection} />
+        <Route path="proyecto-k/mision-vision" component={ProjectkSection} />
         <Route path="proyecto-k/filosofia-religiosa" component={ProjectkSection} />
+        <Route path="proyecto-k/metas" component={ProjectkSection} />
+        <Route path="proyecto-k/ideario" component={ProjectkSection} />
+        <Route path="proyecto-k/valores" component={ProjectkSection} />
+        <Route path="proyecto-k/oracion" component={ProjectkSection} />
+        <Route path="proyecto-k/himno" component={ProjectkSection} />
 
       <Route path="extraescolares" component={ExtraSection} />
+        <Route path="extraescolares/actividades-deportivas" component={ExtraSection} />
+        <Route path="extraescolares/actividades-artisticas" component={ExtraSection} />
+        <Route path="extraescolares/areas-conocmiento" component={ExtraSection} />
+
       <Route path="boletines" component={BulletinSection} />
+        <Route path="boletines/santa-fe" component={BulletinSection} />
+        <Route path="boletines/otay" component={BulletinSection} />
+        <Route path="boletines/presidentes" component={BulletinSection} />
+
       <Route path="contacto" component={ContactSection} />
     </Route>
   </Router>

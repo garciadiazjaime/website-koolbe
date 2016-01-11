@@ -16,7 +16,7 @@ export default class Activities extends React.Component {
     }, {
       elements: [{
         type: 'link',
-        url: 'contactanos',
+        url: 'contacto',
         text: 'Contáctanos',
       }],
     }];

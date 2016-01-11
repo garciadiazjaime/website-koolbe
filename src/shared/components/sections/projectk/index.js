@@ -94,7 +94,7 @@ export default class AboutUs extends Component {
               </Par1>
               <div className="row" style={{ marginTop: '45px' }}>
                 <div className="col-xs-12 col-sm-7">
-                  <Button1 refs="contact" classTitle="button2">
+                  <Button1 refs="contacto" classTitle="button2">
                     Contáctanos
                   </Button1>
                 </div>
