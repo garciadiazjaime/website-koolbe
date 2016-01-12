@@ -5,6 +5,10 @@
 .bottom180 {
   margin-bottom: 180px;
 }
+.right.carousel-control {
+	background-image: none;
+	background: #000;
+}
 @media screen and (max-width: 400px) {
   .vAligner {
     margin-top: 30px;
