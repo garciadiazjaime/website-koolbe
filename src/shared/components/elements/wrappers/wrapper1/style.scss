@@ -19,6 +19,11 @@
   margin-bottom: -20px;
   @include linear-gradient(to left, $blueMedium 50%, $green 50.1%);
 }
+.wrapper5{
+  background: $blueMedium;
+  padding: 35px 15px 40px;
+  margin-bottom: 68px;
+}
 @media screen and (max-width: 400px){
 	.wrapper2{
     padding: 30px 20px 30px;
