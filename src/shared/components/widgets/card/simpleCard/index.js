@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import _ from 'lodash';
 
+/*eslint-disable */
+import Par1 from '../../../../components/elements/paragraphs/paragraph1';
+import Title1 from '../../../../components/elements/titles/title1';
+/*eslint-enable */
 
 export default class SimpleCard extends Component {
 
@@ -65,6 +69,29 @@ export default class SimpleCard extends Component {
     return null;
   }
 
+  getCustomComponent(element) {
+    switch (element) {
+      case 'Title1':
+        return Title1;
+      case 'Par1':
+        return Par1;
+      default:
+        return null;
+    }
+  }
+
+  getCustom(data, index) {
+    const { element, className, text } = data;
+    const CustomComponent = this.getCustomComponent(element);
+
+    if (CustomComponent) {
+      return (<CustomComponent className={className} classTitle={className} key={index}>
+          {text}
+        </CustomComponent>);
+    }
+    return null;
+  }
+
   sanitize(value) {
     return {
       __html: value,
@@ -92,6 +119,8 @@ export default class SimpleCard extends Component {
             return this.getSprite(item, index);
           case 'IMAGE':
             return this.getImage(item, index);
+          case 'CUSTOM':
+            return this.getCustom(item, index);
           default:
             return null;
         }

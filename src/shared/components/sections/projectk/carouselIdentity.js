@@ -1,16 +1,31 @@
-import _ from 'lodash';
-
-const slideStyle = {
-  backgroundSize: 'cover',
-  height: '350px',
-};
 
 module.exports = {
   meta: {
     id: 'slide-projectk-images',
-    style: {},
-    arrowLeft: '',
-    arrowRight: '',
+    style: {
+      backgroundImage: 'none',
+      height: '50px',
+      width: '50px',
+      color: '',
+      textShadow: 'none',
+      opacity: '1',
+      top: '50%',
+      transform: 'translateY(-50%)',
+    },
+    arrowLeft: {
+      width: '0',
+      height: '0',
+      borderTop: '20px solid transparent',
+      borderBottom: '20px solid transparent',
+      borderRight: '20px solid white',
+    },
+    arrowRight: {
+      width: '0',
+      height: '0',
+      borderTop: '20px solid transparent',
+      borderBottom: '20px solid transparent',
+      borderLeft: '20px solid white',
+    },
     indicators: {},
     showControl: false,
     showIndicators: true,
@@ -19,10 +34,25 @@ module.exports = {
   classes: {},
   slides: [{
     wrapper: {
-      style: _.merge({}, slideStyle, {
-        backgroundImage: "url('images/home/proyectok/slider/slide1.jpg')",
-      }),
     },
-    card: {},
+    wrapperInner: {
+      style: {
+        width: 'auto',
+      },
+    },
+    card: {
+      elements: [{
+        type: 'custom',
+        element: 'Title1',
+        className: 'title11',
+        text: 'Visión',
+      }, {
+        type: 'custom',
+        element: 'Par1',
+        className: 'par4',
+        text: 'Desarrollamos en nuestro alumnado aptitudes de conocimiento académico,' +
+          'deportivo, artístico y cultural potenciando sus capacidades individuales.',
+      }],
+    },
   }],
 };

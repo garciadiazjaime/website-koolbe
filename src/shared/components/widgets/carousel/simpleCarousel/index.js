@@ -14,9 +14,10 @@ export default class SimpleCarousel extends Component {
       return slides.map((slide, index) => {
         const activeState = this.getActiveState(index);
         const itemClasses = 'item ' + activeState + ' ' + (classes.item || '');
+        const wrapperInner = slide.wrapperInner ? slide.wrapperInner.style : null;
 
         return (<div className={itemClasses} key={index} style={slide.wrapper.style}>
-            <div className="container">
+            <div className="container" style={wrapperInner}>
               <div className={classes.wrapperElement || ''}>
                 <SimpleCard data={slide.card} />
               </div>
