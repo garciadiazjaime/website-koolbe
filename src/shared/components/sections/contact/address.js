@@ -1,7 +1,7 @@
 import React from 'react';
 
 const style = process.env.NODE_ENV === 'DEV' ? require('./style.scss') : {};
-
+const Sprites = require('../../../sprite');
 
 export default class Address extends React.Component {
 
@@ -24,7 +24,7 @@ export default class Address extends React.Component {
 
         <div className="row">
           <div className="col-sm-1 col-xs-1">
-            <i>m</i>
+            <div style={Sprites.General.Location}></div>
           </div>
           <div className="col-sm-10 col-xs-10">
             {data.location}
@@ -41,10 +41,12 @@ export default class Address extends React.Component {
 
         <div className="row">
           <div className="col-sm-1 col-xs-1">
-            <i>t</i>
+            <div style={Sprites.General.Phone}></div>
           </div>
           <div className="col-sm-10 col-xs-10">
+            <div style={{ marginTop: '3px' }}>
             {data.tels}
+            </div>
           </div>
         </div>
 

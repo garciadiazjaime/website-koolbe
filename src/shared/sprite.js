@@ -76,6 +76,13 @@ module.exports = {
         }
     },
     "General": {
+        "ArrowBluebck": {
+            "backgroundPosition": "-160px -46px",
+            "width": "20px",
+            "height": "20px",
+            "backgroundImage": "url('http://127.0.0.1:3030/images/sprites/sprite-general.png')",
+            "backgroundSize": "183px 143px"
+        },
         "Facebook": {
             "backgroundPosition": "-160px -0px",
             "width": "23px",
@@ -91,9 +98,16 @@ module.exports = {
             "backgroundSize": "183px 143px"
         },
         "FlechaSmall": {
-            "backgroundPosition": "-160px -46px",
+            "backgroundPosition": "-160px -118px",
             "width": "17px",
             "height": "17px",
+            "backgroundImage": "url('http://127.0.0.1:3030/images/sprites/sprite-general.png')",
+            "backgroundSize": "183px 143px"
+        },
+        "Location": {
+            "backgroundPosition": "-160px -66px",
+            "width": "15px",
+            "height": "26px",
             "backgroundImage": "url('http://127.0.0.1:3030/images/sprites/sprite-general.png')",
             "backgroundSize": "183px 143px"
         },
@@ -108,6 +122,13 @@ module.exports = {
             "backgroundPosition": "-0px -0px",
             "width": "160px",
             "height": "75px",
+            "backgroundImage": "url('http://127.0.0.1:3030/images/sprites/sprite-general.png')",
+            "backgroundSize": "183px 143px"
+        },
+        "Phone": {
+            "backgroundPosition": "-160px -92px",
+            "width": "15px",
+            "height": "26px",
             "backgroundImage": "url('http://127.0.0.1:3030/images/sprites/sprite-general.png')",
             "backgroundSize": "183px 143px"
         }

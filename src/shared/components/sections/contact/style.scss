@@ -83,7 +83,7 @@
   font-family: $fontALigth;
   color: $grayDark;
   font-size: 14px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   margin-right: 30px;
 
   @media #{$isPhone} {
@@ -100,7 +100,7 @@
     position: relative;
     cursor: pointer;
 
-    @extend .arrow
+    @extend .arrowBlueBck
   }
 
   a {
@@ -132,6 +132,30 @@
 
 .presidentesColor {
   color: $green;
+}
+
+.santafeBackground {
+  background-color: $blueMedium;
+}
+
+.otayBackground {
+  background-color: $red;
+}
+
+.presidentesBackground {
+  background-color: $green;
+}
+
+.locationTitle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: $fontBBold;
+  font-size: 16px;
+  color: $white;
+  margin-left: 15px;
+  width: 180px;
+  padding: 8px 0 8px 30px;
 }
 
 .errorCSSClass {
