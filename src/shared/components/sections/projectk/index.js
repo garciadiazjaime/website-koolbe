@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
 
+const style = process.env.NODE_ENV === 'DEV' ? require('./style.scss') : {};
+
+import SimpleCarousel from '../../widgets/carousel/simpleCarousel';
+
+import carouselImagesData from './carouselImages';
+
 import Button1 from '../../elements/buttons/button1';
 import ImageInsert from '../../elements/images/image';
 import List1 from '../../elements/lists/list1';
@@ -7,7 +13,6 @@ import Par1 from '../../elements/paragraphs/paragraph1';
 import Title1 from '../../elements/titles/title1';
 import Wrapper1 from '../../elements/wrappers/wrapper1';
 
-const style = process.env.NODE_ENV === 'DEV' ? require('./style.scss') : {};
 
 import scrollHelper from '../../../utils/scroll';
 
@@ -132,7 +137,7 @@ export default class ProjectK extends Component {
           </div>
           <div className={'row ' + style.bottom180} >
             <div className="col-xs-12 col-sm-6">
-              <ImageInsert url="images/proyectok/slider/slide1.jpg" classTitle={'image1'}/>
+              <SimpleCarousel data={carouselImagesData} />
             </div>
             <div className="col-xs-12 col-sm-6">
               <Title1 className="title14">

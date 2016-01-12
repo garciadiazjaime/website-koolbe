@@ -79,7 +79,7 @@ export default class SimpleCarousel extends Component {
   render() {
     const { data } = this.props;
     const { slides, meta } = data;
-    const { sliderID } = data.meta;
+    const sliderID = data.meta.id;
 
     const slidesEl = this.getSlides(slides, data.classes);
     const controlsEl = meta.showControl !== false ? this.getControls(meta, meta.id) : null;
