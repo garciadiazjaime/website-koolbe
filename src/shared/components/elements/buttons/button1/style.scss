@@ -40,6 +40,10 @@
     right: 13px;
     top: 50%;
   }
+
+  @media screen and (max-width: 400px){
+  	margin-bottom: 15px;
+  }
 }
 .button2{
   @extend .button1;
@@ -48,14 +52,14 @@
     transform: translate(-100%, -75%);
     border-top: 4px solid transparent;
     border-bottom: 4px solid transparent;
-    border-left: 4px solid $blueDark;
+    border-left: 4px solid $blueMedium;
     right: 3px;
   }
 }
 
 .button3{
   color: white;
-  font: fontA;
+  font-family: $fontA;
   font-size: 12px;
   display: inline-block;
   cursor: pointer;
@@ -72,16 +76,33 @@
     margin-bottom: 15px;
   }
 }
+
 .button4{
   @extend .button2;
   background: none;
   margin-bottom: 20px;
+  font-size: 16px;
+
   &:hover{
     background: rgba(255, 255, 255, .3);
   }
 }
-@media screen and (max-width: 400px){
-	.button1{
-		margin-bottom: 15px;
-	}
+
+.button5{
+  font-family: $fontBBold;
+  font-size: 16px;
+  display: block;
+  color: $white;
+  padding: 10px 0;
+
+  @extend  .arrow;
+
+  &:after {
+    right: 40px;
+  }
+
+  &:hover {
+    color: $white;
+  }
+
 }

@@ -19,13 +19,18 @@ export default(
         <Route path="inscripciones/planteles" component={RegisterSection} />
         <Route path="inscripciones/grados" component={RegisterSection} />
         <Route path="inscripciones/requisitos" component={RegisterSection} />
-        <Route path="inscripciones/uniformes" component={RegisterSection} />
 
-        <Route path="inscripciones/santa-fe" component={RegisterSection} />
+        <Route path="inscripciones/preescolar" component={RegisterSection} />
+        <Route path="inscripciones/primaria" component={RegisterSection} />
+        <Route path="inscripciones/secundaria" component={RegisterSection} />
+        <Route path="inscripciones/preparatoria" component={RegisterSection} />
+
+
+        <Route path="inscripciones/santafe" component={RegisterSection} />
         <Route path="inscripciones/otay" component={RegisterSection} />
         <Route path="inscripciones/presidentes" component={RegisterSection} />
 
-      <Route path="proyecto-k" component={ProjectkSection} />
+        <Route path="proyecto-k" component={ProjectkSection} />
         <Route path="proyecto-k/somos-escuela-beo" component={ProjectkSection} />
         <Route path="proyecto-k/mision-vision" component={ProjectkSection} />
         <Route path="proyecto-k/filosofia-religiosa" component={ProjectkSection} />

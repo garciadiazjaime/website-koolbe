@@ -1,6 +1,7 @@
 const style = process.env.NODE_ENV === 'DEV' ? require('./style.scss') : {};
 
 module.exports = [{
+  id: 'santafe',
   title: 'Santa Fé',
   href: 'plantelSantaFe',
   classes: {
@@ -15,20 +16,25 @@ module.exports = [{
     secundaria: 'images/aboutus/plantelBlue/secundaria.jpg',
     preparatoria: 'images/aboutus/plantelBlue/preparatoria.jpg',
   },
+  files: {
+    ficha: 'pdfs/santafe/ficha-Inscripcion.pdf',
+    uniforme: 'pdfs/uniforme.pdf',
+  },
   levels: [{
     title: 'Preescolar',
-    href: 'preescolar',
+    href: 'inscripciones/preescolar',
   }, {
-    title: 'Preescolar',
-    href: 'preescolar',
+    title: 'Primaria',
+    href: 'inscripciones/primaria',
   }, {
     title: 'Secundaria',
-    href: 'secundaria',
+    href: 'inscripciones/secundaria',
   }, {
     title: 'Preparatoria',
-    href: 'preparatoria',
+    href: 'inscripciones/preparatoria',
   }],
 }, {
+  id: 'otay',
   title: 'Otay',
   href: 'plantelOtay',
   classes: {
@@ -42,17 +48,22 @@ module.exports = [{
     primaria: 'images/aboutus/plantelRed/primaria.jpg',
     secundaria: 'images/aboutus/plantelRed/secundaria.jpg',
   },
+  files: {
+    ficha: 'pdfs/otay/ficha-Inscripcion.pdf',
+    uniforme: 'pdfs/uniforme.pdf',
+  },
   levels: [{
     title: 'Preescolar',
-    href: 'preescolar',
+    href: 'inscripciones/preescolar',
   }, {
-    title: 'Preescolar',
-    href: 'preescolar',
+    title: 'Primaria',
+    href: 'inscripciones/primaria',
   }, {
     title: 'Secundaria',
-    href: 'secundaria',
+    href: 'inscripciones/secundaria',
   }],
 }, {
+  id: 'presidentes',
   title: 'Presidentes',
   href: 'plantelPresidentes',
   classes: {
@@ -66,14 +77,18 @@ module.exports = [{
     primaria: 'images/aboutus/plantelGreen/primaria.jpg',
     secundaria: 'images/aboutus/plantelGreen/secundaria.jpg',
   },
+  files: {
+    ficha: 'pdfs/presidentes/ficha-Inscripcion.pdf',
+    uniforme: 'pdfs/uniforme.pdf',
+  },
   levels: [{
     title: 'Preescolar',
-    href: 'preescolar',
+    href: 'inscripciones/preescolar',
   }, {
-    title: 'Preescolar',
-    href: 'preescolar',
+    title: 'Primaria',
+    href: 'inscripciones/primaria',
   }, {
     title: 'Secundaria',
-    href: 'secundaria',
+    href: 'inscripciones/secundaria',
   }],
 }];

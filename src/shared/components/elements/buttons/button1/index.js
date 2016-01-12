@@ -7,11 +7,13 @@ export default class Button1 extends React.Component {
 
   render() {
     // todo: let's use className and href instead of classTitle/refs
-    return (
-      <Link className={style[this.props.classTitle]} to={this.props.refs}>
+    return this.props.type === 'outside' ?
+      (<a className={style[this.props.classTitle]} href={this.props.refs} target="_blank">
         {this.props.children}
-      </Link>
-    );
+      </a>) :
+      (<Link className={style[this.props.classTitle]} to={this.props.refs}>
+        {this.props.children}
+      </Link>);
   }
 }
 
@@ -22,4 +24,5 @@ Button1.propTypes = {
   ]),
   classTitle: React.PropTypes.string,
   refs: React.PropTypes.string.isRequired,
+  type: React.PropTypes.string,
 };

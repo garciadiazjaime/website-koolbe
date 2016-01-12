@@ -134,7 +134,7 @@ export default class ProjectK extends Component {
             <div className="col-xs-12 col-sm-6">
               <ImageInsert url="images/proyectok/slider/slide1.jpg" classTitle={'image1'}/>
             </div>
-            <div className="col-xs-12 col-sm-6">
+            <div className="col-xs-12 col-sm-6" id="somos-escuela-beo">
               <Title1 className="title14">
                 Somos Escuela BEO
               </Title1>

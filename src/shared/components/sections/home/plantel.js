@@ -20,7 +20,7 @@ export default class Plantel extends Component {
       }, {
         type: 'link',
         text: ['SANTE FE'],
-        url: 'inscripciones/santa-fe',
+        url: 'inscripciones/santafe',
       }, {
         type: 'description',
         text: ['<span style={blancoE}>(664) 975 2237 y 68</span>', '<hr />'],
