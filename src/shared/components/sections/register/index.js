@@ -25,7 +25,7 @@ export default class Register extends Component {
 
   getPrepa() {
     const plantelImages = sectionData[this.state.selectedPlace].images;
-    if (sectionData[this.state.selectedPlace].title === 'Santa Fé') {
+    if (plantelImages.preparatoria) {
       return (
         <div>
           <div className="row">
