@@ -1,23 +1,31 @@
 import React from 'react';
-import { Link } from 'react-router';
 
 const style = process.env.NODE_ENV === 'DEV' ? require('./style.scss') : {};
 import dataFiles from './data';
 
+import scrollHelper from '../../../utils/scroll';
+
 
 export default class ExtraescolaresSection extends React.Component {
+
+  componentDidUpdate() {
+    /*eslint-disable */
+    const { location } = this.props;
+    /*eslint-enable */
+    scrollHelper(location);
+  }
 
   getFiles(data) {
     const places = data.map((place, index) => {
       const bulletines = place.bulletin.map((item, index2) => {
         return (<li key={index2}>
           <h3><i className="glyphicon glyphicon-file" aria-hidden="true"></i>{item.title}</h3>
-          <Link to={item.url} style={place.styleLink}>descargar</Link>
+          <a href={item.url} style={place.styleLink} target="_blank">descargar</a>
         </li>);
       });
 
       return (<div className="col-sm-4" key={index}>
-          <h2 style={place.styleTile}>
+          <h2 style={place.styleTile} id={place.id}>
             <span dangerouslySetInnerHTML={this.sanitize(place.title)} />
           </h2>
           <ul>
@@ -34,9 +42,9 @@ export default class ExtraescolaresSection extends React.Component {
             {item.title}
             <span dangerouslySetInnerHTML={this.sanitize(place.title)} className="visible-xs" />
           </h3>
-          <Link to={item.url} style={place.styleLink}>
+          <a href={item.url} style={place.styleLink} target="_blank">
             <span>descargar</span>
-          </Link>
+          </a>
         </li>);
       });
 

@@ -45,7 +45,7 @@ export default class Schedule extends React.Component {
         },
       }, {
         type: 'link',
-        url: 'contactanos',
+        url: 'contacto',
         text: 'Contáctanos',
       }],
     }];

@@ -7,8 +7,17 @@ import Activities from './activities';
 import Contact from './contact';
 import Schedule from './schedule';
 
+import scrollHelper from '../../../utils/scroll';
+
 
 export default class ExtraescolaresSection extends React.Component {
+
+  componentDidUpdate() {
+    /*eslint-disable */
+    const { location } = this.props;
+    /*eslint-enable */
+    scrollHelper(location);
+  }
 
   getCards() {
     return [{
@@ -29,6 +38,9 @@ export default class ExtraescolaresSection extends React.Component {
           <SimpleCard data={cards[0]} />
         </div>
         <Intro />
+        <span id="actividades-deportivas"></span>
+        <span id="actividades-artisticas"></span>
+        <span id="areas-conocmiento"></span>
         <div className={style.activities}>
           <Activities />
         </div>

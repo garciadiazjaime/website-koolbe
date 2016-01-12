@@ -60,7 +60,7 @@ export default class Header extends Component {
           {this.getLevels(item.levels)}
         </div>
         <div className="row">
-          <div className="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+          <div className="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-0">
             <Button1 refs="contact" classTitle="button4">
               Contáctanos
             </Button1>

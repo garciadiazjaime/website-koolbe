@@ -11,67 +11,68 @@ module.exports = {
     url: 'inscripciones',
     children: [{
       title: 'Planteles',
-      url: 'planteles',
+      url: 'inscripciones/planteles',
     }, {
       title: 'Grados',
-      url: 'grados',
+      url: 'inscripciones/grados',
     }, {
       title: 'Requisitos',
-      url: 'requisitos',
+      url: 'inscripciones/requisitos',
     }, {
       title: 'Uniformes',
-      url: 'uniformes',
+      url: 'pdfs/uniformes.pdf',
+      type: 'outside',
     }],
   }, {
     title: 'PROYECTO K',
     url: 'proyecto-k',
     children: [{
       title: 'Misión y Visión',
-      url: 'mision-vision',
+      url: 'proyecto-k/mision-vision',
     }, {
       title: 'Filosofía',
-      url: 'filosofia',
+      url: 'proyecto-k/filosofia-religiosa',
     }, {
       title: 'Metas',
-      url: 'metas',
+      url: 'proyecto-k/metas',
     }, {
       title: 'Ideario',
-      url: 'ideario',
+      url: 'proyecto-k/ideario',
     }, {
       title: 'Valores',
-      url: 'valores',
+      url: 'proyecto-k/valores',
     }, {
       title: 'Oración',
-      url: 'oracion',
+      url: 'proyecto-k/oracion',
     }, {
       title: 'Himno',
-      url: 'himno',
+      url: 'proyecto-k/himno',
     }],
   }, {
     title: 'Extraescolares',
     url: 'extraescolares',
     children: [{
       title: 'Actividades Deportivas',
-      url: 'actividades-deportivas',
+      url: 'extraescolares/actividades-deportivas',
     }, {
       title: 'Actividades Artisticas',
-      url: 'actividades-artisticas',
+      url: 'extraescolares/actividades-artisticas',
     }, {
       title: 'Áreas del conocmiento',
-      url: 'areas-conocmiento',
+      url: 'extraescolares/areas-conocmiento',
     }],
   }, {
     title: 'Boletines',
     url: 'boletines',
     children: [{
       title: 'Santa Fe',
-      url: 'santa-fe',
+      url: 'boletines/santa-fe',
     }, {
       title: 'Otay',
-      url: 'otay',
+      url: 'boletines/otay',
     }, {
       title: 'Presidentes',
-      url: 'presidentes',
+      url: 'boletines/presidentes',
     }],
   }, {
     title: 'Contacto',

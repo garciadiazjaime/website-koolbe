@@ -28,7 +28,7 @@ export default class ProyectoK extends Component {
       }, {
         type: 'link',
         text: 'Conóce más',
-        url: '#',
+        url: 'proyecto-k',
       }],
     }, CarouselData];
   }

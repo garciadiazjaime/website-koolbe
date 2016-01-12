@@ -9,6 +9,12 @@ module.exports = [{
   },
   tels: '(664) 975 2237 y 68',
   coverImage: 'images/aboutus/plantelBlue.jpg',
+  images: {
+    preescolar: 'images/aboutus/plantelBlue/preescolar.jpg',
+    primaria: 'images/aboutus/plantelBlue/primaria.jpg',
+    secundaria: 'images/aboutus/plantelBlue/secundaria.jpg',
+    preparatoria: 'images/aboutus/plantelBlue/preparatoria.jpg',
+  },
   levels: [{
     title: 'Preescolar',
     href: 'preescolar',
@@ -30,7 +36,12 @@ module.exports = [{
     intro: style.backgroundRed,
   },
   tels: '(664) 624 4310',
-  coverImage: '',
+  coverImage: 'images/aboutus/plantelRed.jpg',
+  images: {
+    preescolar: 'images/aboutus/plantelRed/preescolar.jpg',
+    primaria: 'images/aboutus/plantelRed/primaria.jpg',
+    secundaria: 'images/aboutus/plantelRed/secundaria.jpg',
+  },
   levels: [{
     title: 'Preescolar',
     href: 'preescolar',
@@ -49,7 +60,12 @@ module.exports = [{
     intro: style.backgroundGrend,
   },
   tels: '(664) 978-3220',
-  coverImage: '',
+  coverImage: 'images/aboutus/plantelGreen.jpg',
+  images: {
+    preescolar: 'images/aboutus/plantelGreen/preescolar.jpg',
+    primaria: 'images/aboutus/plantelGreen/primaria.jpg',
+    secundaria: 'images/aboutus/plantelGreen/secundaria.jpg',
+  },
   levels: [{
     title: 'Preescolar',
     href: 'preescolar',

@@ -15,7 +15,11 @@ export default class FooterAAA extends Component {
       const children = item.children ? this.getMenu(item.children) : null;
 
       return (<li key={index} className={className || style.menuChild}>
-        <Link to={item.url}>{item.title}</Link>
+        {
+          item.type ?
+          <a href={item.url} target="_blank">{item.title}</a> :
+          <Link to={item.url}>{item.title}</Link>
+        }
         {children}
       </li>);
     }, this);
@@ -39,7 +43,7 @@ export default class FooterAAA extends Component {
     return [{
       elements: [{
         type: 'link',
-        url: '#',
+        url: 'inicio',
         text: '&nbsp;',
         style: _.merge({}, Sprites.General.LogoFooter, {
           display: 'inline-block',
