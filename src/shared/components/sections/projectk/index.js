@@ -22,7 +22,6 @@ export default class ProjectK extends Component {
   }
 
   render() {
-    console.log('projectk');
     return (
       <div>
         <div className="container">
