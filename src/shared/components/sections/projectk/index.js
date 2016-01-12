@@ -5,6 +5,7 @@ const style = process.env.NODE_ENV === 'DEV' ? require('./style.scss') : {};
 import SimpleCarousel from '../../widgets/carousel/simpleCarousel';
 
 import carouselImagesData from './carouselImages';
+import carouselVisionData from './carouselIdentity';
 
 import Button1 from '../../elements/buttons/button1';
 import ImageInsert from '../../elements/images/image';
@@ -64,16 +65,12 @@ export default class ProjectK extends Component {
         </div>
         <div style={{ marginBottom: '77px' }}>
           <Wrapper1 className="wrapper5">
-            <div className="container">
+            <div className="container" style={{ width: 'auto' }}>
               <div className="row">
                 <div className="col-xs-12 col-sm-6 col-sm-offset-3" id="mision-vision">
-                  <Title1 className="title11">
-                    Visión
-                  </Title1>
-                  <Par1 classTitle="par4">
-                    Desarrollamos en nuestro alumnado aptitudes de conocimiento académico,
-                    deportivo, artístico y cultural potenciando sus capacidades individuales.
-                  </Par1>
+
+                  <SimpleCarousel data={carouselVisionData} />
+
                 </div>
               </div>
             </div>
