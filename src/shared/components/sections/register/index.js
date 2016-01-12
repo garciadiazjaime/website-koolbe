@@ -37,15 +37,17 @@ export default class Register extends Component {
               <Title1 className="title4">
                 Documentación
               </Title1>
-              <List1 classTitle="list2">
-                <li>Acta de nacimiento original.</li>
+              <div className={style.bottom46}>
+                <List1 classTitle="list2">
+                  <li>Acta de nacimiento original.</li>
 
-                <li>CURP</li>
+                  <li>CURP</li>
 
-                <li>Certificado de nivel o semestre anterior.<br />
-                (Original y 2 copias de cada documento)</li>
+                  <li>Certificado de nivel o semestre anterior.<br />
+                  (Original y 2 copias de cada documento)</li>
 
-              </List1>
+                </List1>
+              </div>
               <Title1 className="title19">
                 PROCEDIMIENTO PARA LA REINSCRIPCIÓN AL COBACH
               </Title1>
@@ -132,18 +134,20 @@ export default class Register extends Component {
                 <Title1 className="title4">
                   Documentación
                 </Title1>
-                <List1 classTitle="list2">
-                  <li>Acta de nacimiento original y 3 copias.</li>
+                <div className={style.bottom46}>
+                  <List1 classTitle="list2">
+                    <li>Acta de nacimiento original y 3 copias.</li>
 
-                  <li>Constancia de estudios original y 3 copias.<br />
-                  (en caso de inscribir a 2º y 3º).</li>
+                    <li>Constancia de estudios original y 3 copias.<br />
+                    (en caso de inscribir a 2º y 3º).</li>
 
-                  <li>Cartilla de vacunación original y 3 copias.<br />
-                  CURP original y 3 copias.</li>
+                    <li>Cartilla de vacunación original y 3 copias.<br />
+                    CURP original y 3 copias.</li>
 
-                  <li>Carta de no adeudo<br />
-                  (en caso de provenir de escuela particular).</li>
-                </List1>
+                    <li>Carta de no adeudo<br />
+                    (en caso de provenir de escuela particular).</li>
+                  </List1>
+                </div>
                 <Title1 className="title4">
                   Requisitos de edad para ingresar a los niveles de preescolar
                 </Title1>
@@ -169,30 +173,32 @@ export default class Register extends Component {
                 <Title1 className="title4">
                   Documentación
                 </Title1>
-                <List1 classTitle="list2">
-                  <li>Acta de nacimiento original y 3 copias.</li>
+                <div className={style.bottom46}>
+                  <List1 classTitle="list2">
+                    <li>Acta de nacimiento original y 3 copias.</li>
 
-                  <li>Última boleta de calificaciones o constancia de la escuela donde
-                  estudia actualmente, original y 3 copias.</li>
+                    <li>Última boleta de calificaciones o constancia de la escuela donde
+                    estudia actualmente, original y 3 copias.</li>
 
-                  <li>Certificado de preescolar original y 3 copias<br />
-                  (en caso de inscribir a 1º).</li>
+                    <li>Certificado de preescolar original y 3 copias<br />
+                    (en caso de inscribir a 1º).</li>
 
-                  <li>CURP original y 3 copias.</li>
+                    <li>CURP original y 3 copias.</li>
 
-                  <li>Cartilla de vacunación original y 3 copias<br />
-                  (en caso de inscribir a 1º).</li>
+                    <li>Cartilla de vacunación original y 3 copias<br />
+                    (en caso de inscribir a 1º).</li>
 
-                  <li>Formato SUI (en caso de inscribir a 1º).</li>
+                    <li>Formato SUI (en caso de inscribir a 1º).</li>
 
-                  <li>Carta de no adeudo <br />
-                  (en caso de provenir de escuela particular).</li>
+                    <li>Carta de no adeudo <br />
+                    (en caso de provenir de escuela particular).</li>
 
-                  <li>Carta de buena conducta.</li>
+                    <li>Carta de buena conducta.</li>
 
-                  <li>Constancia de calificaciones <br />
-                  (Aplica sólo en caso de traslado avanzado el ciclo escolar).</li>
-                </List1>
+                    <li>Constancia de calificaciones <br />
+                    (Aplica sólo en caso de traslado avanzado el ciclo escolar).</li>
+                  </List1>
+                </div>
                 <Title1 className="title4">
                   Requisitos de edad para ingresar a los niveles de preescolar
                 </Title1>
@@ -215,29 +221,31 @@ export default class Register extends Component {
                 <Title1 className="title4">
                   Documentación
                 </Title1>
-                <List1 classTitle="list2">
-                  <li>Acta de nacimiento original y 3 copias.</li>
+                <div className={style.bottom46}>
+                  <List1 classTitle="list2">
+                    <li>Acta de nacimiento original y 3 copias.</li>
 
-                  <li>Última boleta de calificaciones o constancia de la escuela
-                  donde estudia actualmente, original y 3 copias.</li>
+                    <li>Última boleta de calificaciones o constancia de la escuela
+                    donde estudia actualmente, original y 3 copias.</li>
 
-                  <li>Certificado de primaria<br />
-                  (en caso de inscribir a 1º) original y 3 copias.</li>
+                    <li>Certificado de primaria<br />
+                    (en caso de inscribir a 1º) original y 3 copias.</li>
 
-                  <li>CURP original y 3 copias.</li>
+                    <li>CURP original y 3 copias.</li>
 
-                  <li>Formato SUI (en caso de inscribir a 1º).</li>
+                    <li>Formato SUI (en caso de inscribir a 1º).</li>
 
-                  <li>Carta de no adeudo<br />
-                  (en caso de provenir de escuela particular).</li>
+                    <li>Carta de no adeudo<br />
+                    (en caso de provenir de escuela particular).</li>
 
-                  <li>Carta de buena conducta.</li>
+                    <li>Carta de buena conducta.</li>
 
-                  <li>Revalidación USA.</li>
+                    <li>Revalidación USA.</li>
 
-                  <li>Folio de traslado.</li>
+                    <li>Folio de traslado.</li>
 
-                </List1>
+                  </List1>
+                </div>
                 <Title1 className="title5">
                   Sin constancia del grado anterior, el alumno no se puede inscribir
                 </Title1>

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 const style = process.env.NODE_ENV === 'DEV' ? require('./style.scss') : {};
 
 import SimpleCarousel from '../../widgets/carousel/simpleCarousel';
@@ -14,7 +13,6 @@ import Par1 from '../../elements/paragraphs/paragraph1';
 import Title1 from '../../elements/titles/title1';
 import Wrapper1 from '../../elements/wrappers/wrapper1';
 
-const style = process.env.NODE_ENV === 'DEV' ? require('./style.scss') : {};
 
 import scrollHelper from '../../../utils/scroll';
 
