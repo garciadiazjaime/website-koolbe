@@ -174,7 +174,7 @@ export default class ProjectK extends Component {
         <Wrapper1 className="wrapper4">
           <div className="container">
             <div className="row">
-              <div className="col-xs-12 col-sm-4 col-sm-offset-1" id="oracion">
+              <div className="col-xs-12 col-sm-5 col-sm-offset-1" id="oracion">
                 <ImageInsert url="images/proyectok/mrkolbe.png" classTitle={'image4'}/>
                 <Title1 className="title17">
                   Oración a<br />
