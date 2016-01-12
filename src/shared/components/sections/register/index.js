@@ -13,7 +13,7 @@ import sectionData from './data';
 const style = process.env.NODE_ENV === 'DEV' ? require('./style.scss') : {};
 
 
-export default class AboutUs extends Component {
+export default class Register extends Component {
 
   constructor(...args) {
     super(...args);

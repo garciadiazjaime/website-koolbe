@@ -11,16 +11,17 @@ module.exports = {
     url: 'inscripciones',
     children: [{
       title: 'Planteles',
-      url: 'planteles',
+      url: 'inscripciones/planteles',
     }, {
       title: 'Grados',
-      url: 'grados',
+      url: 'inscripciones/grados',
     }, {
       title: 'Requisitos',
-      url: 'requisitos',
+      url: 'inscripciones/requisitos',
     }, {
       title: 'Uniformes',
-      url: 'uniformes',
+      url: 'pdfs/uniformes.pdf',
+      type: 'outside',
     }],
   }, {
     title: 'PROYECTO K',

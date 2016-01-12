@@ -1,23 +1,28 @@
 import React, { Component } from 'react';
 
-const style = process.env.NODE_ENV === 'DEV' ? require('./style.scss') : {};
-
 import Button1 from '../../elements/buttons/button1';
-
 import ImageInsert from '../../elements/images/image';
-
 import List1 from '../../elements/lists/list1';
-
 import Par1 from '../../elements/paragraphs/paragraph1';
-
 import Title1 from '../../elements/titles/title1';
-
 import Wrapper1 from '../../elements/wrappers/wrapper1';
 
+const style = process.env.NODE_ENV === 'DEV' ? require('./style.scss') : {};
 
-export default class AboutUs extends Component {
+import scrollHelper from '../../../utils/scroll';
+
+
+export default class ProjectK extends Component {
+
+  componentDidUpdate() {
+    /*eslint-disable */
+    const { location } = this.props;
+    /*eslint-enable */
+    scrollHelper(location);
+  }
 
   render() {
+    console.log('projectk');
     return (
       <div>
         <div className="container">
@@ -57,7 +62,7 @@ export default class AboutUs extends Component {
           <Wrapper1 className="wrapper3">
             <div className="container">
               <div className="row">
-                <div className="col-xs-12 col-sm-6 col-sm-offset-3">
+                <div className="col-xs-12 col-sm-6 col-sm-offset-3" id="mision-vision">
                   <Title1 className="title11">
                     Visión
                   </Title1>
@@ -72,7 +77,7 @@ export default class AboutUs extends Component {
         </div>
         <div className="container">
           <div className="row" style={{ marginBottom: '78px' }}>
-            <div className="col-xs-12 col-sm-6">
+            <div className="col-xs-12 col-sm-6" id="filosofia-religiosa">
               <Title1 className="title12">
                 Filosofía Religiosa
               </Title1>
@@ -81,6 +86,7 @@ export default class AboutUs extends Component {
                 cristiana que tiene al hombre y a la mujer como centro y preocupación
                 de toda su actividad.
               </Par1>
+              <span id="metas"></span>
               <Title1 className="title13">
                 Confirmaciones y  Primeras Comuniones
               </Title1>
@@ -100,9 +106,9 @@ export default class AboutUs extends Component {
                 </div>
               </div>
             </div>
-            <div className="col-xs-12 col-sm-6">
+            <div className="col-xs-12 col-sm-6" id="ideario">
               <Title1 className="title12">
-                Ideario
+                Ideario <span id="valores"></span>
               </Title1>
               <List1 classTitle="list4">
                 <li>La educación a favor del hombre y de la mujer creados a imagen y
@@ -164,7 +170,7 @@ export default class AboutUs extends Component {
         <Wrapper1 className="wrapper4">
           <div className="container">
             <div className="row">
-              <div className="col-xs-12 col-sm-4 col-sm-offset-1">
+              <div className="col-xs-12 col-sm-4 col-sm-offset-1" id="oracion">
                 <ImageInsert url="images/proyectok/mrkolbe.png" classTitle={'image4'}/>
                 <Title1 className="title17">
                   Oración a<br />
@@ -182,7 +188,7 @@ export default class AboutUs extends Component {
                     Amén.
                 </Par1>
               </div>
-              <div className="col-xs-12 col-sm-4 col-sm-offset-2">
+              <div className="col-xs-12 col-sm-4 col-sm-offset-2" id="himno">
                 <ImageInsert url="images/proyectok/escudo.png" classTitle={'image4'}/>
                 <Title1 className="title17">
                   Himno <br />

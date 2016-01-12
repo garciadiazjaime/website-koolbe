@@ -3,8 +3,17 @@ import React from 'react';
 const style = process.env.NODE_ENV === 'DEV' ? require('./style.scss') : {};
 import dataFiles from './data';
 
+import scrollHelper from '../../../utils/scroll';
+
 
 export default class ExtraescolaresSection extends React.Component {
+
+  componentDidUpdate() {
+    /*eslint-disable */
+    const { location } = this.props;
+    /*eslint-enable */
+    scrollHelper(location);
+  }
 
   getFiles(data) {
     const places = data.map((place, index) => {
@@ -16,7 +25,7 @@ export default class ExtraescolaresSection extends React.Component {
       });
 
       return (<div className="col-sm-4" key={index}>
-          <h2 style={place.styleTile}>
+          <h2 style={place.styleTile} id={place.id}>
             <span dangerouslySetInnerHTML={this.sanitize(place.title)} />
           </h2>
           <ul>

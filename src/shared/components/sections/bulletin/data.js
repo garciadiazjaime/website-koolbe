@@ -2,6 +2,7 @@ const Constants = require('../../../constants');
 
 module.exports = [{
   title: 'SANTA FE',
+  id: 'santa-fe',
   styleTile: {
     color: Constants.blueLight,
   },
@@ -27,6 +28,7 @@ module.exports = [{
   }],
 }, {
   title: '&nbsp;&nbsp;&nbsp;&nbsp;OTAY',
+  id: 'otay',
   styleTile: {
     color: Constants.red,
   },
@@ -49,6 +51,7 @@ module.exports = [{
   }],
 }, {
   title: '&nbsp;&nbsp;&nbsp;&nbsp;PRESIDENTES',
+  id: 'presidentes',
   styleTile: {
     color: Constants.green,
   },

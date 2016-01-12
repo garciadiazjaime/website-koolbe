@@ -6,6 +6,8 @@ import menuData from '../../../menuData';
 import Sprites from '../../../sprite';
 import Address from './address';
 
+import scrollHelper from '../../../utils/scroll';
+
 
 export default class Contact extends React.Component {
 
@@ -20,6 +22,13 @@ export default class Contact extends React.Component {
       },
       location: 'santafe',
     };
+  }
+
+  componentDidUpdate() {
+    /*eslint-disable */
+    const { location } = this.props;
+    /*eslint-enable */
+    scrollHelper(location);
   }
 
   getLocations(data) {
