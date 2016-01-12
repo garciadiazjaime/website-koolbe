@@ -12,9 +12,9 @@ module.exports = {
     arrowLeft: '',
     arrowRight: '',
     indicators: {},
-    showControl: false,
+    showControl: true,
     showIndicators: false,
-    interval: 20000,
+    interval: 8000,
   },
   classes: {},
   slides: [{

@@ -14,7 +14,7 @@ module.exports = {
     indicators: {},
     showControl: true,
     showIndicators: false,
-    interval: 20000,
+    interval: 8000,
   },
   classes: {},
   slides: [{
