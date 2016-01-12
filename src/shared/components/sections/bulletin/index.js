@@ -1,10 +1,15 @@
 import React from 'react';
+import _ from 'lodash';
 
 const style = process.env.NODE_ENV === 'DEV' ? require('./style.scss') : {};
 import dataFiles from './data';
-
 import scrollHelper from '../../../utils/scroll';
-
+import Sprites from '../../../sprite';
+const iconStyle = _.merge({}, Sprites.General.BoletinesIcon, {
+  display: 'inline-block',
+  position: 'relative',
+  top: '8px',
+});
 
 export default class ExtraescolaresSection extends React.Component {
 
@@ -19,7 +24,10 @@ export default class ExtraescolaresSection extends React.Component {
     const places = data.map((place, index) => {
       const bulletines = place.bulletin.map((item, index2) => {
         return (<li key={index2}>
-          <h3><i className="glyphicon glyphicon-file" aria-hidden="true"></i>{item.title}</h3>
+          <h3>
+            <i style={iconStyle}></i>
+            {item.title}
+          </h3>
           <a href={item.url} style={place.styleLink} target="_blank">descargar</a>
         </li>);
       });
@@ -38,7 +46,7 @@ export default class ExtraescolaresSection extends React.Component {
       const files = place.extra.map((item, index2) => {
         return (<li key={index2}>
           <h3>
-            <i className="glyphicon glyphicon-file" aria-hidden="true"></i>
+            <i style={iconStyle}></i>
             {item.title}
             <span dangerouslySetInnerHTML={this.sanitize(place.title)} className="visible-xs" />
           </h3>

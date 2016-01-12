@@ -77,60 +77,67 @@ module.exports = {
     },
     "General": {
         "ArrowBluebck": {
-            "backgroundPosition": "-160px -46px",
+            "backgroundPosition": "-160px -26px",
             "width": "20px",
             "height": "20px",
             "backgroundImage": "url('http://127.0.0.1:3030/images/sprites/sprite-general.png')",
-            "backgroundSize": "183px 143px"
+            "backgroundSize": "181px 166px"
+        },
+        "BoletinesIcon": {
+            "backgroundPosition": "-160px -0px",
+            "width": "21px",
+            "height": "26px",
+            "backgroundImage": "url('http://127.0.0.1:3030/images/sprites/sprite-general.png')",
+            "backgroundSize": "181px 166px"
         },
         "Facebook": {
-            "backgroundPosition": "-160px -0px",
+            "backgroundPosition": "-0px -143px",
             "width": "23px",
             "height": "23px",
             "backgroundImage": "url('http://127.0.0.1:3030/images/sprites/sprite-general.png')",
-            "backgroundSize": "183px 143px"
+            "backgroundSize": "181px 166px"
         },
         "FlechaMed": {
-            "backgroundPosition": "-160px -23px",
+            "backgroundPosition": "-23px -143px",
             "width": "23px",
             "height": "23px",
             "backgroundImage": "url('http://127.0.0.1:3030/images/sprites/sprite-general.png')",
-            "backgroundSize": "183px 143px"
+            "backgroundSize": "181px 166px"
         },
         "FlechaSmall": {
-            "backgroundPosition": "-160px -118px",
+            "backgroundPosition": "-160px -98px",
             "width": "17px",
             "height": "17px",
             "backgroundImage": "url('http://127.0.0.1:3030/images/sprites/sprite-general.png')",
-            "backgroundSize": "183px 143px"
+            "backgroundSize": "181px 166px"
         },
         "Location": {
-            "backgroundPosition": "-160px -66px",
+            "backgroundPosition": "-160px -46px",
             "width": "15px",
             "height": "26px",
             "backgroundImage": "url('http://127.0.0.1:3030/images/sprites/sprite-general.png')",
-            "backgroundSize": "183px 143px"
+            "backgroundSize": "181px 166px"
         },
         "LogoFooter": {
             "backgroundPosition": "-0px -75px",
             "width": "143px",
             "height": "68px",
             "backgroundImage": "url('http://127.0.0.1:3030/images/sprites/sprite-general.png')",
-            "backgroundSize": "183px 143px"
+            "backgroundSize": "181px 166px"
         },
         "Logo": {
             "backgroundPosition": "-0px -0px",
             "width": "160px",
             "height": "75px",
             "backgroundImage": "url('http://127.0.0.1:3030/images/sprites/sprite-general.png')",
-            "backgroundSize": "183px 143px"
+            "backgroundSize": "181px 166px"
         },
         "Phone": {
-            "backgroundPosition": "-160px -92px",
+            "backgroundPosition": "-160px -72px",
             "width": "15px",
             "height": "26px",
             "backgroundImage": "url('http://127.0.0.1:3030/images/sprites/sprite-general.png')",
-            "backgroundSize": "183px 143px"
+            "backgroundSize": "181px 166px"
         }
     },
     "Home": {
