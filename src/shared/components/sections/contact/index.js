@@ -8,6 +8,7 @@ import Address from './address';
 
 import scrollHelper from '../../../utils/scroll';
 
+let shouldUpdate = true;
 
 export default class Contact extends React.Component {
 
@@ -20,6 +21,11 @@ export default class Contact extends React.Component {
         otay: Sprites.Contact.Otay,
         presidentes: Sprites.Contact.Presidentes,
       },
+      titleBck: {
+        santafe: style.santafeBackground,
+        otay: style.otayBackground,
+        presidentes: style.presidentesBackground,
+      },
       location: 'santafe',
     };
   }
@@ -28,25 +34,33 @@ export default class Contact extends React.Component {
     /*eslint-disable */
     const { location } = this.props;
     /*eslint-enable */
-    scrollHelper(location);
+    if (shouldUpdate) {
+      scrollHelper(location);
+    }
+    shouldUpdate = true;
   }
 
   getLocations(data) {
     const places = data.map((place, index) => {
       return (<Address data={place} key={index} changeLocation={this.changeLocation} />);
     });
-
+    const bckClass = this.state.titleBck[this.state.location];
+    const title = data.filter((item) => {
+      return item.id === this.state.location;
+    })[0].title;
     return (<div className="row">
         <div className="col-sm-5">
           {places}
         </div>
         <div className="col-sm-7 hidden-xs">
+          <div className={style.locationTitle + ' ' + bckClass}>{title}</div>
           <div style={this.state.locations[this.state.location]} className="img-responsive"></div>
         </div>
       </div>);
   }
 
   changeLocation(event) {
+    shouldUpdate = false;
     this.setState({
       location: event.target.id,
     });

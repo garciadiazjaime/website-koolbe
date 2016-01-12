@@ -139,7 +139,7 @@ export default class ProjectK extends Component {
             <div className="col-xs-12 col-sm-6">
               <SimpleCarousel data={carouselImagesData} />
             </div>
-            <div className="col-xs-12 col-sm-6">
+            <div className="col-xs-12 col-sm-6" id="somos-escuela-beo">
               <Title1 className="title14">
                 Somos Escuela BEO
               </Title1>

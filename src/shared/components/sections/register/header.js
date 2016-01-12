@@ -22,10 +22,10 @@ export default class Header extends Component {
   getTabs(data) {
     if (_.isArray(data) && data.length) {
       return data.map((item, index) => {
-        const { href, classes } = item;
-        return (<div className={'col-xs-4 ' + style.colNopad} key={index}>
+        const { href, classes, id } = item;
+        return (<div className={'col-xs-4 ' + style.colNopad} key={index} id={id}>
           <Button2 href={href} className={classes.tab} onClick={this.clickHandler} index={index}>
-            <h2>Plantel</h2>
+            <h2 id={href}>Plantel</h2>
             {item.title}
           </Button2>
         </div>);
@@ -36,10 +36,12 @@ export default class Header extends Component {
 
   getLevels(data) {
     if (_.isArray(data) && data.length) {
+      const len = data.length;
       return data.map((item, index) => {
-        return (<Button1 refs={item.href} classTitle="button3" index={index} key={index}>
-          {item.title} |&nbsp;
-        </Button1>);
+        return (<span className={style.levels} key={index}>
+            {item.title} { index + 1 < len ? <span>|&nbsp;</span> : null }
+          </span>
+        );
       });
     }
   }
@@ -61,7 +63,7 @@ export default class Header extends Component {
         </div>
         <div className="row">
           <div className="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-0">
-            <Button1 refs="contact" classTitle="button4">
+            <Button1 refs="contacto" classTitle="button5">
               Contáctanos
             </Button1>
           </div>
@@ -69,7 +71,9 @@ export default class Header extends Component {
       </div>
 
       <div className="col-xs-12 col-sm-8">
-        <ImageInsert url={item.coverImage} classTitle="image1" />
+        <div className="row">
+          <ImageInsert url={item.coverImage} classTitle="image1" />
+        </div>
       </div>
     </div>);
   }
@@ -80,7 +84,7 @@ export default class Header extends Component {
     return (<div>
 
         <div className="container">
-          <div className="row">
+          <div className="row" id="planteles">
             {this.getTabs(data)}
           </div>
         </div>

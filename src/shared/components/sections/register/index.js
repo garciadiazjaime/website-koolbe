@@ -9,9 +9,10 @@ import Title1 from '../../elements/titles/title1';
 import Wrapper1 from '../../elements/wrappers/wrapper1';
 import Header from './header';
 import sectionData from './data';
+import scrollHelper from '../../../utils/scroll';
 
 const style = process.env.NODE_ENV === 'DEV' ? require('./style.scss') : {};
-
+let shouldUpdate = true;
 
 export default class Register extends Component {
 
@@ -23,11 +24,38 @@ export default class Register extends Component {
     this.clickHandler = this.clickHandler.bind(this);
   }
 
+  componentWillReceiveProps() {
+    /*eslint-disable */
+    const { location } = this.props;
+    /*eslint-enable */
+    const elementID = location.pathname ? location.pathname.split('/').pop() || 'inicio' : 'inicio';
+    const refs = {
+      santafe: 0,
+      otay: 1,
+      presidentes: 2,
+    };
+    if (refs[elementID]) {
+      this.setState({
+        selectedPlace: refs[elementID],
+      });
+    }
+  }
+
+  componentDidUpdate() {
+    /*eslint-disable */
+    const { location } = this.props;
+    /*eslint-enable */
+    if (shouldUpdate) {
+      scrollHelper(location);
+    }
+    shouldUpdate = true;
+  }
+
   getPrepa() {
     const plantelImages = sectionData[this.state.selectedPlace].images;
     if (plantelImages.preparatoria) {
       return (
-        <div>
+        <div id="preparatoria">
           <div className="row">
           <div className="col-xs-12 col-sm-6">
             <Image url={plantelImages.preparatoria} classTitle="image1" />
@@ -72,6 +100,7 @@ export default class Register extends Component {
   }
 
   clickHandler(index) {
+    shouldUpdate = false;
     this.setState({
       selectedPlace: index,
     });
@@ -79,7 +108,7 @@ export default class Register extends Component {
 
   render() {
     const plantelImages = sectionData[this.state.selectedPlace].images;
-
+    const files = sectionData[this.state.selectedPlace].files;
     return (
       <div>
 
@@ -87,7 +116,7 @@ export default class Register extends Component {
 
         <div className={'container ' + style.sidePadded50}>
           <div className="row">
-            <div className="col-xs-12 col-sm-8">
+            <div className="col-xs-12 col-sm-8" id="requisitos">
               <Title1 className="title1">
                 Requisitos de Admisión
               </Title1>
@@ -106,7 +135,7 @@ export default class Register extends Component {
                 <li>Realizar pago por concepto de Inscripción/Reinscripción.</li>
               </List1>
             </div>
-            <div className="col-xs-12  col-sm-4" style={{ marginBottom: '100px' }}>
+            <div className="col-xs-12  col-sm-4" style={{ marginBottom: '100px' }} id="grados">
                 <Wrapper1 className="wrapper1">
                   <Title1 className="title3">
                     Grados Escolares
@@ -117,15 +146,15 @@ export default class Register extends Component {
                     el Sistema SISEEKO.
                   </Par1>
                 </ Wrapper1>
-                <Button1 refs="inscripcion" classTitle="button1">
+                <Button1 refs={files.ficha} classTitle="button1" type="outside">
                   FICHA DE INSCRIPCIÓN
                 </Button1>
-                <Button1 refs="uniforme" classTitle="button1">
+                <Button1 refs={files.uniforme} classTitle="button1" type="outside">
                   UNIFORME
                 </Button1>
             </div>
           </div>
-          <div className="row">
+          <div className="row" id="preescolar">
             <div className="col-xs-12 col-sm-6">
               <Image url={plantelImages.preescolar} classTitle="image1" />
             </div>
@@ -164,7 +193,7 @@ export default class Register extends Component {
 
           <Hr1 className="hr2" />
 
-          <div className="row">
+          <div className="row" id="primaria">
             <div className="col-xs-12 col-sm-6">
               <Image url={plantelImages.primaria} classTitle="image1" />
             </div>
@@ -212,7 +241,7 @@ export default class Register extends Component {
 
           <Hr1 className="hr2" />
 
-          <div className="row">
+          <div className="row" id="secundaria">
             <div className="col-xs-12 col-sm-6">
               <Image url={plantelImages.secundaria} classTitle="image1" />
             </div>
@@ -284,7 +313,7 @@ export default class Register extends Component {
               </Title1>
               <div className="row">
                 <div className="col-xs-8 col-xs-offset-2">
-                  <Button1 refs="contact" classTitle="button2">
+                  <Button1 refs="proyecto-k" classTitle="button2">
                     Conoce más
                   </Button1>
                 </div>
