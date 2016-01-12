@@ -32,7 +32,7 @@ module.exports = {
     indicators: {},
     showControl: true,
     showIndicators: false,
-    interval: 20000,
+    interval: 8000,
   },
   classes: {
     carouselInner: style.carouselInner,
@@ -58,7 +58,7 @@ module.exports = {
       }, {
         type: 'link',
         text: 'Inscríbete',
-        url: 'inscribete',
+        url: 'inscripciones',
         style: {
           backgroundColor: Constants.green,
         },
@@ -83,7 +83,7 @@ module.exports = {
       }, {
         type: 'link',
         text: 'Inscríbete',
-        url: 'inscribete',
+        url: 'inscripciones',
         style: {
           backgroundColor: Constants.red,
         },
@@ -109,7 +109,7 @@ module.exports = {
       }, {
         type: 'link',
         text: 'Inscríbete',
-        url: 'inscribete',
+        url: 'inscripciones',
         style: {
           backgroundColor: Constants.blueLight,
         },
@@ -134,7 +134,7 @@ module.exports = {
       }, {
         type: 'link',
         text: 'Conóce más',
-        url: 'inscribete',
+        url: 'extraescolares',
         style: {
           backgroundColor: Constants.blueLight,
         },

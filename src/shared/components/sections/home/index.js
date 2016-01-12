@@ -7,8 +7,17 @@ import SimpleCard from '../../widgets/card/simpleCard';
 import ProyectoK from './proyectok';
 import carouselData from './carouselBannerData';
 
+import scrollHelper from '../../../utils/scroll';
+
 
 export default class HomeSection extends React.Component {
+
+  componentDidUpdate() {
+    /*eslint-disable */
+    const { location } = this.props;
+    /*eslint-enable */
+    scrollHelper(location);
+  }
 
   getCards() {
     return [{

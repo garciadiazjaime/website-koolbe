@@ -11,7 +11,7 @@ export default class MainMenu extends Component {
     return data.map((item, index) => {
       return (
         <li key={index}>
-          <Link to={item.url} className={style.navbarNavAnchor}>{item.title}</Link>
+          <Link to={item.url} className={style.navbarNavAnchor} id={item.url}>{item.title}</Link>
         </li>
       );
     });
@@ -36,7 +36,7 @@ export default class MainMenu extends Component {
                 <span className="icon-bar"></span>
                 <span className="icon-bar"></span>
               </button>
-              <a className="navbar-brand" href="#" style={Sprites.General.Logo}></a>
+              <Link className="navbar-brand" to="inicio" style={Sprites.General.Logo}></Link>
             </div>
 
             <div className={style.navbarCollapse + ' collapse navbar-collapse'} id='mainmenu'>
