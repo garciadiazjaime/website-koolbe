@@ -44,14 +44,35 @@ module.exports = {
   slides: [{
     wrapper: {
       style: _.merge({}, slideStyle, {
-        backgroundImage: "url('images/proyectok/slider/slide1.jpg')",
+        backgroundImage: "url('images/proyectok/slider/Slider-beo-01.jpg')",
       }),
     },
     card: {},
   }, {
     wrapper: {
       style: _.merge({}, slideStyle, {
-        backgroundImage: "url('images/proyectok/slider/slide1.jpg')",
+        backgroundImage: "url('images/proyectok/slider/Slider-beo-02.jpg')",
+      }),
+    },
+    card: {},
+  }, {
+    wrapper: {
+      style: _.merge({}, slideStyle, {
+        backgroundImage: "url('images/proyectok/slider/Slider-beo-03.jpg')",
+      }),
+    },
+    card: {},
+  }, {
+    wrapper: {
+      style: _.merge({}, slideStyle, {
+        backgroundImage: "url('images/proyectok/slider/Slider-beo-04.jpg')",
+      }),
+    },
+    card: {},
+  }, {
+    wrapper: {
+      style: _.merge({}, slideStyle, {
+        backgroundImage: "url('images/proyectok/slider/Slider-beo-05.jpg')",
       }),
     },
     card: {},
