@@ -19,7 +19,7 @@ export default class MainMenu extends Component {
 
   getIcons(data) {
     return data.map((item, index) => {
-      return (<a key={index} style={item.style} href={item.url}>&nbsp;</a>);
+      return (<a key={index} style={item.style} href={item.url} target="_blank">&nbsp;</a>);
     });
   }
 

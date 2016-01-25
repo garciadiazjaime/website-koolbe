@@ -50,7 +50,7 @@ export default class Form extends React.Component {
         require: true,
       },
       tel: {
-        title: 'Teléfono',
+        title: 'Tel&eacute;fono',
         value: '',
         require: true,
       },

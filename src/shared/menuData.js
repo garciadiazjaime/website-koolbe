@@ -83,26 +83,26 @@ module.exports = {
     style: _.merge({}, Sprites.General.Facebook, {
       display: 'inline-block',
     }),
-    url: '#',
+    url: 'https://www.facebook.com/InstitutoRamiroKolbe/?fref=ts',
   }],
   // todo: tmp should be address onces footer gets adapted
   tmp: [{
     id: 'santafe',
     title: 'Santa Fe',
     location: 'Camino Vecinal 11998, Pórticos Santa Fe Tijuana B.C. 22666, México.',
-    gmaps: '#',
+    gmaps: 'https://www.google.com.mx/maps/place/Instituto+Ramiro+Kolbe/@32.4440469,-117.0278012,17z/data=!3m1!4b1!4m2!3m1!1s0x80d9370497bd9efb:0x1cb650ba794c36c4',
     tels: '(664) 975 2237 y 68',
   }, {
     id: 'otay',
     title: 'Otay',
     location: 'Minería 150 Plaza Otay Tijuana B.C. 22510, México',
-    gmaps: '#',
+    gmaps: 'https://www.google.com.mx/maps/place/INSTITUTO+RAMIRO+KOLBE/@32.5345426,-116.9346619,17z/data=!3m1!4b1!4m7!1m4!3m3!1s0x80d9477486c3f6d7:0x2d0ceb3210beca8c!2sCalle+Mineria,+Tijuana,+B.C.!3b1!3m1!1s0x80d94774792cd65d:0xc69b704e3f630e1d',
     tels: '(664) 624 4310',
   }, {
     id: 'presidentes',
     title: 'Presidentes',
     location: 'Ave. Del Águila Azteca 7072 Col. Guaycura 22216 Tijuana B.C.',
-    gmaps: '#',
+    gmaps: 'https://www.google.com.mx/maps/search/1302+Miguel+Alem%C3%A1n+Valdez,Tijuana,+Baja+California/@32.4915881,-116.9132486,3a,75y,354.52h,66.22t/data=!3m8!1e1!3m5!1svgavouZXwMHybwaXLv1m5Q!2e0!6s%2F%2Fgeo0.ggpht.com%2Fcbk%3Fpanoid%3DvgavouZXwMHybwaXLv1m5Q%26output%3Dthumbnail%26cb_client%3Dmaps_sv.tactile.gps%26thumb%3D2%26w%3D203%26h%3D100%26yaw%3D91.518616%26pitch%3D0!7i13312!8i6656!4b1',
     tels: '(664) 978-3220',
   }],
   addresses: [{

@@ -124,6 +124,7 @@
 
 .proyectoK{
   background-color: $blueLight;
+  @include gradient-borders($blueDark)
   height: 310px;
   padding-left: 52px;
   margin-bottom: 60px;
