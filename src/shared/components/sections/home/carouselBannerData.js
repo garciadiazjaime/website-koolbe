@@ -54,7 +54,7 @@ module.exports = {
       }, {
         type: 'description',
         text: ['Contamos con niveles escolares, <br />respaldados por la ' +
-          'formula educativa <br />del Sistema SISEEKO'],
+          'f&oacute;rmula educativa <br />del Sistema SISEEKO'],
       }, {
         type: 'link',
         text: 'Inscríbete',

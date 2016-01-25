@@ -47,6 +47,9 @@
 }
 .button2{
   @extend .button1;
+  font-size: 16px;
+  padding: 10px 0 10px 20px;
+  width: 180px;
   background-color: $blueLight;
   &::after{
     transform: translate(-100%, -75%);

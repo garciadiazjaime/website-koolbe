@@ -12,10 +12,24 @@ import scrollHelper from '../../../utils/scroll';
 
 export default class HomeSection extends React.Component {
 
+  componentWillMount() {
+    const images = ['url(\'images/mobile/home/banner/pre.jpg\')',
+      'url(\'images/mobile/home/banner/primaria.jpg\')',
+      'url(\'images/mobile/home/banner/prepa.jpg\')',
+      'url(\'images/mobile/home/banner/extra.jpg\')',
+      'url(\'images/mobile/home/banner/beo.jpg\')'];
+    if (process.env.NODE_ENV === 'DEV' && window.innerWidth <= 320) {
+      images.map((item, index) => {
+        carouselData.slides[index].wrapper.style.backgroundImage = item;
+      });
+      this.setState({
+        status: true,
+      });
+    }
+  }
+
   componentDidUpdate() {
-    /*eslint-disable */
     const { location } = this.props;
-    /*eslint-enable */
     scrollHelper(location);
   }
 
@@ -52,3 +66,7 @@ export default class HomeSection extends React.Component {
     );
   }
 }
+
+HomeSection.propTypes = {
+  location: React.PropTypes.any,
+};

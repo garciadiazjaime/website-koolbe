@@ -1,6 +1,8 @@
 import _ from 'lodash';
 
 const slideStyle = {
+  backgroundPosition: 'center center',
+  backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
   height: '350px',
 };

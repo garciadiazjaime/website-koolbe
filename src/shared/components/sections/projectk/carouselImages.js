@@ -2,6 +2,8 @@ import _ from 'lodash';
 import Constants from '../../../constants';
 
 const slideStyle = {
+  backgroundPosition: 'center center',
+  backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
   height: '350px',
 };

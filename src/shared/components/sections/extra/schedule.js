@@ -1,3 +1,4 @@
+/* eslint max-len: [2, 500, 4] */
 import React from 'react';
 import _ from 'lodash';
 
@@ -38,7 +39,7 @@ export default class Schedule extends React.Component {
         },
       }, {
         type: 'description',
-        text: ['Costo: <span>$570.00 m.n. por mes.</span>'],
+        text: ['Servicio con un costo adicional mensual y horarios específicos. Consultar en el plantel donde este inscrito su hijo'],
         style: {
           fontSize: '18px',
           fontFamily: Constants.fontA,
