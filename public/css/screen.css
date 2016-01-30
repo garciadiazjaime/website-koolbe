@@ -9,15 +9,15 @@
 
 @font-face {
   font-family: nunito;
-  src: url(/fonts/nunito/nunito-regular.ttf);
+  src: url(/fonts/arial_rounded/regular.ttf);
 }
 @font-face {
   font-family: nunito-bold;
-  src: url(/fonts/nunito/nunito-bold.ttf);
+  src: url(/fonts/arial_rounded/bold.ttf);
 }
 @font-face {
   font-family: nunito-light;
-  src: url(/fonts/nunito/nunito-light.ttf);
+  src: url(/fonts/arial_rounded/light.ttf);
 }
 
 @media screen and (min-width: 1200px) {

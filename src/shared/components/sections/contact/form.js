@@ -50,7 +50,7 @@ export default class Form extends React.Component {
         require: true,
       },
       tel: {
-        title: 'Tel&eacute;fono',
+        title: 'Teléfono',
         value: '',
         require: true,
       },
@@ -125,7 +125,7 @@ export default class Form extends React.Component {
         msgElement.addClass(response.entity.status ? style.successCSSClass : style.errorCSSClass);
         msgElement.html(response.entity.status ?
           'Información enviada de manera exitosa, gracias.' :
-          'Lo sentimos, favor de intentar más tarde.');
+          'Lo sentimos, favor de intentar m&aacute;s tarde.');
       });
     } else {
       msgElement.addClass(style.errorCSSClass);
@@ -154,7 +154,7 @@ export default class Form extends React.Component {
         </div>
 
         <div className="form-group">
-          <label id="lab_tel" className="col-sm-2 control-label">Teléfono</label>
+          <label id="lab_tel" className="col-sm-2 control-label">Tel&eacute;fono</label>
           <div className="col-sm-10">
             <input type="tel" name="tel" onChange={this.onChangeHandler} value={tel.value}/>
           </div>

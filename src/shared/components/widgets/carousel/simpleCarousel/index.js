@@ -33,7 +33,7 @@ export default class SimpleCarousel extends Component {
       return data.map((slide, i) => {
         const s = this.getActiveState(i);
         return (
-          <li data-target={cID} data-slide-to={i} key={i} className={s} style={iS}></li>
+          <li data-target={'#' + cID} data-slide-to={i} key={i} className={s} style={iS}></li>
         );
       }, this);
     }

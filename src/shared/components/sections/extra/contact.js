@@ -9,15 +9,15 @@ export default class Activities extends React.Component {
     return [{
       elements: [{
         type: 'description',
-        text: ['*Los grupos se abren según la demanda que haya de los <br />' +
-        'mismos, siendo el mínimo de 8 a 10 alumnos según la <br /> actividad. ' +
-        'Estas tienen un costo adicional mensual y <br />horarios específicos.'],
+        text: ['*Los grupos se abren seg&uacute;n la demanda que haya de los <br />' +
+        'mismos, siendo el m&iacute;nimo de 8 a 10 alumnos seg&uacute;n la <br /> actividad. ' +
+        'Estas tienen un costo adicional mensual y <br />horarios espec&iacute;ficos.'],
       }],
     }, {
       elements: [{
         type: 'link',
         url: 'contacto',
-        text: 'Contáctanos',
+        text: 'Cont&aacute;ctanos',
       }],
     }];
   }

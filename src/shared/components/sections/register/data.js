@@ -17,8 +17,8 @@ module.exports = [{
     preparatoria: 'images/aboutus/plantelBlue/preparatoria.jpg',
   },
   files: {
-    ficha: 'pdfs/santafe/ficha-Inscripcion.pdf',
-    uniforme: 'pdfs/uniforme.pdf',
+    ficha: 'https://www.dropbox.com/s/bqcp427un4fnysr/ficha-inscripcion.pdf?dl=0',
+    uniforme: 'https://www.dropbox.com/s/gjt2jlgsqdq8set/uniforme.pdf?dl=0',
   },
   levels: [{
     title: 'Preescolar',
@@ -49,8 +49,8 @@ module.exports = [{
     secundaria: 'images/aboutus/plantelRed/secundaria.jpg',
   },
   files: {
-    ficha: 'pdfs/otay/ficha-Inscripcion.pdf',
-    uniforme: 'pdfs/uniforme.pdf',
+    ficha: 'https://www.dropbox.com/s/echc67dfijtho8n/ficha-inscripcion.pdf?dl=0',
+    uniforme: 'https://www.dropbox.com/s/gjt2jlgsqdq8set/uniforme.pdf?dl=0',
   },
   levels: [{
     title: 'Preescolar',
@@ -78,8 +78,8 @@ module.exports = [{
     secundaria: 'images/aboutus/plantelGreen/secundaria.jpg',
   },
   files: {
-    ficha: 'pdfs/presidentes/ficha-Inscripcion.pdf',
-    uniforme: 'pdfs/uniforme.pdf',
+    ficha: 'https://www.dropbox.com/s/98dg8olqcxbc60x/ficha-inscripcion.pdf?dl=0',
+    uniforme: 'https://www.dropbox.com/s/gjt2jlgsqdq8set/uniforme.pdf?dl=0',
   },
   levels: [{
     title: 'Preescolar',

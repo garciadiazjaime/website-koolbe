@@ -23,9 +23,9 @@ export default class Schedule extends React.Component {
       }, {
         type: 'description',
         text: ['Este servicio se ofrece para todos los niveles. ' +
-          'El horario extendido continúa el proceso formativo del alumno. ' +
-          'No es guardería, sino apoyo educativo profesional; a las tareas, ' +
-          'al descanso y los buenos hábitos después de los horarios de ' +
+          'El horario extendido contin&uacute;a el proceso formativo del alumno. ' +
+          'No es guarder&iacute;a, sino apoyo educativo profesional; a las tareas, ' +
+          'al descanso y los buenos h&aacute;bitos despu&eacute;s de los horarios de ' +
           'clases formales. En cuanto a los alimentos el padre de familia puede ' +
           'optar por solicitar el servicio en la cooperativa escolar ' +
           'de su plantel escolar o enviar la comida. De preferencia ' +
@@ -39,7 +39,7 @@ export default class Schedule extends React.Component {
         },
       }, {
         type: 'description',
-        text: ['Servicio con un costo adicional mensual y horarios específicos. Consultar en el plantel donde este inscrito su hijo'],
+        text: ['Servicio con un costo adicional mensual y horarios espec&iacute;ficos. Consultar en el plantel donde este inscrito su hijo'],
         style: {
           fontSize: '18px',
           fontFamily: Constants.fontA,
@@ -47,7 +47,7 @@ export default class Schedule extends React.Component {
       }, {
         type: 'link',
         url: 'contacto',
-        text: 'Contáctanos',
+        text: 'Cont&aacute;ctanos',
       }],
     }];
   }

@@ -17,3 +17,28 @@
     margin-bottom: 30px;
   }
 }
+
+.vision {
+
+  min-height: 450px;
+
+  @media #{$isPhone} {
+    h1 {
+      height: 60px;
+    }
+  }
+
+  li {
+    background-color: $green !important;
+    border: none;
+    margin: 0 15px !important;
+  }
+
+  p{
+    min-height: 280px;
+    margin-bottom: 0px !important;
+    @media #{$isPhone} {
+      min-height: 300px;
+    }
+  }
+}

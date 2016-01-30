@@ -15,13 +15,13 @@ export default class ExtraescolaresSection extends React.Component {
     }, {
       elements: [{
         type: 'description',
-        text: ['Estas actividades tienen una contribución importante al desarrollo ' +
+        text: ['Estas actividades tienen una contribución importante al desarrollo ' +
         'personal de nuestros alumnos, completando e integrando de manera especial ' +
-        'su educación y formación. El objetivo principal es la enseñanza-aprendizaje a ' +
-        'través de metodologías más creativas y prácticas.'],
+        'su educación y formación. El objetivo principal es la ense&ntilde;anza-aprendizaje a ' +
+        'trav&eacute;s de metodolog&iacute;as m&aacute;s creativas y pr&aacute;cticas.'],
       }, {
         type: 'description',
-        text: ['Estas se ofrecen por las tardes de manera opcional según el gusto y ' +
+        text: ['Estas se ofrecen por las tardes de manera opcional seg&uacute;n el gusto y ' +
         'preferencia de cada uno de nuestros alumnos. Cada inicio de ciclo escolar ' +
         '(agosto) se emite CONVOCATORIA donde se ofertan todas las opciones ' +
         'disponibles, por ejemplo:'],

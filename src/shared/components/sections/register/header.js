@@ -64,7 +64,7 @@ export default class Header extends Component {
         <div className="row">
           <div className="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-0">
             <Button1 refs="contacto" classTitle="button5">
-              Contáctanos
+              Cont&aacute;ctanos
             </Button1>
           </div>
         </div>

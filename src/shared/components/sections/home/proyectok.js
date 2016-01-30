@@ -15,19 +15,19 @@ export default class ProyectoK extends Component {
       },
       elements: [{
         type: 'subtitle',
-        text: ['MÉTODO ACADÉMICO'],
+        text: ['M&Eacute;TODO ACAD&eacute;MICO'],
       }, {
         type: 'title',
         text: ['El Proyecto K'],
       }, {
         type: 'description',
-        text: ['Instituto Ramiro Kolbe, es una institución privada que ofrece ' +
-          'a niños y adolescentes una fórmula educativa de excelente nivel, ' +
-          'sustentada por ser bicultural, bilingüe, tecnológica, integral y religiosa, ' +
-          'con amplios valores axiológicos y transmisora de cultura y tradiciones.'],
+        text: ['Instituto Ramiro Kolbe, es una institución privada que ofrece ' +
+          'a ni&ntilde;os y adolescentes una fórmula educativa de excelente nivel, ' +
+          'sustentada por ser bicultural, biling&uuml;e, tecnológica, integral y religiosa, ' +
+          'con amplios valores axiológicos y transmisora de cultura y tradiciones.'],
       }, {
         type: 'link',
-        text: 'Conóce más',
+        text: 'Conoce m&aacute;s',
         url: 'proyecto-k',
       }],
     }, CarouselData];

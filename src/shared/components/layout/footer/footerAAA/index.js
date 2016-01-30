@@ -18,7 +18,7 @@ export default class FooterAAA extends Component {
         {
           item.type ?
           <a href={item.url} target="_blank">{item.title}</a> :
-          <Link to={item.url}>{item.title}</Link>
+          <Link to={item.url} dangerouslySetInnerHTML={this.sanitize(item.title)} />
         }
         {children}
       </li>);
@@ -29,7 +29,7 @@ export default class FooterAAA extends Component {
 
   getAddress(data) {
     const items = data.map((item, index) => {
-      return (<div className="col-sm-4" key={index}>
+      return (<div className="col-sm-4 hidden-sm hidden-xs" key={index}>
         <div className="row">
           <SimpleCard data={item} />
         </div>
@@ -52,7 +52,7 @@ export default class FooterAAA extends Component {
     }, {
       elements: [{
         type: 'description',
-        text: ['Síguenos en :'],
+        text: ['S&iacute;guenos en :'],
       }, {
         type: 'link',
         url: '#',
@@ -63,6 +63,12 @@ export default class FooterAAA extends Component {
         }),
       }],
     }];
+  }
+
+  sanitize(value) {
+    return {
+      __html: value,
+    };
   }
 
   render() {
@@ -116,7 +122,7 @@ export default class FooterAAA extends Component {
                 Un proyecto de:&nbsp;
                 <a href={data[0].url} title={data[0].title} target="_blank">{data[0].name}</a>
                 &nbsp;&nbsp;
-                Código por:&nbsp;
+                Código por:&nbsp;
                 <a href={data[1].url} title={data[1].title} target="_blank">{data[1].name}</a>
               </div>
             </div>
