@@ -69,7 +69,7 @@ export default class Contact extends React.Component {
   render() {
     return (<div className="container">
         <div className={style.contact}>
-          <h1>Contáctanos</h1>
+          <h1>Cont&aacute;ctanos</h1>
           <hr />
           <Intro />
           <br className="visible-xs" />

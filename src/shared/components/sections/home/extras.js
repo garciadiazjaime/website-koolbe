@@ -20,11 +20,11 @@ export default class Extras extends Component {
         text: ['Somos <br />Escuela BEO'],
       }, {
         type: 'description',
-        text: ['BRITISH ENGLISH OLYMPICS <br />Certificación como escuela' +
+        text: ['BRITISH ENGLISH OLYMPICS <br />Certificación como escuela' +
           ' dentro <br />del BEO BOARD.'],
       }, {
         type: 'link',
-        text: 'Conóce más',
+        text: 'Conoce m&aacute;s',
         url: 'proyecto-k/somos-escuela-beo',
       }],
     }, {
@@ -39,10 +39,10 @@ export default class Extras extends Component {
       }, {
         type: 'description',
         text: ['El fin principal de las actividades <br />extraescolares es canalizar' +
-          ' la <br />vocación de los niños.'],
+          ' la <br />vocación de los ni&ntilde;os.'],
       }, {
         type: 'link',
-        text: 'Conóce más',
+        text: 'Conoce m&aacute;s',
         url: 'extraescolares',
       }],
     }, {
@@ -53,14 +53,14 @@ export default class Extras extends Component {
         }),
       }, {
         type: 'title',
-        text: ['Filosofía <br />Religiosa'],
+        text: ['Filosof&iacute;a <br />Religiosa'],
       }, {
         type: 'description',
-        text: ['La educación a favor del hombre <br />y de la mujer creados a imagen ' +
+        text: ['La educación a favor del hombre <br />y de la mujer creados a imagen ' +
           '<br />y semejanza de Dios.'],
       }, {
         type: 'link',
-        text: 'Conóce más',
+        text: 'Conoce m&aacute;s',
         url: 'proyecto-k/filosofia-religiosa',
       }],
     }];

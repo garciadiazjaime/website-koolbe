@@ -10,20 +10,20 @@ module.exports = [{
     backgroundColor: Constants.blueLight,
   },
   bulletin: [{
-    title: 'Boletín Preescolar',
+    title: 'Bolet&iacute;n Preescolar',
     url: '#',
   }, {
-    title: 'Boletín Primaria',
+    title: 'Bolet&iacute;n Primaria',
     url: '#',
   }, {
-    title: 'Boletín Secundaria',
+    title: 'Bolet&iacute;n Secundaria',
     url: '#',
   }, {
-    title: 'Boletín Preparatoria',
+    title: 'Bolet&iacute;n Preparatoria',
     url: '#',
   }],
   extra: [{
-    title: 'Ficha de Inscripción',
+    title: 'Ficha de Inscripción',
     url: '/pdfs/santafe/ficha-Inscripcion.pdf',
   }],
 }, {
@@ -36,17 +36,17 @@ module.exports = [{
     backgroundColor: Constants.red,
   },
   bulletin: [{
-    title: 'Boletín Preescolar',
+    title: 'Bolet&iacute;n Preescolar',
     url: '#',
   }, {
-    title: 'Boletín Primaria',
+    title: 'Bolet&iacute;n Primaria',
     url: '#',
   }, {
-    title: 'Boletín Secundaria',
+    title: 'Bolet&iacute;n Secundaria',
     url: '#',
   }],
   extra: [{
-    title: 'Ficha de Inscripción',
+    title: 'Ficha de Inscripción',
     url: '/pdfs/otay/ficha-Inscripcion.pdf',
   }],
 }, {
@@ -59,17 +59,17 @@ module.exports = [{
     backgroundColor: Constants.green,
   },
   bulletin: [{
-    title: 'Boletín Preescolar',
+    title: 'Bolet&iacute;n Preescolar',
     url: '#',
   }, {
-    title: 'Boletín Primaria',
+    title: 'Bolet&iacute;n Primaria',
     url: '#',
   }, {
-    title: 'Boletín Secundaria',
+    title: 'Bolet&iacute;n Secundaria',
     url: '#',
   }],
   extra: [{
-    title: 'Ficha de Inscripción',
+    title: 'Ficha de Inscripción',
     url: '/pdfs/presidentes/ficha-Inscripcion.pdf',
   }],
 }];

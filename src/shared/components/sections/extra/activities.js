@@ -16,7 +16,7 @@ export default class Activities extends React.Component {
         text: ['Actividades <br />Deportivas'],
       }, {
         type: 'description',
-        text: ['Fútbol, Básquetbol, Volibol, <br /> entre otras.'],
+        text: ['F&uacute;tbol, B&aacute;squetbol, Volibol, <br /> entre otras.'],
       }],
     }, {
       elements: [{
@@ -24,10 +24,10 @@ export default class Activities extends React.Component {
         style: _.merge({}, Sprites.Extra.Artisticas),
       }, {
         type: 'title',
-        text: ['Actividades <br />Artísticas'],
+        text: ['Actividades <br />Art&iacute;sticas'],
       }, {
         type: 'description',
-        text: ['Música, Ballet, Piano, <br />Danza, Guitarra, Violín,<br /> ' +
+        text: ['M&uacute;sica, Ballet, Piano, <br />Danza, Guitarra, Viol&iacute;n,<br /> ' +
           'Dibujo y Pintura, etc.'],
       }],
     }, {
@@ -36,10 +36,10 @@ export default class Activities extends React.Component {
         style: _.merge({}, Sprites.Extra.Robotica),
       }, {
         type: 'title',
-        text: ['Actividades del <br />Área de Conocimiento'],
+        text: ['Actividades del <br />&aacute;rea de Conocimiento'],
       }, {
         type: 'description',
-        text: ['Robótica, Cursos de <br />nivelación, entre otros.'],
+        text: ['Robótica, Cursos de <br />nivelación, entre otros.'],
       }],
     }];
   }

@@ -54,7 +54,7 @@ module.exports = {
       }, {
         type: 'description',
         text: ['Contamos con niveles escolares, <br />respaldados por la ' +
-          'f&oacute;rmula educativa <br />del Sistema SISEEKO'],
+          'fórmula educativa <br />del Sistema SISEEKO'],
       }, {
         type: 'link',
         text: 'Inscríbete',
@@ -75,10 +75,10 @@ module.exports = {
     card: {
       elements: [{
         type: 'title',
-        text: ['Educación <br />de altura <br />a tu alcance'],
+        text: ['Educación <br />de altura <br />a tu alcance'],
       }, {
         type: 'description',
-        text: ['Brindamos a nuestro alumnado una<br />educación integral, ' +
+        text: ['Brindamos a nuestro alumnado una<br />educación integral, ' +
           'al alcance de sus<br />familias, que les permite trascender en<br/>nuestra sociedad.'],
       }, {
         type: 'link',
@@ -100,11 +100,11 @@ module.exports = {
     card: {
       elements: [{
         type: 'title',
-        text: ['Educación <br />para el éxito<br />y excelencia'],
+        text: ['Educación <br />para el éxito<br />y excelencia'],
       }, {
         type: 'description',
         text: ['Desarrollamos en nuestro alumnado<br />aptitudes de conocimiento ' +
-          'académico,<br />deportivo, artístico y cultural potenciando<br/>sus ' +
+          'acad&eacute;mico,<br />deportivo, art&iacute;stico y cultural potenciando<br/>sus ' +
           'capacidades individuales.'],
       }, {
         type: 'link',
@@ -129,11 +129,11 @@ module.exports = {
         text: ['Servicios y <br />Actividades<br />Extraescolares'],
       }, {
         type: 'description',
-        text: ['Enseñanza y aprendizaje a través de<br />metodologías más creativas ' +
-          'y prácticas.'],
+        text: ['Ense&ntilde;anza y aprendizaje a trav&eacute;s de<br /> ' +
+          'metodolog&iacute;as m&aacute;s creativas y pr&aacute;cticas.'],
       }, {
         type: 'link',
-        text: 'Conóce más',
+        text: 'Conoce m&aacute;s',
         url: 'extraescolares',
         style: {
           backgroundColor: Constants.blueLight,
@@ -154,12 +154,12 @@ module.exports = {
         text: ['Vive la<br />experiencia<br />BEO'],
       }, {
         type: 'description',
-        text: ['Participa en las Olimpiadas<br />Británicas de Inglés, y ' +
-          'vive una<br/>experiencia única junto a las<br /> escuelas más exclusivas ' +
-          'del<br />Reino Unido.'],
+        text: ['Participa en las Olimpiadas<br />Brit&aacute;nicas de Inglés, y ' +
+          'vive una<br/>experiencia &uacute;nica junto a las<br /> escuelas m&aacute;s ' +
+          ' exclusivas del<br />Reino Unido.'],
       }, {
         type: 'link',
-        text: 'Conóce más',
+        text: 'Conoce m&aacute;s',
         url: 'inscribete',
         style: {
           backgroundColor: Constants.red,

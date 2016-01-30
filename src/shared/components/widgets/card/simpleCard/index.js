@@ -2,10 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import _ from 'lodash';
 
-/*eslint-disable */
 import Par1 from '../../../../components/elements/paragraphs/paragraph1';
 import Title1 from '../../../../components/elements/titles/title1';
-/*eslint-enable */
 
 export default class SimpleCard extends Component {
 
@@ -86,7 +84,7 @@ export default class SimpleCard extends Component {
 
     if (CustomComponent) {
       return (<CustomComponent className={className} classTitle={className} key={index}>
-          {text}
+          <span dangerouslySetInnerHTML={this.sanitize(text)} />
         </CustomComponent>);
     }
     return null;

@@ -20,6 +20,20 @@ import scrollHelper from '../../../utils/scroll';
 
 export default class ProjectK extends Component {
 
+  componentWillMount() {
+    if (process.env.NODE_ENV === 'DEV' && window.innerWidth <= 320) {
+      carouselImagesData.slides = carouselImagesData.slides.map((item, index) => {
+        let imageUrl = item.wrapper.style.backgroundImage.toString();
+        imageUrl = imageUrl.replace('images/proyectok', 'images/mobile/proyectok');
+        carouselImagesData.slides[index].wrapper.style.backgroundImage = imageUrl;
+        return carouselImagesData.slides[index];
+      });
+      this.setState({
+        status: true,
+      });
+    }
+  }
+
   componentDidUpdate() {
     /*eslint-disable */
     const { location } = this.props;
@@ -45,15 +59,17 @@ export default class ProjectK extends Component {
               <div style={{ marginBottom: '45px' }}>
                 <Par1 classTitle="par2">
                   El Instituto Ramiro Kolbe surge de la inquietud  del Padre
-                  Jesús Quesada Martínez, de ayudar a los demás a través de la educación,
-                  ya que él cree firmemente en la idea de que la educación es la base de
-                  una sociedad en progreso inspirados en la filosofía de San Maximiliano Kobe –
+                  Jesús Quesada Martínez, de ayudar a los dem&aacute;s a
+                  través de la educación, ya que él cree firmemente en la
+                  idea de que la educación es la base de una sociedad en progreso inspirados
+                  en la filosofía de San Maximiliano Kobe –
                 </Par1>
               </div>
               <Par1 classTitle="par2">
-                De esta manera y gracias a al apoyo de un grupo de inversionistas, inicia el
-                reclutamiento de un muy valioso equipo docente y administrativo, así como
-                el diseño y estructuración del Sistema Educativo y Editorial Kolbe (SISEEKO).
+                De esta manera y gracias a al apoyo de un grupo de inversionistas,
+                inicia el reclutamiento de un muy valioso equipo docente y administrativo,
+                así como el diseño y estructuración del Sistema Educativo y
+                Editorial Kolbe (SISEEKO).
               </Par1>
             </div>
             <div className={'col-xs-12 col-sm-5 ' + style.vAligner }>
@@ -68,9 +84,9 @@ export default class ProjectK extends Component {
             <div className="container" style={{ width: 'auto' }}>
               <div className="row">
                 <div className="col-xs-12 col-sm-6 col-sm-offset-3" id="mision-vision">
-
+                  <div className={style.vision}>
                   <SimpleCarousel data={carouselVisionData} />
-
+                  </div>
                 </div>
               </div>
             </div>
@@ -83,9 +99,9 @@ export default class ProjectK extends Component {
                 Filosofía Religiosa
               </Title1>
               <Par1 classTitle="par2">
-                La filosofía del instituto Kolbe se funda en el pensamiento de la antropología
-                cristiana que tiene al hombre y a la mujer como centro y preocupación
-                de toda su actividad.
+                La filosofía del instituto Kolbe se funda en el pensamiento de
+                la antropología cristiana que tiene al hombre y a la mujer como
+                centro y preocupación de toda su actividad.
               </Par1>
               <span id="metas"></span>
               <Title1 className="title13">
@@ -102,7 +118,7 @@ export default class ProjectK extends Component {
               <div className="row" style={{ marginTop: '45px' }}>
                 <div className="col-xs-12 col-sm-7">
                   <Button1 refs="contacto" classTitle="button2">
-                    Contáctanos
+                    Cont&aacute;ctanos
                   </Button1>
                 </div>
               </div>
@@ -144,10 +160,11 @@ export default class ProjectK extends Component {
                 (British English Olympics)
               </Title1>
               <Par1 classTitle="par1">
-                Certificación como escuela dentro del BEO BOARD. Cada año se llevan a cabo las
-                Olimpiadas Británicas de Inglés en donde las escuelas más exclusivas del
-                Reino Unido reciben a un grupo de estudiantes de todo el mundo se
-                enfrentan a diferentes retos académicos en el idioma Inglés.
+                Certificación como escuela dentro del BEO BOARD. Cada año se llevan
+                a cabo las Olimpiadas Brit&aacute;nicas de Inglés en donde las
+                escuelas m&aacute;s exclusivas del Reino Unido reciben a un grupo de
+                estudiantes de todo el mundo se enfrentan a diferentes retos académicos
+                en el idioma Inglés.
               </Par1>
               <Title1 className="title16">
                 Objetivos y ventjas
@@ -158,7 +175,8 @@ export default class ProjectK extends Component {
 
                 <li>Fomenta el conocimiento de diferentes culturas.</li>
 
-                <li>Convivencia con personas de diferentes países, tradiciones y opiniones.</li>
+                <li>Convivencia con personas de diferentes países, tradiciones y
+                opiniones.</li>
 
                 <li>Crecimiento personal.</li>
 
@@ -179,13 +197,14 @@ export default class ProjectK extends Component {
                 </Title1>
                 <Par1 classTitle="par5">
                   San Maximiliano Kolbe, Bendice el trabajo que estamos iniciando este
-                  nuevo día, bendice a nuestro padres, bendice su trabajo y cuídalos de
-                  toda enfermedad. Bendice a nuestros maestros y a toda su familia,
-                  bendice a nuestro instituto. Te ofrecemos este día de trabajo,
-                  te ofrecemos nuestras clases y nuestro recreo, te ofrecemos nuestras tareas,
-                  y nuestra convivencia con todos nuestros compañeros. Madre mía inmaculada,
-                  Que sea un buen estudiante, Que sea un buen hijo. Quiero ser obediente,
-                  respetuoso, Trabajador y un buen amigo para todos.<br/>
+                  nuevo día, bendice a nuestro padres, bendice su trabajo y
+                  cuídalos de toda enfermedad. Bendice a nuestros maestros y
+                  a toda su familia, bendice a nuestro instituto. Te ofrecemos este
+                  día de trabajo, te ofrecemos nuestras clases y nuestro recreo,
+                  te ofrecemos nuestras tareas, y nuestra convivencia con todos nuestros
+                  compañeros. Madre mía inmaculada, Que sea un buen estudiante,
+                  Que sea un buen hijo. Quiero ser obediente, respetuoso, Trabajador y
+                  un buen amigo para todos.<br/>
                     Amén.
                 </Par1>
               </div>
@@ -200,7 +219,7 @@ export default class ProjectK extends Component {
                   Y lo grito con honor,<br />
                   porque  a diario doy la vida<br />
                   trabajando con amor.<br />
-                  Tú, Maximiliano, mártir y santo,<br />
+                  Tú, Maximiliano, m&aacute;rtir y santo,<br />
                   Nos inspiras y nos das valor.<br />
                   A luchar por la patria y por Dios<br />
                   En busca de un mundo mejor!<br />

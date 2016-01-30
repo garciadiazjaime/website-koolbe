@@ -84,10 +84,11 @@ export default class Register extends Component {
               </Title1>
               <List1 classTitle="list2">
                 <li>
-                  En el periodo que previamente el Instituto le informe para realizar en línea su
-                  inscripción. Ingresando a la siguiente dirección electrónica: <br />
-                  <a href="http://www.cobach.edu.mx">www.cobach.edu.mx</a><br />
-                  opción <strong>“alumnos”</strong>, <strong>“reinscripción en línea”</strong>.
+                  En el periodo que previamente el Instituto le informe para realizar en
+                  línea su inscripción. Ingresando a la siguiente dirección
+                  electrónica: <br /> <a href="http://www.cobach.edu.mx">www.cobach.edu.mx</a><br />
+                  opción <strong>"alumnos"</strong>,
+                  <strong>"reinscripción en línea"</strong>.
                 </li>
               </List1>
             </Wrapper1>
@@ -128,7 +129,8 @@ export default class Register extends Component {
                 <li>Ficha de inscripción debidamente llena.</li>
                 <li>Entrevista con Dirección Académica.</li>
                 <li>Cuestionario del departamento de Psicología debidamente lleno.</li>
-                <li>Entrevista con departamento de Psicología, solo en caso de ser necesario.</li>
+                <li>Entrevista con departamento de Psicología,
+                  solo en caso de ser necesario.</li>
                 <li>Realizar examen diagnóstico.</li>
                 <li>Entregar documentación completa del alumno solicitado por departamento
                 de Control Escolar.</li>
@@ -181,11 +183,13 @@ export default class Register extends Component {
                   Requisitos de edad para ingresar a los niveles de preescolar
                 </Title1>
                 <List1 classTitle="list3">
-                  <li className="first"> 3 años cumplidos al 31 de diciembre del año en curso.</li>
+                  <li className="first"> 3 años cumplidos al 31 de diciembre del
+                    año en curso.</li>
 
                   <li> 4 años cumplidos al 31 de diciembre del año en curso.</li>
 
-                  <li className="third"> 5 años cumplidos al 31 de diciembre del año en curso.</li>
+                  <li className="third"> 5 años cumplidos al 31 de diciembre del
+                    año en curso.</li>
                 </List1>
               </Wrapper1>
             </div>
@@ -206,7 +210,7 @@ export default class Register extends Component {
                   <List1 classTitle="list2">
                     <li>Acta de nacimiento original y 3 copias.</li>
 
-                    <li>Última boleta de calificaciones o constancia de la escuela donde
+                    <li>última boleta de calificaciones o constancia de la escuela donde
                     estudia actualmente, original y 3 copias.</li>
 
                     <li>Certificado de preescolar original y 3 copias<br />
@@ -254,7 +258,7 @@ export default class Register extends Component {
                   <List1 classTitle="list2">
                     <li>Acta de nacimiento original y 3 copias.</li>
 
-                    <li>Última boleta de calificaciones o constancia de la escuela
+                    <li>última boleta de calificaciones o constancia de la escuela
                     donde estudia actualmente, original y 3 copias.</li>
 
                     <li>Certificado de primaria<br />
@@ -314,7 +318,7 @@ export default class Register extends Component {
               <div className="row">
                 <div className="col-xs-8 col-xs-offset-2">
                   <Button1 refs="proyecto-k" classTitle="button2">
-                    Conoce más
+                    Conoce m&aacute;s
                   </Button1>
                 </div>
               </div>

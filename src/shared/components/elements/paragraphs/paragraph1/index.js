@@ -14,9 +14,6 @@ export default class Paragraph1 extends React.Component {
 }
 
 Paragraph1.propTypes = {
-  children: React.PropTypes.oneOfType([
-    React.PropTypes.array,
-    React.PropTypes.string,
-  ]),
+  children: React.PropTypes.any,
   classTitle: React.PropTypes.string,
 };

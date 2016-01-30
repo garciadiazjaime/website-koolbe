@@ -33,7 +33,7 @@
 
 .menuParent {
   float: left;
-  padding-right: 30px;
+  padding-right: 22px;
 
   @media #{$isPhone} {
     padding-bottom: 20px;
@@ -61,7 +61,14 @@
   right: 5px;
 
   @media screen and (max-width: 1201px) {
-    right: -50px;
+    right: -10px;
+  }
+  @media screen and (min-width: 1201px) {
+    right: 48px;
+  }
+
+  @media screen and (max-width: 1023px) {
+    display: none;
   }
 
   h2 {
