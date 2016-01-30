@@ -79,7 +79,7 @@ export default class ProjectK extends Component {
             </div>
           </div>
         </div>
-        <div style={{ marginBottom: '77px' }}>
+        <div>
           <Wrapper1 className="wrapper5">
             <div className="container" style={{ width: 'auto' }}>
               <div className="row">

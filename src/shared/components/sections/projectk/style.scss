@@ -22,6 +22,12 @@
 
   min-height: 450px;
 
+  @media #{$isPhone} {
+    h1 {
+      height: 60px;
+    }
+  }
+
   li {
     background-color: $green !important;
     border: none;
@@ -31,5 +37,8 @@
   p{
     min-height: 280px;
     margin-bottom: 0px !important;
+    @media #{$isPhone} {
+      min-height: 300px;
+    }
   }
 }

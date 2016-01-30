@@ -26,7 +26,7 @@ export default class ExtraescolaresSection extends React.Component {
         return (<li key={index2}>
           <h3>
             <i style={iconStyle}></i>
-            {item.title}
+            <span dangerouslySetInnerHTML={this.sanitize(item.title)} />
           </h3>
           <a href={item.url} style={place.styleLink} target="_blank">descargar</a>
         </li>);
@@ -47,7 +47,7 @@ export default class ExtraescolaresSection extends React.Component {
         return (<li key={index2}>
           <h3>
             <i style={iconStyle}></i>
-            {item.title}
+            <span dangerouslySetInnerHTML={this.sanitize(item.title)} />
             <span dangerouslySetInnerHTML={this.sanitize(place.title)} className="visible-xs" />
           </h3>
           <a href={item.url} style={place.styleLink} target="_blank">
