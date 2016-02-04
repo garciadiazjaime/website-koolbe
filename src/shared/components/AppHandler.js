@@ -7,10 +7,16 @@ import FooterAAA from './layout/footer/footerAAA';
 
 export default class AppHandler extends React.Component {
 
+  clickHandler() {
+    if ($('.navbar-header button').is(':visible')) {
+      $('.navbar-header button').click();
+    }
+  }
+
   render() {
     return (
       <div>
-        <Menu items={menuData.items} icons={menuData.icons} />
+        <Menu items={menuData.items} icons={menuData.icons} onClick={this.clickHandler} />
         {this.props.children}
         <FooterAAA />
       </div>

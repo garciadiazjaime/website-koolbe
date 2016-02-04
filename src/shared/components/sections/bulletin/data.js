@@ -27,7 +27,7 @@ module.exports = [{
     url: 'https://www.dropbox.com/s/bqcp427un4fnysr/ficha-inscripcion.pdf?dl=0',
   }],
 }, {
-  title: '&nbsp;&nbsp;&nbsp;&nbsp;OTAY',
+  title: 'OTAY',
   id: 'otay',
   styleTile: {
     color: Constants.red,
@@ -50,7 +50,7 @@ module.exports = [{
     url: 'https://www.dropbox.com/s/echc67dfijtho8n/ficha-inscripcion.pdf?dl=0',
   }],
 }, {
-  title: '&nbsp;&nbsp;&nbsp;&nbsp;PRESIDENTES',
+  title: 'PRESIDENTES',
   id: 'presidentes',
   styleTile: {
     color: Constants.green,

@@ -9,9 +9,11 @@ export default class MainMenu extends Component {
 
   getItems(data) {
     return data.map((item, index) => {
+      const { url, title } = item;
+      const { onClick } = this.props;
       return (
         <li key={index}>
-          <Link to={item.url} className={style.navbarNavAnchor} id={item.url}>{item.title}</Link>
+          <Link to={url} className={style.navbarNavAnchor} id={url} onClick={onClick}>{title}</Link>
         </li>
       );
     });
@@ -59,4 +61,5 @@ export default class MainMenu extends Component {
 MainMenu.propTypes = {
   items: React.PropTypes.array.isRequired,
   icons: React.PropTypes.array,
+  onClick: React.PropTypes.func.isRequired,
 };

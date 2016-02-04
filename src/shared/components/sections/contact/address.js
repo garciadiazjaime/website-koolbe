@@ -10,6 +10,11 @@ export default class Address extends React.Component {
     this.changeLoc = this.props.changeLocation;
   }
 
+  sanitize(value) {
+    return {
+      __html: value,
+    };
+  }
 
   render() {
     const { data } = this.props;
@@ -27,7 +32,7 @@ export default class Address extends React.Component {
             <div style={Sprites.General.Location}></div>
           </div>
           <div className="col-sm-10 col-xs-10">
-            {data.location}
+            <span dangerouslySetInnerHTML={this.sanitize(data.location)} />
           </div>
         </div>
 

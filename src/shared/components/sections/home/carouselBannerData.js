@@ -53,8 +53,8 @@ module.exports = {
         text: ['Fórmula <br />educativa <br />de alto nivel'],
       }, {
         type: 'description',
-        text: ['Contamos con niveles escolares, <br />respaldados por la ' +
-          'fórmula educativa <br />del Sistema SISEEKO'],
+        text: ['Contamos con niveles escolares, respaldados por la ' +
+          'fórmula educativa del Sistema SISEEKO'],
       }, {
         type: 'link',
         text: 'Inscríbete',
@@ -78,8 +78,8 @@ module.exports = {
         text: ['Educación <br />de altura <br />a tu alcance'],
       }, {
         type: 'description',
-        text: ['Brindamos a nuestro alumnado una<br />educación integral, ' +
-          'al alcance de sus<br />familias, que les permite trascender en<br/>nuestra sociedad.'],
+        text: ['Brindamos a nuestro alumnado una educación integral, ' +
+          'al alcance de sus familias, que les permite trascender en nuestra sociedad.'],
       }, {
         type: 'link',
         text: 'Inscríbete',
@@ -103,8 +103,8 @@ module.exports = {
         text: ['Educación <br />para el éxito<br />y excelencia'],
       }, {
         type: 'description',
-        text: ['Desarrollamos en nuestro alumnado<br />aptitudes de conocimiento ' +
-          'acad&eacute;mico,<br />deportivo, art&iacute;stico y cultural potenciando<br/>sus ' +
+        text: ['Desarrollamos en nuestro alumnado aptitudes de conocimiento ' +
+          'acad&eacute;mico, deportivo, art&iacute;stico y cultural potenciando sus ' +
           'capacidades individuales.'],
       }, {
         type: 'link',
@@ -129,7 +129,7 @@ module.exports = {
         text: ['Servicios y <br />Actividades<br />Extraescolares'],
       }, {
         type: 'description',
-        text: ['Ense&ntilde;anza y aprendizaje a trav&eacute;s de<br /> ' +
+        text: ['Ense&ntilde;anza y aprendizaje a trav&eacute;s de ' +
           'metodolog&iacute;as m&aacute;s creativas y pr&aacute;cticas.'],
       }, {
         type: 'link',
@@ -154,9 +154,9 @@ module.exports = {
         text: ['Vive la<br />experiencia<br />BEO'],
       }, {
         type: 'description',
-        text: ['Participa en las Olimpiadas<br />Brit&aacute;nicas de Inglés, y ' +
-          'vive una<br/>experiencia &uacute;nica junto a las<br /> escuelas m&aacute;s ' +
-          ' exclusivas del<br />Reino Unido.'],
+        text: ['Participa en las Olimpiadas Brit&aacute;nicas de Inglés, y ' +
+          'vive una experiencia &uacute;nica junto a las escuelas m&aacute;s ' +
+          ' exclusivas del Reino Unido.'],
       }, {
         type: 'link',
         text: 'Conoce m&aacute;s',
