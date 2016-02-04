@@ -62,6 +62,14 @@
   }
 }
 
+.ficha_inscripcion {
+  display: block;
+
+  @media #{$isPhone6} {
+    margin-left: 30px;
+  }
+}
+
 .break {
   margin: 65px 0 50px;
 }

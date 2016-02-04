@@ -18,7 +18,7 @@ export default class HomeSection extends React.Component {
       'url(\'images/mobile/home/banner/prepa.jpg\')',
       'url(\'images/mobile/home/banner/extra.jpg\')',
       'url(\'images/mobile/home/banner/beo.jpg\')'];
-    if (process.env.NODE_ENV === 'DEV' && window.innerWidth <= 320) {
+    if (process.env.NODE_ENV === 'DEV' && window.innerWidth <= 400) {
       images.map((item, index) => {
         carouselData.slides[index].wrapper.style.backgroundImage = item;
       });

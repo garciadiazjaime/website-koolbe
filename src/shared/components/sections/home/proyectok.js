@@ -15,7 +15,7 @@ export default class ProyectoK extends Component {
       },
       elements: [{
         type: 'subtitle',
-        text: ['M&Eacute;TODO ACAD&eacute;MICO'],
+        text: ['M&Eacute;TODO ACAD&Eacute;MICO'],
       }, {
         type: 'title',
         text: ['El Proyecto K'],

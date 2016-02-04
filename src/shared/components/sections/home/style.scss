@@ -17,6 +17,7 @@
     font-size: 20px;
     font-family: $fontALigth;
     margin-top: 62px;
+    max-width: 400px;
 
     @media #{$isPhone} {
       font-size: 15px;
@@ -153,7 +154,11 @@
 
     @media #{$isPhone} {
       font-size: 20px;
-      margin-top: 15px;
+      margin-top: 10px;
+    }
+
+    @media #{$isPhone6} {
+      margin-top: 10px;
     }
   }
 
@@ -179,6 +184,14 @@
     font-family: $fontBBold;
     font-size: 16px;
     padding-left: 0;
+
+    @media #{$isPhone} {
+      margin-top: 0px;
+    }
+
+    @media #{$isPhone6} {
+      margin-top: 0px;
+    }
 
     @extend .btnA
   }
