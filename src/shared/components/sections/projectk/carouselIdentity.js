@@ -97,11 +97,10 @@ module.exports = {
         className: 'par4',
         text: 'Eduaci&oacute;n Religiosa <br />' +
           'Eduaci&oacute;n Tecnol&oacute;gica <br />' +
-          'Eduaci&oacute;n Culturla <br />' +
           'Eduaci&oacute;n Bicultural <br />' +
-          'Eduaci&oacute;n Integra <br />' +
+          'Eduaci&oacute;n Integral <br />' +
           'Eduaci&oacute;n Axiol&oacute;gica <br />' +
-          'Eduaci&oacute;n Bilingue <br />',
+          'Eduaci&oacute;n Bilingüe <br />',
       }],
     },
   }],

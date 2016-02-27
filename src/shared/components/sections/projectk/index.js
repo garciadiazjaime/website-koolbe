@@ -59,7 +59,7 @@ export default class ProjectK extends Component {
               <div style={{ marginBottom: '45px' }}>
                 <Par1 classTitle="par2">
                   El Instituto Ramiro Kolbe surge de la inquietud  del Padre
-                  Jesús Quesada Martínez, de ayudar a los dem&aacute;s a
+                  Jesús Quezada Martínez, de ayudar a los dem&aacute;s a
                   través de la educación, ya que él cree firmemente en la
                   idea de que la educación es la base de una sociedad en progreso inspirados
                   en la filosofía de San Maximiliano Kobe –

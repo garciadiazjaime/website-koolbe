@@ -116,7 +116,7 @@ export default class FooterAAA extends Component {
           <div className="container">
             <div className="row">
               <div className="col-sm-7">
-                Todos los derechos reservados Branding Pool 2015
+                Todos los derechos reservados Instituto Ramiro Kolbe ®
               </div>
               <div className="col-sm-5">
                 Un proyecto de:&nbsp;
